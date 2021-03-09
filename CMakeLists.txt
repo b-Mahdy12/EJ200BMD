@@ -28,7 +28,7 @@ message(STATUS "Found HEED in ${Heed_DIR}")
 include(${Geant4_USE_FILE})
 include_directories(${PROJECT_SOURCE_DIR}/include)
 include(${ROOT_USE_FILE})
-include_directories(${PROJECT_SOURCE_DIR}/root-style)
+#include_directories(${PROJECT_SOURCE_DIR}/root-style)
 include_directories(${Heed_INC_DIR})
 
 
@@ -57,7 +57,6 @@ set(EXAMPLEB1_SCRIPTS
   run2.mac
   run.mac
   vis.mac
-  analysis.py
   EJ200Scibar1.stl
   EJ200Scibar_60_WLS2mm_Ascii.stl
   )
