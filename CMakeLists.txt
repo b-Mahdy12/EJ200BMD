@@ -53,12 +53,9 @@ target_link_libraries(scintillator-sipm ${ROOT_LIBRARIES})
 #
 set(EXAMPLEB1_SCRIPTS
   init_vis.mac
-  run1.mac
   run2.mac
-  run.mac
   vis.mac
-  EJ200Scibar1.stl
-  EJ200Scibar_60_WLS2mm_Ascii.stl
+  EJ200Scibar_Ascii.stl
   )
 
 foreach(_script ${EXAMPLEB1_SCRIPTS})

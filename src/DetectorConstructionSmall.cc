@@ -1,29 +1,3 @@
-//
-// ********************************************************************
-// * License and Disclaimer                                           *
-// *                                                                  *
-// * The  Geant4 software  is  copyright of the Copyright Holders  of *
-// * the Geant4 Collaboration.  It is provided  under  the terms  and *
-// * conditions of the Geant4 Software License,  included in the file *
-// * LICENSE and available at  http://cern.ch/geant4/license .  These *
-// * include a list of copyright holders.                             *
-// *                                                                  *
-// * Neither the authors of this software system, nor their employing *
-// * institutes,nor the agencies providing financial support for this *
-// * work  make  any representation or  warranty, express or implied, *
-// * regarding  this  software system or assume any liability for its *
-// * use.  Please see the license in the file  LICENSE  and URL above *
-// * for the full disclaimer and the limitation of liability.         *
-// *                                                                  *
-// * This  code  implementation is the result of  the  scientific and *
-// * technical work of the GEANT4 collaboration.                      *
-// * By using,  copying,  modifying or  distributing the software (or *
-// * any work based  on the software)  you  agree  to acknowledge its *
-// * use  in  resulting  scientific  publications,  and indicate your *
-// * acceptance of all terms of the Geant4 Software license.          *
-// ********************************************************************
-//
-//
 /// \file DetectorConstructionSmall.cc
 /// \brief Implementation of the DetectorConstructionSmall class
 
@@ -86,28 +60,31 @@ G4VPhysicalVolume *DetectorConstructionSmall::Construct()
   //G4Element *Al  = new G4Element("Aluminum", "Al", 13., 26.98*g/mole);
 
   G4MaterialPropertiesTable *scintillatorProperties = new G4MaterialPropertiesTable();
-
-  scintillatorProperties->AddConstProperty("SCINTILLATIONYIELD", 9000. / MeV);
-  //scintillatorProperties->AddConstProperty("SCINTILLATIONYIELD", 9./MeV); // for testing
+  scintillatorProperties->AddConstProperty("SCINTILLATIONYIELD", 10000. / MeV);
   scintillatorProperties->AddConstProperty("FASTTIMECONSTANT", 0.7 * ns);
   scintillatorProperties->AddConstProperty("RESOLUTIONSCALE", 1.0);
   scintillatorProperties->AddConstProperty("YIELDRATIO", 1.0);
 
-  const G4int NPHOTONENERGIES = 22;
+  const G4int NPHOTONENERGIES = 37;
   G4double scintResponseWavelengths[NPHOTONENERGIES] = {
-      3.26 * eV, 3.22 * eV, 3.17 * eV, 3.13 * eV, 3.10 * eV, 3.06 * eV, 3.02 * eV,
-      2.98 * eV, 2.95 * eV, 2.91 * eV, 2.88 * eV, 2.83 * eV, 2.78 * eV, 2.75 * eV,
-      2.72 * eV, 2.69 * eV, 2.66 * eV, 2.63 * eV, 2.61 * eV, 2.58 * eV, 2.53 * eV, 2.50 * eV};
+      0.4906 * eV, 0.4868 * eV, 0.4838 * eV, 0.4816 * eV, 0.4797 * eV, 0.4779 * eV, 0.4761 * eV, 0.4740 * eV, 0.4732 * eV,
+      0.4718 * eV, 0.4704 * eV, 0.4680 * eV, 0.4662 * eV, 0.4631 * eV, 0.4598 * eV, 0.4561 * eV,
+      0.4525 * eV, 0.4506 * eV, 0.4483 * eV, 0.4448 * eV, 0.4423 * eV, 0.4396 * eV, 0.4365 * eV,
+      0.4332 * eV, 0.4297 * eV, 0.4256 * eV, 0.4227 * eV, 0.4202 * eV, 0.4180 * eV, 0.4152 * eV,
+      0.4122 * eV, 0.4090 * eV, 0.4064 * eV, 0.4030 * eV, 0.3999 * eV, 0.3969 * eV, 0.3525 * eV};
   G4double scintResponseSpectrum[NPHOTONENERGIES] = {
-      1.69, 3.13, 4.21, 4.92, 7.8, 9.59, 11.75, 15.16, 18.93,
-      25.22, 35.11, 43.9, 48.57, 53.6, 60.78, 85.93, 99.4,
-      91.32, 75.69, 35.28, 17.5, 4.38};
+      0.00076176 * eV, 0.00687241 * eV, 0.02745649 * eV, 0.06180196 * eV, 0.09235521 * eV, 0.16265089 * eV, 0.25836889 * eV,
+      0.33651601 * eV, 0.454276 * eV, 0.59830225 * eV, 0.72386064 * eV, 0.85119076 * eV, 0.97792321 * eV,
+      1.01103025 * eV, 0.95628841 * eV, 0.88209664 * eV, 0.76195441 * eV, 0.67765824 * eV, 0.57289761 * eV,
+      0.47692836 * eV, 0.38975049 * eV, 0.33016516 * eV, 0.28718881 * eV, 0.23107249 * eV, 0.20025625 * eV,
+      0.16265089 * eV, 0.13293316 * eV, 0.10265616 * eV, 0.07033104 * eV, 0.05130225 * eV, 0.03323329 * eV,
+      0.01907161 * eV, 0.01221025 * eV, 0.00881721 * eV, 0.00781456 * eV, 0.00439569 * eV, 0.37613689 * eV};
   G4double scintRefractiveIndex[NPHOTONENERGIES];
   G4double scintAbsLength[NPHOTONENERGIES];
   for (int i = 0; i < NPHOTONENERGIES; i++)
   {
     scintRefractiveIndex[i] = 1.58;
-    scintAbsLength[i] = 140. * cm;
+    scintAbsLength[i] = 380. * cm;
   }
   scintillatorProperties->AddProperty("FASTCOMPONENT", scintResponseWavelengths, scintResponseSpectrum, NPHOTONENERGIES);
   scintillatorProperties->AddProperty("RINDEX", scintResponseWavelengths, scintRefractiveIndex, NPHOTONENERGIES);
@@ -122,32 +99,49 @@ G4VPhysicalVolume *DetectorConstructionSmall::Construct()
   sapphireProperties->AddProperty("RINDEX", pCherenkov, refractiveIndex, nCherenkovMomenta)->SetSpline(true);
   sapphire->SetMaterialPropertiesTable(sapphireProperties);*/
 
-  double copperDensity = 8.960 * g / cm3;
-  double copperAtomicWeight = 63.55 * g / mole;
-  G4Material *copper = new G4Material("Copper", 29., copperAtomicWeight, copperDensity);
+  // SiPM_WINDOW_DEFINITION
+  double siliconDensity = 2.33 * g / cm3;
+  double siliconAtomicWeight = 28.0855 * g / mole;
+  G4Material *silicon = new G4Material("silicon", 14., siliconAtomicWeight, siliconDensity);
   const G4int k_ = 1;
-  G4double pCherenkovCopper[k_] = {2. * eV};
-  G4double copperRefractiveIndex[k_] = {1.6};
-  G4MaterialPropertiesTable *copperProperties = new G4MaterialPropertiesTable();
-  copperProperties->AddProperty("RINDEX", pCherenkovCopper, copperRefractiveIndex, k_)->SetSpline(true);
-  copper->SetMaterialPropertiesTable(copperProperties);
+  G4double pCherenkovsilicon[k_] = {2. * GeV};
+  G4double siliconRefractiveIndex[k_] = {1.57};
+  G4MaterialPropertiesTable *siliconProperties = new G4MaterialPropertiesTable();
+  siliconProperties->AddProperty("RINDEX", pCherenkovsilicon, siliconRefractiveIndex, k_)->SetSpline(true);
+  silicon->SetMaterialPropertiesTable(siliconProperties);
 
-  const G4int nEntries = 9;
-  G4double PhotonEnergy[nEntries] = {6.6 * eV, 6.7 * eV, 6.8 * eV, 6.9 * eV, 7.0 * eV, 7.1 * eV, 7.2 * eV, 7.3 * eV, 7.4 * eV};
-  G4double RIndexFiber[nEntries] = {1.60, 1.60, 1.60, 1.60, 1.60, 1.60, 1.60, 1.60, 1.60};
-  G4double AbsFiber[nEntries] = {0.1 * mm, 0.2 * mm, 0.3 * mm, 0.4 * cm, 1.0 * cm, 10 * cm, 1.0 * m, 10.0 * m, 10.0 * m};
-  G4double EmissionFiber[nEntries] = {0.0, 0.0, 0.0, 0.1, 0.5, 1.0, 5.0, 10.0, 10.0};
+  // WLS_FIBER_DIFINITION
+  const G4int nAEntries = 15;
+  G4double PhotonEnergy_h1[nAEntries] = {
+  0.548304131 * eV, 0.535216907 * eV, 0.518731399 * eV,
+  0.506254792 * eV, 0.495073725 * eV, 0.484343772 * eV, 0.475383605 * eV, 0.470665497 * eV, 0.464103308 * eV,
+  0.457092843 * eV, 0.452104715 * eV, 0.446625037 * eV, 0.441262784 * eV, 0.436048961 * eV, 0.430408888 * eV};
+  G4double RIndexFiber[nAEntries] = {1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57};
+  G4double AbsFiber[nAEntries] = {
+  0.13527684 * eV, 0.23580736 * eV, 0.46826649 * eV, 0.70358544 * eV, 0.90098064 * eV,
+  0.97239321 * eV, 0.90155025 * eV, 0.74183769 * eV, 0.60341824 * eV, 0.469225 * eV,
+  0.31787044 * eV, 0.18939904 * eV, 0.07279204 * eV, 0.02666689 * eV, 0.00564001 * eV};
+  const G4int nEEntries = 17;
+  G4double PhotonEnergy_h2[nEEntries] = {
+  0.423852298 * eV, 0.419616975 * eV,
+  0.417552542 * eV, 0.41706186 *  eV, 0.415041636 * eV, 0.413573284 * eV, 0.411576333 * eV,
+  0.410594897 * eV, 0.400337959 * eV, 0.38641104 *  eV, 0.377208808 * eV, 0.367629515 * eV,
+  0.359309413 * eV, 0.350625247 * eV, 0.343416853 * eV, 0.33515463 *  eV, 0.39234228 *  eV};
+  G4double EmissionFiber[nEEntries] = {
+  0.00096721 * eV, 0.006241 * eV,
+  0.02795584 * eV, 0.06528025 * eV, 0.16208676 * eV, 0.37920964 * eV, 0.53260804 * eV,
+  0.66928761 * eV, 1.00420441 * eV, 0.64016001 * eV, 0.35772361 * eV, 0.17181025 * eV,
+  0.08392609 * eV, 0.03359889 * eV, 0.01646089 * eV, 0.00840889 * eV, 0.89000356 * eV};
 
-  // G4Material *WLS;
-
-  //  !! Causes segmintation violation
-  // G4MaterialPropertiesTable *WLSmaterial = new G4MaterialPropertiesTable();
-  // WLSmaterial->AddProperty("RINDEX", PhotonEnergy, RIndexFiber, nEntries);
-  // WLSmaterial->AddProperty("WLSABSLENGTH", PhotonEnergy, AbsFiber, nEntries);
-  // WLSmaterial->AddProperty("WLSCOMPONENT", PhotonEnergy, EmissionFiber, nEntries);
-  // WLSmaterial->AddConstProperty("WLSTIMECONSTANT", 0.5 * ns);
-  //
-  // WLS->SetMaterialPropertiesTable(WLSmaterial);
+  G4Material *WLS;
+  // !!Causes segmintation violation
+  G4MaterialPropertiesTable *WLSmaterial = new G4MaterialPropertiesTable();
+  WLSmaterial->AddProperty("RINDEX", PhotonEnergy_h1, RIndexFiber, nEEntries);
+  WLSmaterial->AddProperty("WLSABSLENGTH", PhotonEnergy_h1, AbsFiber, nAEntries);
+  WLSmaterial->AddProperty("WLSCOMPONENT", PhotonEnergy_h2, EmissionFiber, nEEntries);
+  WLSmaterial->AddConstProperty("WLSTIMECONSTANT", 2.7 * ns);
+  
+  WLS->SetMaterialPropertiesTable(WLSmaterial);
 
   G4double scintillatorSizeX = 60 * cm;
   G4double scintillatorSizeY = 2 * cm;
@@ -219,7 +213,7 @@ G4VPhysicalVolume *DetectorConstructionSmall::Construct()
   //
   // Scintillator
   //
-  auto mesh = CADMesh::TessellatedMesh::FromSTL("EJ200Scibar_60_WLS2mm_Ascii.stl");
+  auto mesh = CADMesh::TessellatedMesh::FromSTL("EJ200Scibar_Ascii.stl");
   mesh->SetScale(10.0);
   mesh->SetOffset(G4ThreeVector(-0.5 * scintillatorSizeX, 0, -0.5 * scintillatorSizeX));
   auto EJ200Scibar = mesh->GetSolid();
@@ -229,55 +223,20 @@ G4VPhysicalVolume *DetectorConstructionSmall::Construct()
   G4double scintellatorbar = 1 * cm;
   G4double scratchDepth = 3 * mm;
 
-  // G4double NBarsH = 15;
-  // G4double NBarsV = 70;
-  //
-
-  // G4Box *scintillatorSolidH = new G4Box("ScintillatorBox", 0.5 * scintellatorbar, 0.5 * scintellatorbar, 0.5 * scintillatorSizeZLong);
-  // G4Box *scintillatorSolid = new G4Box("ScintillatorBox", 0.5 * scintellatorbar, 0.5 * (scintellatorbar - scratchDepth), 0.5 * scintillatorSizeZLong);
-  // G4Transform3D tr1 = G4Transform3D(0., G4ThreeVector(0., 0., 0.));
-  // G4Transform3D tr2 = G4Transform3D(0., G4ThreeVector(scintellatorbar, 0., 0.));
-  //
-  // G4MultiUnion *EJ200LongBar = G4MultiUnion("LongBars");
-  // EJ200LongBar->node(scintillatorSolidH, tra1);
-  // EJ200LongBar->node(scintillatorSolid, tra2);
-
   fScintillatorLogical = new G4LogicalVolume(EJ200Scibar, polyvinyltoluene, "ScintillatorLogical");
   // for (int i = 1; i <= NBarsH; i++)
   // {
   // G4VPhysicalVolume *physScint = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), fScintillatorLogical, "ScintillatorPhysical", logicEnv, false, 0, checkOverlaps);
-    G4VPhysicalVolume *physScint1 = new G4PVPlacement(0,  G4ThreeVector(0, 0.06 * envSizeX, 0.), fScintillatorLogical, "ScintillatorPhysical", logicWorld, false, 0, checkOverlaps);
-    G4VPhysicalVolume *physScint2 = new G4PVPlacement(0,  G4ThreeVector(0, -0.06 * envSizeX, 0.), fScintillatorLogical, "ScintillatorPhysical", logicWorld, false, 0, checkOverlaps);
-
-  // };
+  G4VPhysicalVolume *physScint1 = new G4PVPlacement(0, G4ThreeVector(0, 0.06 * envSizeX, 0.), fScintillatorLogical, "ScintillatorPhysical", logicWorld, false, 0, checkOverlaps);
+  G4VPhysicalVolume *physScint2 = new G4PVPlacement(0, G4ThreeVector(0, -0.06 * envSizeX, 0.), fScintillatorLogical, "ScintillatorPhysical", logicWorld, false, 0, checkOverlaps);
+  // G4VPhysicalVolume *physScint1 = new G4PVPlacement(0, G4ThreeVector(0, 0.06 * envSizeX, 0.), fScintillatorLogical, "ScintillatorPhysical", logicEnv, false, 0, checkOverlaps);
+  // G4VPhysicalVolume *physScint2 = new G4PVPlacement(0, G4ThreeVector(0, -0.06 * envSizeX, 0.), fScintillatorLogical, "ScintillatorPhysical", logicEnv, false, 0, checkOverlaps);
 
   G4VisAttributes *bore = new G4VisAttributes(G4Colour(0.9, 0.5, 1.));
   bore->SetVisibility(true);
   bore->SetForceWireframe(true);
   // bore->SetForceSolid(false);
   fScintillatorLogical->SetVisAttributes(bore);
-
-  //
-  // G4Box *scintillatorSolidHR = new G4Box("ScintillatorBox", 0.5 * scintellatorbar, 0.5 * scintellatorbar, 0.5 * scintillatorSizeZShort);
-  // G4Box *scintillatorSolidR = new G4Box("ScintillatorBox", 0.5 * scintellatorbar, 0.5 * (scintellatorbar - scratchDepth), 0.5 * scintillatorSizeZShort);
-  // // G4Transform3D tr1 = G4Transform3D(0., G4ThreeVector(0., 0., 0.));
-  // G4Transform3D tr4 = G4Transform3D(0., G4ThreeVector(0., scintellatorbar, 0.));
-  // G4MultiUnion *EJ200ShortBar = G4MultiUnion("ShortBars");
-  // EJ200ShortBar->node(scintillatorSolidHR, tra1);
-  // EJ200ShortBar->node(scintillatorSolidR, tra3);
-
-  // fScintillatorLogicalR = new G4LogicalVolume(EJ200ShortBar, polyvinyltoluene, "ScintillatorLogical");
-
-  // G4RotationMatrix *rot = new G4RotationMatrix(90. * degree,0,0);
-  // // for (int i = 1; i <= NBarsV; i++)
-  // // {
-  //   G4VPhysicalVolume *physScintR = new G4PVPlacement(rot, G4ThreeVector(0., 0., 0.), fScintillatorLogicalR, "ScintillatorPhysical", logicEnv, false, 0, checkOverlaps);
-  // };
-  // G4VPhysicalVolume *physScintR = new G4PVPlacement(0, G4ThreeVector(0., scintillatorSizeY, scintillatorZ), fScintillatorLogical, "ScintillatorPhysical", logicEnv, false, 0, checkOverlaps);
-
-  // G4Box *scintillatorSolidR = new G4Box("ScintillatorBox", 0.5 * scintillatorSizeX, 0.5 * scintillatorSizeY, 0.5 * scintillatorSizeZ);
-  // G4LogicalVolume* fScintillatorLogicalR = new G4LogicalVolume(scintillatorSolidR, polyvinyltoluene, "ScintillatorLogical");
-  // G4VPhysicalVolume *physScintR = new G4PVPlacement(0, G4ThreeVector(0., 0., scintillatorZ), fScintillatorLogicalR, "ScintillatorPhysical", logicEnv, false, 0, checkOverlaps);
 
   //
   // WLS Fiber
@@ -290,12 +249,11 @@ G4VPhysicalVolume *DetectorConstructionSmall::Construct()
   // SiPM window
   //
   G4Box *sipmSolid = new G4Box("SiPMBox", 0.5 * sipmCathodeLength, 0.5 * sipmCathodeLength, 0.5 * sipmCathodeThickness);
-  fSipmLogical = new G4LogicalVolume(sipmSolid, copper, "SiPMLogical");
+  fSipmLogical = new G4LogicalVolume(sipmSolid, silicon, "SiPMLogical");
   // G4VPhysicalVolume *physSipm1 = new G4PVPlacement(0, G4ThreeVector(0., 0., sipm1CathodeZ), fSipmLogical, "SiPMPhysical1", logicEnv, false, 0, checkOverlaps);
   // G4VPhysicalVolume *physSipm2 = new G4PVPlacement(0, G4ThreeVector(0., 0., sipm2CathodeZ), fSipmLogical, "SiPMPhysical2", logicEnv, false, 0, checkOverlaps);
   G4VPhysicalVolume *physSipm1 = new G4PVPlacement(0, G4ThreeVector(0., 0., sipm1CathodeZ), fSipmLogical, "SiPMPhysical1", logicWorld, false, 0, checkOverlaps);
   G4VPhysicalVolume *physSipm2 = new G4PVPlacement(0, G4ThreeVector(0., 0., sipm2CathodeZ), fSipmLogical, "SiPMPhysical2", logicWorld, false, 0, checkOverlaps);
-
 
   G4OpticalSurface *teflonSurface = new G4OpticalSurface("TeflonSurface");
   teflonSurface->SetType(dielectric_LUTDAVIS);
@@ -328,11 +286,11 @@ G4VPhysicalVolume *DetectorConstructionSmall::Construct()
   teflonSurfaceProperties->AddProperty("EFFICIENCY", scintResponseWavelengths, teflonEfficiency, NPHOTONENERGIES);
   teflonSurface->SetMaterialPropertiesTable(teflonSurfaceProperties);
 
-  auto rod1 = new G4LogicalBorderSurface("TeflonBorderSurface1", physScint1, physScint1, teflonSurface);
-  // auto rod1R = new G4LogicalBorderSurface("TeflonBorderSurface1R", physScintR, physEnv1R, teflonSurface);
+  // auto rod1 = new G4LogicalBorderSurface("TeflonBorderSurface1", physScint1, physEnv1, teflonSurface);
+  // auto rod2 = new G4LogicalBorderSurface("TeflonBorderSurface2", physScint2, physEnv2, teflonSurface);
 
+  auto rod1 = new G4LogicalBorderSurface("TeflonBorderSurface1", physScint1, physScint1, teflonSurface);
   auto rod2 = new G4LogicalBorderSurface("TeflonBorderSurface2", physScint2, physScint2, teflonSurface);
-  // auto rod2R = new G4LogicalBorderSurface("TeflonBorderSurface2R", physScintR, physEnv2R, teflonSurface);
 
   return physWorld;
 }
@@ -346,23 +304,9 @@ void DetectorConstructionSmall::ConstructMaterials()
 
   // Argon gas
   nistManager->FindOrBuildMaterial("G4_Ar");
-  // With a density different from the one defined in NIST
-  // G4double density = 1.782e-03*g/cm3;
-  // nistManager->BuildMaterialWithNewDensity("B5_Ar","G4_Ar",density);
-  // !! cases segmentation fault
 
-  // Scintillator
-  // (PolyVinylToluene, C_9H_10)
+  // Polyvyneltoluene
   nistManager->FindOrBuildMaterial("G4_PLASTIC_SC_VINYLTOLUENE");
-
-  // Vacuum "Galactic"
-  // nistManager->FindOrBuildMaterial("G4_Galactic");
-
-  // Vacuum "Air with low density"
-  // auto air = G4Material::GetMaterial("G4_AIR");
-  // G4double density = 1.0e-5*air->GetDensity();
-  // nistManager
-  //   ->BuildMaterialWithNewDensity("Air_lowDensity", "G4_AIR", density);
 
   G4cout << G4endl << "The materials defined are: " << G4endl << G4endl;
   G4cout << *(G4Material::GetMaterialTable()) << G4endl;
