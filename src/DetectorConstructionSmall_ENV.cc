@@ -204,9 +204,16 @@ G4VPhysicalVolume *DetectorConstructionSmall::Construct()
   // // bore->SetForceSolid(false);
   // boreLV->SetVisAttributes(bore);
 
-  // //
-  // //GDML_SciBar_Wirs
-  // //
+  //
+  // Envelope
+  //
+  G4Material *envMaterial = air;
+  G4Box *solidEnv = new G4Box("Envelope", 0.5 * envSizeX, 0.5 * envSizeY, 0.5 * envSizeZ);
+  G4LogicalVolume *logicEnv = new G4LogicalVolume(solidEnv, envMaterial, "Envelope");
+  G4VPhysicalVolume *physEnv1 = new G4PVPlacement(0, G4ThreeVector(0, 0.06 * envSizeX, 0), logicEnv, "Envelope1", logicWorld, false, 0, checkOverlaps);
+  G4VPhysicalVolume *physEnv2 = new G4PVPlacement(0, G4ThreeVector(0, -0.06 * envSizeX, 0), logicEnv, "Envelope2", logicWorld, false, 0, checkOverlaps);
+
+  // GDML_SciBar_Wirs
   // G4GDMLParser *scibar;
   // scibar->Read("SCIBAR.gdml");
   //
@@ -220,31 +227,44 @@ G4VPhysicalVolume *DetectorConstructionSmall::Construct()
   mesh->SetScale(10.0);
   // mesh->SetOffset(G4ThreeVector(-0.5 * scintillatorSizeX, 0, -0.5 * scintillatorSizeX));
   // mesh->SetOffset(G4ThreeVector(0,0,0));
+
   auto EJ200Scibar = mesh->GetSolid();
+
   fScintillatorLogical = new G4LogicalVolume(EJ200Scibar, polyvinyltoluene, "ScintillatorLogical");
-  G4VPhysicalVolume *physScint1 = new G4PVPlacement(rota, G4ThreeVector(-0.5 * envSizeX, 0, 0.5 * envSizeX), fScintillatorLogical, "ScintillatorPhysical", logicWorld, false, 0, checkOverlaps);
-  G4VPhysicalVolume *physScint2 = new G4PVPlacement(rota, G4ThreeVector(-0.5 * envSizeX,  0.3*envSizeX, 0.5 * envSizeX), fScintillatorLogical, "ScintillatorPhysical", logicWorld, false, 0, checkOverlaps);
 
   //
-  // WLS Fiber
+  // Wires
   //
   auto meshWire = CADMesh::TessellatedMesh::FromSTL("Wires_Ascii_FibrousGlass.stl");
   meshWire->SetScale(10.0);
   // meshWire->SetOffset(G4ThreeVector(-0.5 * scintillatorSizeX, 0, -0.5 * scintillatorSizeX));
+  // mesh->SetOffset(G4ThreeVector(0,0,0));
+
   auto Wire = meshWire->GetSolid();
   G4Material *Fib = G4Material::GetMaterial("G4_PLEXIGLASS");
   WLSFiberLogical = new G4LogicalVolume(Wire, air, "WireLogical");
-  G4VPhysicalVolume *WirePhy = new G4PVPlacement(0, G4ThreeVector(0, 0, 0.), WLSFiberLogical, "WwirePhysical", fScintillatorLogical, false, 0, checkOverlaps);
+  G4VPhysicalVolume *WirePhy = new G4PVPlacement(0, G4ThreeVector(0, 0.06 * envSizeX, 0.), WLSFiberLogical, "WwirePhysical", fScintillatorLogical, false, 0, checkOverlaps);
 
+  //ه
+  G4double scintillatorSizeZLong = 68. * cm;
+  G4double scintillatorSizeZShort = 15. * cm;
+  G4double scintellatorbar = 1 * cm;
+  G4double scratchDepth = 3 * mm;
   //
-  // VISUAL ATTRIBUTE
+
+  //  // for (int i = 1; i <= NBarsH; i++)
+  //  // {
+  //  // G4VPhysicalVolume *physScint = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), fScintillatorLogical, "ScintillatorPhysical", logicEnv, false, 0, checkOverlaps);
+  G4VPhysicalVolume *physScint1 = new G4PVPlacement(rota, G4ThreeVector(0, 0.06 * envSizeX, 0.), fScintillatorLogical, "ScintillatorPhysical", logicEnv, false, 0, checkOverlaps);
+  // G4VPhysicalVolume *physScint2 = new G4PVPlacement(rota, G4ThreeVector(0, -0.06 * envSizeX, 0.), fScintillatorLogical, "ScintillatorPhysical", logicEnv, false, 0, checkOverlaps);
+  //  // G4VPhysicalVolume *physScint1 = new G4PVPlacement(0, G4ThreeVector(0, 0.06 * envSizeX, 0.), fScintillatorLogical, "ScintillatorPhysical", logicEnv, false, 0, checkOverlaps);
+  //  // G4VPhysicalVolume *physScint2 = new G4PVPlacement(0, G4ThreeVector(0, -0.06 * envSizeX, 0.), fScintillatorLogical, "ScintillatorPhysical", logicEnv, false, 0, checkOverlaps);
   //
   G4VisAttributes *bore = new G4VisAttributes(G4Colour(0.9, 0.5, 1.));
   bore->SetVisibility(true);
   bore->SetForceWireframe(true);
   //  // bore->SetForceSolid(false);
   fScintillatorLogical->SetVisAttributes(bore);
-
   //
   //
   // WLS Fiber
@@ -266,8 +286,8 @@ G4VPhysicalVolume *DetectorConstructionSmall::Construct()
   //
   G4Box *sipmSolid = new G4Box("SiPMBox", 0.5 * sipmCathodeLength, 0.5 * sipmCathodeLength, 0.5 * sipmCathodeThickness);
   fSipmLogical = new G4LogicalVolume(sipmSolid, silicon, "SiPMLogical");
-  // G4VPhysicalVolume *physSipm1 = new G4PVPlacement(0, G4ThreeVector(0., 0., sipm1CathodeZ), fSipmLogical, "SiPMPhysical1", logicWorld, false, 0, checkOverlaps);
-  // G4VPhysicalVolume *physSipm2 = new G4PVPlacement(0, G4ThreeVector(0., 0., sipm2CathodeZ), fSipmLogical, "SiPMPhysical2", logicWorld, false, 0, checkOverlaps);
+  // G4VPhysicalVolume *physSipm1 = new G4PVPlacement(0, G4ThreeVector(0., 0., sipm1CathodeZ), fSipmLogical, "SiPMPhysical1", logicEnv, false, 0, checkOverlaps);
+  // G4VPhysicalVolume *physSipm2 = new G4PVPlacement(0, G4ThreeVector(0., 0., sipm2CathodeZ), fSipmLogical, "SiPMPhysical2", logicEnv, false, 0, checkOverlaps);
   // G4VPhysicalVolume *physSipm1 = new G4PVPlacement(0, G4ThreeVector(0., 0., sipm1CathodeZ), fSipmLogical, "SiPMPhysical1", logicWorld, false, 0, checkOverlaps);
   // G4VPhysicalVolume *physSipm2 = new G4PVPlacement(0, G4ThreeVector(0., 0., sipm2CathodeZ), fSipmLogical, "SiPMPhysical2", logicWorld, false, 0, checkOverlaps);
 
@@ -302,8 +322,8 @@ G4VPhysicalVolume *DetectorConstructionSmall::Construct()
   teflonSurfaceProperties->AddProperty("EFFICIENCY", scintResponseWavelengths, teflonEfficiency, NPHOTONENERGIES);
   teflonSurface->SetMaterialPropertiesTable(teflonSurfaceProperties);
 
-  auto rod1 = new G4LogicalBorderSurface("TeflonBorderSurface1", WirePhy, physScint1, teflonSurface);
-  auto rod2 = new G4LogicalBorderSurface("TeflonBorderSurface1", WirePhy, physScint2, teflonSurface);
+  auto rod1 = new G4LogicalBorderSurface("TeflonBorderSurface1", physScint1, physEnv1, teflonSurface);
+  // auto rod2 = new G4LogicalBorderSurface("TeflonBorderSurface2", physScint2, physEnv2, teflonSurface);
 
   // auto rod1 = new G4LogicalBorderSurface("TeflonBorderSurface1", W, W, teflonSurface);
   // auto rod2 = new G4LogicalBorderSurface("TeflonBorderSurface2", W, W, teflonSurface);

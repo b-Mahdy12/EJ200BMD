@@ -52,7 +52,7 @@ public:
   void ConstructMaterials();
 
   G4LogicalVolume *GetScintillator() const { return fScintillatorLogical; }
-  // G4LogicalVolume *GetWLS() const { return WLSFiberLogical; }
+  G4LogicalVolume *GetWLS() const { return WLSFiberLogical; }
   G4LogicalVolume *GetSipm() const { return fSipmLogical; }
 
 protected:

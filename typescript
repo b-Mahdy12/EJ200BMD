@@ -1,0 +1,309 @@
+Script started on 2021-04-07 16:59:53+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+(xeus-cling) ]0;beso@beso-Latitude-E5250: /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200[01;32mbeso@beso-Latitude-E5250[00m:[01;34m/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200[00m$ conda deactivate
+(base) ]0;beso@beso-Latitude-E5250: /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200[01;32mbeso@beso-Latitude-E5250[00m:[01;34m/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200[00m$ conda deactivate
+]0;beso@beso-Latitude-E5250: /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200[01;32mbeso@beso-Latitude-E5250[00m:[01;34m/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200[00m$ bash ~/Geant4/compiling.sh 
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found HEED in 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/build
+[35m[1mScanning dependencies of target scintillator-sipm[0m
+[  8%] [32mBuilding CXX object CMakeFiles/scintillator-sipm.dir/scintillator-sipm.cc.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/scintillator-sipm.dir/src/ActionInitialization.cc.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/scintillator-sipm.dir/src/CherenkovHit.cc.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/scintillator-sipm.dir/src/DetectorConstruction.cc.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/scintillator-sipm.dir/src/DetectorConstructionLarge.cc.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/scintillator-sipm.dir/src/DetectorConstructionSmall.cc.o[0m
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/scintillator-sipm.cc:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/scintillator-sipm.cc:65:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KcopperThickness[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   65 |   G4int [01;35m[KcopperThickness[m[K = 0;
+      |         [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/scintillator-sipm.cc:69:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KnSipm[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+   69 |   G4int [01;35m[KnSipm[m[K = 10;
+      |         [01;35m[K^~~~~[m[K
+[ 58%] [32mBuilding CXX object CMakeFiles/scintillator-sipm.dir/src/EventAction.cc.o[0m
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionLarge.cc:[m[K In constructor ‘[01m[KDetectorConstructionLarge::DetectorConstructionLarge(G4int)[m[K’:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionLarge.cc:52:65:[m[K [01;35m[Kwarning: [m[Kdeclaration of ‘[01m[KnSipm[m[K’ shadows a member of ‘[01m[KDetectorConstructionLarge[m[K’ [[01;35m[K-Wshadow[m[K]
+   52 | DetectorConstructionLarge::DetectorConstructionLarge(G4int nSipm[01;35m[K)[m[K:G4VUserDetectorConstruction() {
+      |                                                                 [01;35m[K^[m[K
+In file included from [01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionLarge.cc:30[m[K:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/include/DetectorConstructionLarge.hh:61:9:[m[K [01;36m[Knote: [m[Kshadowed declaration is here
+   61 |   G4int [01;36m[KnSipm[m[K;
+      |         [01;36m[K^~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionLarge.cc:[m[K In constructor ‘[01m[KDetectorConstructionLarge::DetectorConstructionLarge(G4int)[m[K’:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionLarge.cc:54:1:[m[K [01;35m[Kwarning: [m[Kdeclaration of ‘[01m[KnSipm[m[K’ shadows a member of ‘[01m[KDetectorConstructionLarge[m[K’ [[01;35m[K-Wshadow[m[K]
+   54 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+In file included from [01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionLarge.cc:30[m[K:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/include/DetectorConstructionLarge.hh:61:9:[m[K [01;36m[Knote: [m[Kshadowed declaration is here
+   61 |   G4int [01;36m[KnSipm[m[K;
+      |         [01;36m[K^~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionLarge.cc:[m[K In constructor ‘[01m[KDetectorConstructionLarge::DetectorConstructionLarge(G4int)[m[K’:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionLarge.cc:54:1:[m[K [01;35m[Kwarning: [m[Kdeclaration of ‘[01m[KnSipm[m[K’ shadows a member of ‘[01m[KDetectorConstructionLarge[m[K’ [[01;35m[K-Wshadow[m[K]
+   54 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+In file included from [01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionLarge.cc:30[m[K:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/include/DetectorConstructionLarge.hh:61:9:[m[K [01;36m[Knote: [m[Kshadowed declaration is here
+   61 |   G4int [01;36m[KnSipm[m[K;
+      |         [01;36m[K^~~~~[m[K
+[ 66%] [32mBuilding CXX object CMakeFiles/scintillator-sipm.dir/src/PrimaryGeneratorAction.cc.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/scintillator-sipm.dir/src/RunAction.cc.o[0m
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionSmall.cc:[m[K In member function ‘[01m[Kvirtual G4VPhysicalVolume* DetectorConstructionSmall::Construct()[m[K’:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionSmall.cc:117:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KPhotonEnergy_h1[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  117 |   G4double [01;35m[KPhotonEnergy_h1[m[K[nAEntries] = {
+      |            [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionSmall.cc:121:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KRIndexFiber[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  121 |   G4double [01;35m[KRIndexFiber[m[K[nAEntries] = {1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57, 1.57};
+      |            [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionSmall.cc:122:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KAbsFiber[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  122 |   G4double [01;35m[KAbsFiber[m[K[nAEntries] = {
+      |            [01;35m[K^~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionSmall.cc:127:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KPhotonEnergy_h2[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  127 |   G4double [01;35m[KPhotonEnergy_h2[m[K[nEEntries] = {
+      |            [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionSmall.cc:132:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KEmissionFiber[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  132 |   G4double [01;35m[KEmissionFiber[m[K[nEEntries] = {
+      |            [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionSmall.cc:160:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsizeXY[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  160 |   G4double [01;35m[KsizeXY[m[K = scintillatorSizeX * 1.2;
+      |            [01;35m[K^~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionSmall.cc:163:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KenvSizeY[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  163 |   G4double [01;35m[KenvSizeY[m[K = scintillatorSizeY + 5;
+      |            [01;35m[K^~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionSmall.cc:264:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KphysSipm1[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  264 |   G4VPhysicalVolume *[01;35m[KphysSipm1[m[K = new G4PVPlacement(0, G4ThreeVector(0., 0., sipm1CathodeZ), fSipmLogical, "SiPMPhysical1", logicWorld, false, 0, checkOverlaps);
+      |                      [01;35m[K^~~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionSmall.cc:265:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KphysSipm2[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  265 |   G4VPhysicalVolume *[01;35m[KphysSipm2[m[K = new G4PVPlacement(0, G4ThreeVector(0., 0., sipm2CathodeZ), fSipmLogical, "SiPMPhysical2", logicWorld, false, 0, checkOverlaps);
+      |                      [01;35m[K^~~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionSmall.cc:301:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krod1[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  301 |   auto [01;35m[Krod1[m[K = new G4LogicalBorderSurface("TeflonBorderSurface1", W, W, teflonSurface);
+      |        [01;35m[K^~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionSmall.cc:302:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krod2[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  302 |   auto [01;35m[Krod2[m[K = new G4LogicalBorderSurface("TeflonBorderSurface2", W, W, teflonSurface);
+      |        [01;35m[K^~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/EventAction.cc:[m[K In constructor ‘[01m[KEventAction::EventAction(RunAction*)[m[K’:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/EventAction.cc:43:46:[m[K [01;35m[Kwarning: [m[Kdeclaration of ‘[01m[KrunAction[m[K’ shadows a member of ‘[01m[KEventAction[m[K’ [[01;35m[K-Wshadow[m[K]
+   43 | EventAction::EventAction(RunAction* runAction[01;35m[K)[m[K: G4UserEventAction() {
+      |                                              [01;35m[K^[m[K
+In file included from [01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/EventAction.cc:32[m[K:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/include/EventAction.hh:67:14:[m[K [01;36m[Knote: [m[Kshadowed declaration is here
+   67 |   RunAction* [01;36m[KrunAction[m[K;
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/EventAction.cc:[m[K In constructor ‘[01m[KEventAction::EventAction(RunAction*)[m[K’:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/EventAction.cc:45:1:[m[K [01;35m[Kwarning: [m[Kdeclaration of ‘[01m[KrunAction[m[K’ shadows a member of ‘[01m[KEventAction[m[K’ [[01;35m[K-Wshadow[m[K]
+   45 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+In file included from [01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/EventAction.cc:32[m[K:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/include/EventAction.hh:67:14:[m[K [01;36m[Knote: [m[Kshadowed declaration is here
+   67 |   RunAction* [01;36m[KrunAction[m[K;
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/EventAction.cc:[m[K In constructor ‘[01m[KEventAction::EventAction(RunAction*)[m[K’:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/EventAction.cc:45:1:[m[K [01;35m[Kwarning: [m[Kdeclaration of ‘[01m[KrunAction[m[K’ shadows a member of ‘[01m[KEventAction[m[K’ [[01;35m[K-Wshadow[m[K]
+   45 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+In file included from [01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/EventAction.cc:32[m[K:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/include/EventAction.hh:67:14:[m[K [01;36m[Knote: [m[Kshadowed declaration is here
+   67 |   RunAction* [01;36m[KrunAction[m[K;
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/EventAction.cc:[m[K In member function ‘[01m[Kvirtual void EventAction::EndOfEventAction(const G4Event*)[m[K’:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/EventAction.cc:68:18:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+   68 |   for (int i=0; [01;35m[Ki<hitEnergies.size()[m[K; i++) {
+      |                 [01;35m[K~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/EventAction.cc:67:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kevent[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   67 | void EventAction::EndOfEventAction([01;35m[Kconst G4Event* event[m[K) {
+      |                                    [01;35m[K~~~~~~~~~~~~~~~^~~~~[m[K
+[ 83%] [32mBuilding CXX object CMakeFiles/scintillator-sipm.dir/src/SensitiveDetector.cc.o[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/scintillator-sipm.dir/src/SteppingAction.cc.o[0m
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/RunAction.cc:[m[K In constructor ‘[01m[KRunAction::RunAction(G4bool, std::string)[m[K’:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/RunAction.cc:68:57:[m[K [01;35m[Kwarning: [m[Kdeclaration of ‘[01m[Kheadless[m[K’ shadows a member of ‘[01m[KRunAction[m[K’ [[01;35m[K-Wshadow[m[K]
+   68 | RunAction::RunAction(G4bool headless, string outFilePath[01;35m[K)[m[K: G4UserRunAction() {
+      |                                                         [01;35m[K^[m[K
+In file included from [01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/RunAction.cc:51[m[K:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/include/RunAction.hh:76:8:[m[K [01;36m[Knote: [m[Kshadowed declaration is here
+   76 |   bool [01;36m[Kheadless[m[K;
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/RunAction.cc:[m[K In constructor ‘[01m[KRunAction::RunAction(bool, std::string)[m[K’:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/RunAction.cc:88:1:[m[K [01;35m[Kwarning: [m[Kdeclaration of ‘[01m[Kheadless[m[K’ shadows a member of ‘[01m[KRunAction[m[K’ [[01;35m[K-Wshadow[m[K]
+   88 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+In file included from [01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/RunAction.cc:51[m[K:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/include/RunAction.hh:76:8:[m[K [01;36m[Knote: [m[Kshadowed declaration is here
+   76 |   bool [01;36m[Kheadless[m[K;
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/RunAction.cc:[m[K In constructor ‘[01m[KRunAction::RunAction(bool, std::string)[m[K’:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/RunAction.cc:88:1:[m[K [01;35m[Kwarning: [m[Kdeclaration of ‘[01m[Kheadless[m[K’ shadows a member of ‘[01m[KRunAction[m[K’ [[01;35m[K-Wshadow[m[K]
+   88 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+In file included from [01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/RunAction.cc:51[m[K:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/include/RunAction.hh:76:8:[m[K [01;36m[Knote: [m[Kshadowed declaration is here
+   76 |   bool [01;36m[Kheadless[m[K;
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/RunAction.cc:[m[K In member function ‘[01m[Kvoid RunAction::FillScintillationTree(G4int)[m[K’:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/RunAction.cc:148:63:[m[K [01;35m[Kwarning: [m[Kdeclaration of ‘[01m[KscintillationCount[m[K’ shadows a member of ‘[01m[KRunAction[m[K’ [[01;35m[K-Wshadow[m[K]
+  148 | void RunAction::FillScintillationTree(G4int scintillationCount[01;35m[K)[m[K {
+      |                                                               [01;35m[K^[m[K
+In file included from [01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/RunAction.cc:51[m[K:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/include/RunAction.hh:78:9:[m[K [01;36m[Knote: [m[Kshadowed declaration is here
+   78 |   G4int [01;36m[KscintillationCount[m[K;
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/SteppingAction.cc:[m[K In constructor ‘[01m[KSteppingAction::SteppingAction(EventAction*)[m[K’:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/SteppingAction.cc:46:56:[m[K [01;35m[Kwarning: [m[Kdeclaration of ‘[01m[KeventAction[m[K’ shadows a member of ‘[01m[KSteppingAction[m[K’ [[01;35m[K-Wshadow[m[K]
+   46 | SteppingAction::SteppingAction(EventAction* eventAction[01;35m[K)[m[K
+      |                                                        [01;35m[K^[m[K
+In file included from [01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/SteppingAction.cc:30[m[K:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/include/SteppingAction.hh:53:20:[m[K [01;36m[Knote: [m[Kshadowed declaration is here
+   53 |   EventAction*     [01;36m[KeventAction[m[K;
+      |                    [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/SteppingAction.cc:[m[K In constructor ‘[01m[KSteppingAction::SteppingAction(EventAction*)[m[K’:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/SteppingAction.cc:51:1:[m[K [01;35m[Kwarning: [m[Kdeclaration of ‘[01m[KeventAction[m[K’ shadows a member of ‘[01m[KSteppingAction[m[K’ [[01;35m[K-Wshadow[m[K]
+   51 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+In file included from [01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/SteppingAction.cc:30[m[K:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/include/SteppingAction.hh:53:20:[m[K [01;36m[Knote: [m[Kshadowed declaration is here
+   53 |   EventAction*     [01;36m[KeventAction[m[K;
+      |                    [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/SteppingAction.cc:[m[K In constructor ‘[01m[KSteppingAction::SteppingAction(EventAction*)[m[K’:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/SteppingAction.cc:51:1:[m[K [01;35m[Kwarning: [m[Kdeclaration of ‘[01m[KeventAction[m[K’ shadows a member of ‘[01m[KSteppingAction[m[K’ [[01;35m[K-Wshadow[m[K]
+   51 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+In file included from [01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/SteppingAction.cc:30[m[K:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/include/SteppingAction.hh:53:20:[m[K [01;36m[Knote: [m[Kshadowed declaration is here
+   53 |   EventAction*     [01;36m[KeventAction[m[K;
+      |                    [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/SteppingAction.cc:[m[K In member function ‘[01m[Kvirtual void SteppingAction::UserSteppingAction(const G4Step*)[m[K’:
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/SteppingAction.cc:83:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<const G4Track*>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+   83 |       for (int i=0; [01;35m[Ki<secondaries->size()[m[K; i++) {
+      |                     [01;35m[K~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/SteppingAction.cc:62:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kevent[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   62 |   const G4Event *[01;35m[Kevent[m[K = G4RunManager::GetRunManager()->GetCurrentEvent();
+      |                  [01;35m[K^~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/SteppingAction.cc:66:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KtrackID[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   66 |   G4int [01;35m[KtrackID[m[K = track->GetTrackID();
+      |         [01;35m[K^~~~~~~[m[K
+[01m[K/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/src/DetectorConstructionSmall.cc:219:46:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgdml[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+  219 |   G4VPhysicalVolume *W = [01;35m[Kgdml->GetWorldVolume()[m[K; //world volume
+      |                          [01;35m[K~~~~~~~~~~~~~~~~~~~~^~[m[K
+[100%] [32m[1mLinking CXX executable scintillator-sipm[0m
+[100%] Built target scintillator-sipm
+]0;beso@beso-Latitude-E5250: /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200[01;32mbeso@beso-Latitude-E5250[00m:[01;34m/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200[00m$ bash ~/Geant4/compiling.sh [C[C[C[C[C[C[C[C[C[C[C[C[K./e[Kbuild/ex[K[Kscintillator-sipm 
+Available UI session types: [ Qt, Xm, GAG, tcsh, csh ]
+Error in <TFile::TFile>: file name is not specified
+
+ *** Break *** segmentation violation
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+
+Thread 5 (Thread 0x7f7b94cc4700 (LWP 18480)):
+#0  0x00007f7ba26f9aff in __GI___poll (fds=0x7f7b8000f9b0, nfds=4, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+#1  0x00007f7b9b4cf36e in  () at /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0
+#2  0x00007f7b9b4cf4a3 in g_main_context_iteration () at /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0
+#3  0x00007f7b9c91e565 in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () at /usr/lib/x86_64-linux-gnu/libQt5Core.so.5
+#4  0x00007f7b9c8c54db in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () at /usr/lib/x86_64-linux-gnu/libQt5Core.so.5
+#5  0x00007f7b9c6fd785 in QThread::exec() () at /usr/lib/x86_64-linux-gnu/libQt5Core.so.5
+#6  0x00007f7b980aeefa in  () at /usr/lib/x86_64-linux-gnu/libQt5DBus.so.5
+#7  0x00007f7b9c6fe9d2 in  () at /usr/lib/x86_64-linux-gnu/libQt5Core.so.5
+#8  0x00007f7b9c58f609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#9  0x00007f7ba2706293 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 4 (Thread 0x7f7b955e8700 (LWP 18479)):
+#0  0x00007f7ba26f9aff in __GI___poll (fds=0x557dd8a521c0, nfds=2, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+#1  0x00007f7b9b4cf36e in  () at /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0
+#2  0x00007f7b9b4cf6f3 in g_main_loop_run () at /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0
+#3  0x00007f7b96348f8a in  () at /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+#4  0x00007f7b9b4f8ad1 in  () at /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0
+#5  0x00007f7b9c58f609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#6  0x00007f7ba2706293 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 3 (Thread 0x7f7b95de9700 (LWP 18478)):
+#0  0x00007f7ba26f9aff in __GI___poll (fds=0x557dd8a3eaa0, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+#1  0x00007f7b9b4cf36e in  () at /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0
+#2  0x00007f7b9b4cf4a3 in g_main_context_iteration () at /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0
+#3  0x00007f7b9b4cf4f1 in  () at /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0
+#4  0x00007f7b9b4f8ad1 in  () at /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0
+#5  0x00007f7b9c58f609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#6  0x00007f7ba2706293 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 2 (Thread 0x7f7b978ef700 (LWP 18477)):
+#0  0x00007f7ba26f9aff in __GI___poll (fds=0x7f7b978ea768, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+#1  0x00007f7b9bb67c1a in  () at /usr/lib/x86_64-linux-gnu/libxcb.so.1
+#2  0x00007f7b9bb6990a in xcb_wait_for_event () at /usr/lib/x86_64-linux-gnu/libxcb.so.1
+#3  0x00007f7b981ab298 in  () at /usr/lib/x86_64-linux-gnu/libQt5XcbQpa.so.5
+#4  0x00007f7b9c6fe9d2 in  () at /usr/lib/x86_64-linux-gnu/libQt5Core.so.5
+#5  0x00007f7b9c58f609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#6  0x00007f7ba2706293 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 1 (Thread 0x7f7b98629d40 (LWP 18476)):
+#0  0x00007f7ba26c9dff in __GI___wait4 (pid=18501, stat_loc=stat_loc
+entry=0x7ffc251102a8, options=options
+entry=0, usage=usage
+entry=0x0) at ../sysdeps/unix/sysv/linux/wait4.c:27
+#1  0x00007f7ba26c9d7b in __GI___waitpid (pid=<optimized out>, stat_loc=stat_loc
+entry=0x7ffc251102a8, options=options
+entry=0) at waitpid.c:38
+#2  0x00007f7ba26390e7 in do_system (line=<optimized out>) at ../sysdeps/posix/system.c:172
+#3  0x00007f7ba412446e in TUnixSystem::Exec(char const*) (shellcmd=<optimized out>, this=0x557dd884a800) at /home/beso/root6/root-6.14.04/core/unix/src/TUnixSystem.cxx:2119
+#4  TUnixSystem::StackTrace() (this=0x557dd884a800) at /home/beso/root6/root-6.14.04/core/unix/src/TUnixSystem.cxx:2413
+#5  0x00007f7ba412114c in TUnixSystem::DispatchSignals(ESignals) (this=0x557dd884a800, sig=kSigSegmentationViolation) at /home/beso/root6/root-6.14.04/core/unix/src/TUnixSystem.cxx:3644
+#6  0x00007f7ba262a210 in <signal handler called> () at /lib/x86_64-linux-gnu/libc.so.6
+#7  0x0000557dd76d774f in DetectorConstructionSmall::Construct() ()
+#8  0x00007f7ba328d333 in G4RunManager::InitializeGeometry() () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4run.so
+#9  0x00007f7ba328d124 in G4RunManager::Initialize() () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4run.so
+#10 0x00007f7ba32a6ced in G4RunMessenger::SetNewValue(G4UIcommand*, G4String) () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4run.so
+#11 0x00007f7ba2b37340 in G4UIcommand::DoIt(G4String) () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4intercoms.so
+#12 0x00007f7ba2b53f26 in G4UImanager::ApplyCommand(char const*) () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4intercoms.so
+#13 0x00007f7ba2b26551 in G4UIbatch::ExecCommand(G4String const&) () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4intercoms.so
+#14 0x00007f7ba2b28346 in G4UIbatch::SessionStart() () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4intercoms.so
+#15 0x00007f7ba2b554b6 in G4UImanager::ExecuteMacroFile(char const*) () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4intercoms.so
+#16 0x00007f7ba2b4359a in G4UIcontrolMessenger::SetNewValue(G4UIcommand*, G4String) () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4intercoms.so
+#17 0x00007f7ba2b37340 in G4UIcommand::DoIt(G4String) () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4intercoms.so
+#18 0x00007f7ba2b53f26 in G4UImanager::ApplyCommand(char const*) () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4intercoms.so
+#19 0x0000557dd76ccdc9 in main ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash.
+You may get help by asking at the ROOT forum http://root.cern.ch/forum
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at http://root.cern.ch/bugs Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#7  0x0000557dd76d774f in DetectorConstructionSmall::Construct() ()
+#8  0x00007f7ba328d333 in G4RunManager::InitializeGeometry() () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4run.so
+#9  0x00007f7ba328d124 in G4RunManager::Initialize() () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4run.so
+#10 0x00007f7ba32a6ced in G4RunMessenger::SetNewValue(G4UIcommand*, G4String) () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4run.so
+#11 0x00007f7ba2b37340 in G4UIcommand::DoIt(G4String) () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4intercoms.so
+#12 0x00007f7ba2b53f26 in G4UImanager::ApplyCommand(char const*) () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4intercoms.so
+#13 0x00007f7ba2b26551 in G4UIbatch::ExecCommand(G4String const&) () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4intercoms.so
+#14 0x00007f7ba2b28346 in G4UIbatch::SessionStart() () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4intercoms.so
+#15 0x00007f7ba2b554b6 in G4UImanager::ExecuteMacroFile(char const*) () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4intercoms.so
+#16 0x00007f7ba2b4359a in G4UIcontrolMessenger::SetNewValue(G4UIcommand*, G4String) () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4intercoms.so
+#17 0x00007f7ba2b37340 in G4UIcommand::DoIt(G4String) () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4intercoms.so
+#18 0x00007f7ba2b53f26 in G4UImanager::ApplyCommand(char const*) () at /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4intercoms.so
+#19 0x0000557dd76ccdc9 in main ()
+===========================================================
+
+
+]0;beso@beso-Latitude-E5250: /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200[01;32mbeso@beso-Latitude-E5250[00m:[01;34m/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200[00m$ exit
+exit
+
+Script done on 2021-04-07 17:01:10+02:00 [COMMAND_EXIT_CODE="139"]
