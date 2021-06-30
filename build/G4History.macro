@@ -52,26 +52,9 @@
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
+/run/verbose 2
+/event/verbose 2
 /run/beamOn 1
 /vis/scene/notifyHandlers scene-0
-/control/execute
-/control/execute run2.mac
-/run/initialize
-/control/verbose 2
-/run/verbose 2
-/gun/particle mu-
-/gun/energy 4 GeV
-/run/beamOn 10
-/control/execute run2.mac
-/run/initialize
-/control/verbose 2
-/run/verbose 2
-/gun/particle mu-
-/gun/energy 4 GeV
-/run/beamOn 10
-/vis/enable
-/vis/viewer/flush
-/vis/viewer/refresh viewer-0
-/vis/viewer/update viewer-0
-/vis/viewer/update
-/vis/viewer/update
+/vis/ogl/set/displayListLimit 100000
+/run/beamOn 1

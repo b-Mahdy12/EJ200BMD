@@ -8,7 +8,7 @@
 #include "G4Element.hh"
 #include "G4NistManager.hh"
 
-#include "G4GDMLParser.hh"
+// #include "G4GDMLParser.hh"
 
 #include "G4RunManager.hh"
 
@@ -223,7 +223,7 @@ G4VPhysicalVolume *DetectorConstructionSmall::Construct()
   auto EJ200Scibar = mesh->GetSolid();
   fScintillatorLogical = new G4LogicalVolume(EJ200Scibar, polyvinyltoluene, "ScintillatorLogical");
   G4VPhysicalVolume *physScint1 = new G4PVPlacement(rota, G4ThreeVector(-0.5 * envSizeX, 0, 0.5 * envSizeX), fScintillatorLogical, "ScintillatorPhysical", logicWorld, false, 0, checkOverlaps);
-  G4VPhysicalVolume *physScint2 = new G4PVPlacement(rota, G4ThreeVector(-0.5 * envSizeX,  0.3*envSizeX, 0.5 * envSizeX), fScintillatorLogical, "ScintillatorPhysical", logicWorld, false, 0, checkOverlaps);
+  // G4VPhysicalVolume *physScint2 = new G4PVPlacement(rota, G4ThreeVector(-0.5 * envSizeX, 0.3 * envSizeX, 0.5 * envSizeX), fScintillatorLogical, "ScintillatorPhysical", logicWorld, false, 0, checkOverlaps);
 
   //
   // WLS Fiber
@@ -233,7 +233,10 @@ G4VPhysicalVolume *DetectorConstructionSmall::Construct()
   // meshWire->SetOffset(G4ThreeVector(-0.5 * scintillatorSizeX, 0, -0.5 * scintillatorSizeX));
   auto Wire = meshWire->GetSolid();
   G4Material *Fib = G4Material::GetMaterial("G4_PLEXIGLASS");
-  WLSFiberLogical = new G4LogicalVolume(Wire, air, "WireLogical");
+  // double density = 2.700 * g / cm3;
+  // double a = 26.98 * g / mole;
+  // G4Material *Al = new G4Material("Aluminum", 13., a, density);
+  WLSFiberLogical = new G4LogicalVolume(Wire, Fib , "WireLogical");
   G4VPhysicalVolume *WirePhy = new G4PVPlacement(0, G4ThreeVector(0, 0, 0.), WLSFiberLogical, "WwirePhysical", fScintillatorLogical, false, 0, checkOverlaps);
 
   //
@@ -303,7 +306,7 @@ G4VPhysicalVolume *DetectorConstructionSmall::Construct()
   teflonSurface->SetMaterialPropertiesTable(teflonSurfaceProperties);
 
   auto rod1 = new G4LogicalBorderSurface("TeflonBorderSurface1", WirePhy, physScint1, teflonSurface);
-  auto rod2 = new G4LogicalBorderSurface("TeflonBorderSurface1", WirePhy, physScint2, teflonSurface);
+  // auto rod2 = new G4LogicalBorderSurface("TeflonBorderSurface1", WirePhy, physScint2, teflonSurface);
 
   // auto rod1 = new G4LogicalBorderSurface("TeflonBorderSurface1", W, W, teflonSurface);
   // auto rod2 = new G4LogicalBorderSurface("TeflonBorderSurface2", W, W, teflonSurface);
@@ -318,8 +321,12 @@ void DetectorConstructionSmall::ConstructMaterials()
   // Air
   nistManager->FindOrBuildMaterial("G4_AIR");
 
-  // Argon gas
-  nistManager->FindOrBuildMaterial("G4_Ar");
+ // // Argon gas
+  // nistManager->FindOrBuildMaterial("G4_Ar");
+
+  // PLEXIGLASS
+   nistManager->FindOrBuildMaterial("G4_PLEXIGLASS");
+
 
   // Polyvyneltoluene
   nistManager->FindOrBuildMaterial("G4_PLASTIC_SC_VINYLTOLUENE");

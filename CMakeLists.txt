@@ -55,9 +55,6 @@ set(EXAMPLEB1_SCRIPTS
   init_vis.mac
   run2.mac
   vis.mac
-  SCIBAR.gdml
-  WIRE.gdml
- EJ200Scibar_Ascii.stl
 Wires_Ascii_FibrousGlass.stl
 EJ200Scibar_Ascii_BC254.stl  
 )
