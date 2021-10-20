@@ -1,0 +1,7 @@
+/media/beso/Basma/0-SWMC/0-Simulations/MuravesSim_khafre/build/CMakeFiles/install/local.dir
+/media/beso/Basma/0-SWMC/0-Simulations/MuravesSim_khafre/build/CMakeFiles/install.dir
+/media/beso/Basma/0-SWMC/0-Simulations/MuravesSim_khafre/build/CMakeFiles/list_install_components.dir
+/media/beso/Basma/0-SWMC/0-Simulations/MuravesSim_khafre/build/CMakeFiles/rebuild_cache.dir
+/media/beso/Basma/0-SWMC/0-Simulations/MuravesSim_khafre/build/CMakeFiles/edit_cache.dir
+/media/beso/Basma/0-SWMC/0-Simulations/MuravesSim_khafre/build/CMakeFiles/install/strip.dir
+/media/beso/Basma/0-SWMC/0-Simulations/MuravesSim_khafre/build/CMakeFiles/MuravesSim.dir
