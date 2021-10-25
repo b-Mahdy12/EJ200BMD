@@ -1,4 +1,4 @@
-# Install script for directory: /media/beso/Basma/0-SWMC/0-Simulations/MuravesSim_khafre
+# Install script for directory: /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/MuravesSim"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/media/beso/Basma/0-SWMC/0-Simulations/MuravesSim_khafre/build/MuravesSim")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/build/MuravesSim")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/MuravesSim" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/MuravesSim")
     file(RPATH_CHANGE
@@ -65,5 +65,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/media/beso/Basma/0-SWMC/0-Simulations/MuravesSim_khafre/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

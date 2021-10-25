@@ -27,3 +27,4 @@
 /run/beamOn 1
 /vis/scene/notifyHandlers scene-0
 /vis/scene/notifyHandlers scene-1
+/run/beamOn 100
