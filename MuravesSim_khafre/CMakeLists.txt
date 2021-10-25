@@ -66,8 +66,9 @@ set(MuravesSim_scripts
 #  run1.mac
 #  run2.mac
    Pyramid_of_Khafre.stl
-   Wires_Ascii_FibrousGlass.stl
-   EJ200Scibar_Ascii_BC254.stl  
+  WLS_Ascii.stl
+  EJ200Scibar_Ascii.stl
+  SiPM_Ascii.stl
    vis.mac
    cmd.file
    cmdpartgun.mac

@@ -186,20 +186,20 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   // Scintillator
   //
   G4double envSizeX = 50. * cm;
-  auto meshSci = CADMesh::TessellatedMesh::FromSTL("EJ200Scibar_Ascii_BC254.stl");
-   meshSci->SetScale(0.5);
+  auto meshSci = CADMesh::TessellatedMesh::FromSTL("EJ200Scibar_Ascii.stl");
+  meshSci->SetScale(0.5);
   // mesh->SetOffset(G4ThreeVector(-0.5 * scintillatorSizeX, 0, -0.5 * scintillatorSizeX));
   // mesh->SetOffset(G4ThreeVector(0,0,0));
   auto EJ200Scibar = meshSci->GetSolid();
   fScintillatorLogical = new G4LogicalVolume(EJ200Scibar, polyvinyltoluene, "ScintillatorLogical");
-  G4VPhysicalVolume *physScint1 = new G4PVPlacement(0, G4ThreeVector(0.,0.,0.), fScintillatorLogical, "ScintillatorPhysical", Khafre_log, false, 0, checkOverlaps);
-  G4VPhysicalVolume *physScint2 = new G4PVPlacement(0, G4ThreeVector(0.,-2,0.), fScintillatorLogical, "ScintillatorPhysical", Khafre_log, false, 0, checkOverlaps);
+  G4VPhysicalVolume *physScint1 = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), fScintillatorLogical, "ScintillatorPhysical", Khafre_log, false, 0, checkOverlaps);
+  G4VPhysicalVolume *physScint2 = new G4PVPlacement(0, G4ThreeVector(0., -2, 0.), fScintillatorLogical, "ScintillatorPhysical", Khafre_log, false, 0, checkOverlaps);
 
   //
   // WLS Fiber
   //
-  auto meshWire = CADMesh::TessellatedMesh::FromSTL("Wires_Ascii_FibrousGlass.stl");
-   meshWire->SetScale(0.5);
+  auto meshWire = CADMesh::TessellatedMesh::FromSTL("WLS_Ascii.stl");
+  meshWire->SetScale(0.5);
   // meshWire->SetOffset(G4ThreeVector(-0.5 * scintillatorSizeX, 0, -0.5 * scintillatorSizeX));
   auto Wire = meshWire->GetSolid();
   G4Material *Fib = G4Material::GetMaterial("G4_PLEXIGLASS");
@@ -208,6 +208,17 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   // G4Material *Al = new G4Material("Aluminum", 13., a, density);
   WLSFiberLogical = new G4LogicalVolume(Wire, Fib, "WireLogical");
   G4VPhysicalVolume *WirePhy = new G4PVPlacement(0, G4ThreeVector(0, 0, 0.), WLSFiberLogical, "WwirePhysical", fScintillatorLogical, false, 0, checkOverlaps);
+
+  //
+  // SiPM
+  //
+  auto meshSiPM = CADMesh::TessellatedMesh::FromSTL("SiPM_Ascii.stl");
+  meshSiPM->SetScale(0.5);
+  // mesh->SetOffset(G4ThreeVector(-0.5 * scintillatorSizeX, 0, -0.5 * scintillatorSizeX));
+  // mesh->SetOffset(G4ThreeVector(0,0,0));
+  auto SiPM = meshSiPM->GetSolid();
+  fSipmLogical = new G4LogicalVolume(SiPM, silicon, "SiPMLogical");
+  G4VPhysicalVolume *SiPMPhy = new G4PVPlacement(0, G4ThreeVector(0, 0, 0.), fSipmLogical, "SiPMPhysical", fScintillatorLogical, false, 0, 0);
 
   //
   // VISUAL ATTRIBUTE
@@ -278,7 +289,6 @@ void DetectorConstruction::ConstructSDandField()
 // Track must hit front and back layer
 G4bool DetectorConstruction::IsInsideAcceptance(const G4ThreeVector &pos, const G4ThreeVector &dir) const
 {
-
 }
 
 void DetectorConstruction::DeleteMessenger()
