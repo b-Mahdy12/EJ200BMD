@@ -193,7 +193,7 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   auto EJ200Scibar = meshSci->GetSolid();
   fScintillatorLogical = new G4LogicalVolume(EJ200Scibar, polyvinyltoluene, "ScintillatorLogical");
   G4VPhysicalVolume *physScint1 = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), fScintillatorLogical, "ScintillatorPhysical", Khafre_log, false, 0, checkOverlaps);
-  G4VPhysicalVolume *physScint2 = new G4PVPlacement(0, G4ThreeVector(0., -2, 0.), fScintillatorLogical, "ScintillatorPhysical", Khafre_log, false, 0, checkOverlaps);
+  G4VPhysicalVolume *physScint2 = new G4PVPlacement(0, G4ThreeVector(0., 0., -2.), fScintillatorLogical, "ScintillatorPhysical", Khafre_log, false, 0, checkOverlaps);
 
   //
   // WLS Fiber
@@ -215,10 +215,10 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   auto meshSiPM = CADMesh::TessellatedMesh::FromSTL("SiPM_Ascii.stl");
   meshSiPM->SetScale(0.5);
   // mesh->SetOffset(G4ThreeVector(-0.5 * scintillatorSizeX, 0, -0.5 * scintillatorSizeX));
-  // mesh->SetOffset(G4ThreeVector(0,0,0));
+   meshSiPM->SetOffset(G4ThreeVector(-0.065, -0.05, 0));
   auto SiPM = meshSiPM->GetSolid();
   fSipmLogical = new G4LogicalVolume(SiPM, silicon, "SiPMLogical");
-  G4VPhysicalVolume *SiPMPhy = new G4PVPlacement(0, G4ThreeVector(0, 0, 0.), fSipmLogical, "SiPMPhysical", fScintillatorLogical, false, 0, 0);
+  G4VPhysicalVolume *SiPMPhy = new G4PVPlacement(0, G4ThreeVector(0, 0, 0), fSipmLogical, "SiPMPhysical", fScintillatorLogical, false, 0, checkOverlaps);
 
   //
   // VISUAL ATTRIBUTE
@@ -229,26 +229,26 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   //  // bore->SetForceSolid(false);
   fScintillatorLogical->SetVisAttributes(bore);
 
-  G4OpticalSurface *teflonSurface = new G4OpticalSurface("TeflonSurface");
-  teflonSurface->SetType(dielectric_LUTDAVIS);
-  teflonSurface->SetModel(DAVIS);
-  teflonSurface->SetFinish(Rough_LUT);
-  //teflonSurface->SetSigmaAlpha(sigma_alpha);
-
-  G4double teflonReflectivity[NPHOTONENERGIES];
-  G4double teflonEfficiency[NPHOTONENERGIES];
-  for (int i = 0; i < NPHOTONENERGIES; i++)
-  {
-    teflonReflectivity[i] = 0.99;
-    teflonEfficiency[i] = 1.;
-  }
-  G4MaterialPropertiesTable *teflonSurfaceProperties = new G4MaterialPropertiesTable();
-  teflonSurfaceProperties->AddProperty("REFLECTIVITY", scintResponseWavelengths, teflonReflectivity, NPHOTONENERGIES);
-  teflonSurfaceProperties->AddProperty("EFFICIENCY", scintResponseWavelengths, teflonEfficiency, NPHOTONENERGIES);
-  teflonSurface->SetMaterialPropertiesTable(teflonSurfaceProperties);
-
-  auto rod1 = new G4LogicalBorderSurface("TeflonBorderSurface1", WirePhy, physScint1, teflonSurface);
-  auto rod2 = new G4LogicalBorderSurface("TeflonBorderSurface1", WirePhy, physScint2, teflonSurface);
+  // G4OpticalSurface *teflonSurface = new G4OpticalSurface("TeflonSurface");
+  // teflonSurface->SetType(dielectric_LUTDAVIS);
+  // teflonSurface->SetModel(DAVIS);
+  // teflonSurface->SetFinish(Rough_LUT);
+  // //teflonSurface->SetSigmaAlpha(sigma_alpha);
+  //
+  // G4double teflonReflectivity[NPHOTONENERGIES];
+  // G4double teflonEfficiency[NPHOTONENERGIES];
+  // for (int i = 0; i < NPHOTONENERGIES; i++)
+  // {
+  //   teflonReflectivity[i] = 0.99;
+  //   teflonEfficiency[i] = 1.;
+  // }
+  // G4MaterialPropertiesTable *teflonSurfaceProperties = new G4MaterialPropertiesTable();
+  // teflonSurfaceProperties->AddProperty("REFLECTIVITY", scintResponseWavelengths, teflonReflectivity, NPHOTONENERGIES);
+  // teflonSurfaceProperties->AddProperty("EFFICIENCY", scintResponseWavelengths, teflonEfficiency, NPHOTONENERGIES);
+  // teflonSurface->SetMaterialPropertiesTable(teflonSurfaceProperties);
+  //
+  // auto rod1 = new G4LogicalBorderSurface("TeflonBorderSurface1", WirePhy, physScint1, teflonSurface);
+  // auto rod2 = new G4LogicalBorderSurface("TeflonBorderSurface1", WirePhy, physScint2, teflonSurface);
 
   return physWorld;
 }

@@ -24,9 +24,6 @@
 /vis/scene/create
 /vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
 /vis/sceneHandler/attach
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
 /vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0
 /vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0
 /vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
@@ -41,16 +38,15 @@
 /vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0
 /vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
 /vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 WwirePhysical 0
-/vis/viewer/set/style w
-/vis/viewer/refresh
-/vis/viewer/set/hiddenEdge 1
-/vis/viewer/refresh
+/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 WwirePhysical 0
+/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 WwirePhysical 0
+/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 WwirePhysical 0
+/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 WwirePhysical 0
+/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 WwirePhysical 0
+/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 WwirePhysical 0
 /vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
 /vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0
-/vis/viewer/set/picking true
-/vis/viewer/refresh
+/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
+/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
+/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
+/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
