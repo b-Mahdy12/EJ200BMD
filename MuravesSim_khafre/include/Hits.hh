@@ -1,5 +1,5 @@
 //
-// Michael Tytgat
+// 
 //
 
 #ifndef Hits_h

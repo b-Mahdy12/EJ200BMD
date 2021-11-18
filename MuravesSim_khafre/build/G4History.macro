@@ -15,38 +15,23 @@
 /vis/scene/notifyHandlers
 /vis/geometry/set/visibility World 0 false
 /vis/scene/notifyHandlers
-/vis/open OGL
-/vis/sceneHandler/create OGL
-/vis/sceneHandler/attach
-/vis/viewer/create ! ! 600
-/vis/viewer/refresh
 /vis/drawVolume
 /vis/scene/create
 /vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
 /vis/sceneHandler/attach
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 WwirePhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 WwirePhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 WwirePhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 WwirePhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 WwirePhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 WwirePhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 WwirePhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 WwirePhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 WwirePhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 WwirePhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
-/vis/set/touchable World 0 Scintbars 0 ScintillatorPhysical 0 SiPMPhysical 0
+/control/execute cmdgps.mac
+/gps/particle mu+
+/gps/ene/type Mono
+/gps/ene/mono 500 GeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0 0 1
+/gps/pos/rot2 1 0 0
+/gps/pos/halfx 46.2 cm
+/gps/pos/halfy 57.2 cm
+/gps/pos/centre 0. 57.2 0. cm
+/gps/direction 0 0 1
+/run/initialize
+/run/beamOn 1
+/vis/scene/notifyHandlers scene-0
+/vis/scene/notifyHandlers scene-1

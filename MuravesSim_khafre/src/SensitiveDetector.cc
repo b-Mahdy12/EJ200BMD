@@ -1,5 +1,5 @@
 //
-// Michael Tytgat
+// 
 //
 
 #include "SensitiveDetector.hh"
@@ -13,26 +13,26 @@
 #include "G4SDManager.hh"
 #include "G4ios.hh"
 
-ScintbarSD::ScintbarSD( const G4String &SDname )
-  : G4VSensitiveDetector(SDname),
+pyrSD::pyrSD( const G4String &SDname ): G4VSensitiveDetector(SDname),
     fHitsCollection(0), fHCID(-1)
 {
-  collectionName.insert("ScintbarsColl");
+  // to collect data SDManager
+  collectionName.insert("PyramidColl");
 }
 
-ScintbarSD::~ScintbarSD() {}
+pyrSD::~pyrSD() {}
 
-void ScintbarSD::Initialize( G4HCofThisEvent *hitcollection )
+void pyrSD::Initialize( G4HCofThisEvent *hitcollection )
 {
   fHitsCollection = new ScintbarHitsCollection(SensitiveDetectorName, collectionName[0]);
   if ( fHCID < 0 ) {
     fHCID = G4SDManager::GetSDMpointer()->GetCollectionID(fHitsCollection);
   }
   hitcollection->AddHitsCollection( fHCID, fHitsCollection);
-  //G4cout << "Initialize ScintbarSD hitcoll ID: " << fHCID << G4endl; 
+  //G4cout << "Initialize pyrSD hitcoll ID: " << fHCID << G4endl; 
 }
 
-G4bool ScintbarSD::ProcessHits( G4Step *step, G4TouchableHistory* history )
+G4bool pyrSD::ProcessHits( G4Step *step, G4TouchableHistory* history )
 {
 
   // geometry info from PreStepPoint
@@ -53,5 +53,5 @@ G4bool ScintbarSD::ProcessHits( G4Step *step, G4TouchableHistory* history )
   return true;
 }
 
-void ScintbarSD::EndOfEvent( G4HCofThisEvent *hitCollection ) {}
+void pyrSD::EndOfEvent( G4HCofThisEvent *hitCollection ) {}
 

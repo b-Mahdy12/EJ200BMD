@@ -1,7 +1,7 @@
 //******************************************************************************
 // PrimaryGeneratorAction_GenPartSrc.hh
 //
-// Michael Tytgat
+// 
 //******************************************************************************
 // 
 #ifndef PrimaryGeneratorAction_GenPartSrc_h

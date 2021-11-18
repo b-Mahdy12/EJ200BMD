@@ -8,11 +8,11 @@ class G4Step;
 class G4HCofThisEvent;
 class G4TouchableHistory;
 
-class ScintbarSD : public G4VSensitiveDetector
+class pyrSD : public G4VSensitiveDetector
 {
 public:
-  ScintbarSD( const G4String &SDname );
-  virtual ~ScintbarSD();
+  pyrSD( const G4String &SDname );
+  virtual ~pyrSD();
 
   virtual void Initialize( G4HCofThisEvent *hitcollection );
   virtual G4bool ProcessHits( G4Step *step, G4TouchableHistory *history );

@@ -1,5 +1,5 @@
 //
-// Michael Tytgat
+// 
 //
 
 #include "Hits.hh"

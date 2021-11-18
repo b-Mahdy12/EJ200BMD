@@ -1,5 +1,5 @@
 # MuravesSim
-### Michael Tytgat
+### 
 
 prerequisites:
 * Geant4
