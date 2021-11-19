@@ -7,7 +7,7 @@
 /gps/pos/rot2 1 0 0
 /gps/pos/halfx 46.2 cm
 /gps/pos/halfy 57.2 cm
-/gps/pos/centre 0. 57.2 0. cm
+/gps/pos/centre 0. 57. 0. cm
 /gps/direction 0 0 1
 
 /run/initialize

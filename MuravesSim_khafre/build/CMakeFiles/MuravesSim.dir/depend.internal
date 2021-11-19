@@ -673,11 +673,6 @@ CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/pwdefs.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/templates.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/tls.hh
- /home/beso/cry_v1.7/src/CRYGenerator.h
- /home/beso/cry_v1.7/src/CRYParticle.h
- /home/beso/cry_v1.7/src/CRYPrimary.h
- /home/beso/cry_v1.7/src/CRYSetup.h
- /home/beso/cry_v1.7/src/CRYUtils.h
  /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/ActionInitialization.cc
 CMakeFiles/MuravesSim.dir/src/DetectorConstruction.cc.o
  ../include/CADMesh.hh
@@ -2226,11 +2221,6 @@ CMakeFiles/MuravesSim.dir/src/PrimaryGeneratorAction_CRY.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/tls.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/trajectoryControl.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/trkdefs.hh
- /home/beso/cry_v1.7/src/CRYGenerator.h
- /home/beso/cry_v1.7/src/CRYParticle.h
- /home/beso/cry_v1.7/src/CRYPrimary.h
- /home/beso/cry_v1.7/src/CRYSetup.h
- /home/beso/cry_v1.7/src/CRYUtils.h
  /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/PrimaryGeneratorAction_CRY.cc
 CMakeFiles/MuravesSim.dir/src/PrimaryGeneratorAction_GenPartSrc.cc.o
  ../include/PrimaryGeneratorAction_GenPartSrc.hh
@@ -2424,11 +2414,6 @@ CMakeFiles/MuravesSim.dir/src/PrimaryGeneratorAction_GenPartSrc.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/pwdefs.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/templates.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/tls.hh
- /home/beso/cry_v1.7/src/CRYGenerator.h
- /home/beso/cry_v1.7/src/CRYParticle.h
- /home/beso/cry_v1.7/src/CRYPrimary.h
- /home/beso/cry_v1.7/src/CRYSetup.h
- /home/beso/cry_v1.7/src/CRYUtils.h
  /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/PrimaryGeneratorAction_GenPartSrc.cc
 CMakeFiles/MuravesSim.dir/src/PrimaryGeneratorAction_PartGun.cc.o
  ../include/PrimaryGeneratorAction_PartGun.hh
@@ -2524,11 +2509,6 @@ CMakeFiles/MuravesSim.dir/src/PrimaryGeneratorAction_PartGun.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/pwdefs.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/templates.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/tls.hh
- /home/beso/cry_v1.7/src/CRYGenerator.h
- /home/beso/cry_v1.7/src/CRYParticle.h
- /home/beso/cry_v1.7/src/CRYPrimary.h
- /home/beso/cry_v1.7/src/CRYSetup.h
- /home/beso/cry_v1.7/src/CRYUtils.h
  /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/PrimaryGeneratorAction_PartGun.cc
 CMakeFiles/MuravesSim.dir/src/PrimaryGeneratorMessenger.cc.o
  ../include/PrimaryGeneratorAction_CRY.hh
@@ -2617,11 +2597,6 @@ CMakeFiles/MuravesSim.dir/src/PrimaryGeneratorMessenger.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/pwdefs.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/templates.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/tls.hh
- /home/beso/cry_v1.7/src/CRYGenerator.h
- /home/beso/cry_v1.7/src/CRYParticle.h
- /home/beso/cry_v1.7/src/CRYPrimary.h
- /home/beso/cry_v1.7/src/CRYSetup.h
- /home/beso/cry_v1.7/src/CRYUtils.h
  /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/PrimaryGeneratorMessenger.cc
 CMakeFiles/MuravesSim.dir/src/RNGWrapper.cc.o
  ../include/RNGWrapper.hh
