@@ -1,0 +1,58 @@
+/run/verbose 2
+/run/initialize
+/control/execute vis.mac
+/vis/open OGL
+/vis/sceneHandler/create OGL
+/vis/viewer/create ! ! 600
+/vis/viewer/refresh
+/vis/drawVolume
+/vis/scene/create
+/vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
+/vis/sceneHandler/attach
+/vis/scene/add/scale
+/vis/scene/notifyHandlers
+/vis/scene/add/axes
+/vis/scene/notifyHandlers
+/vis/geometry/set/visibility World 0 false
+/vis/scene/notifyHandlers
+/vis/drawVolume
+/vis/scene/create
+/vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
+/vis/sceneHandler/attach
+/vis/open OGL
+/vis/sceneHandler/create OGL
+/vis/sceneHandler/attach
+/vis/viewer/create ! ! 600
+/vis/viewer/refresh
+/vis/scene/add/trajectories
+/tracking/storeTrajectory 1
+/vis/scene/notifyHandlers
+/control/execute cmd.file
+/CRY/input returnNeutrons 0
+/CRY/input returnProtons 0
+/CRY/input returnGammas 0
+/CRY/input returnPions 0
+/CRY/input returnKaons 0
+/CRY/input returnMuons 1
+/CRY/input date 7-1-2012
+/CRY/input latitude 90.0
+/CRY/input altitude 2100
+/CRY/input subboxLength 100
+/CRY/update
+/run/beamOn 100
+/vis/scene/notifyHandlers scene-0
+/vis/scene/notifyHandlers scene-1
+/tracking/storeTrajectory 1
+/control/execute cmd.file
+/CRY/input returnNeutrons 0
+/CRY/input returnProtons 0
+/CRY/input returnGammas 0
+/CRY/input returnPions 0
+/CRY/input returnKaons 0
+/CRY/input returnMuons 1
+/CRY/input date 7-1-2012
+/CRY/input latitude 90.0
+/CRY/input altitude 2100
+/CRY/input subboxLength 100
+/CRY/update
+/run/beamOn 100

@@ -1,0 +1,14 @@
+/gps/particle mu-
+/gps/ene/type Mono
+/gps/ene/mono 4 GeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0 0 1
+/gps/pos/rot2 1 0 0
+/gps/pos/halfx 0 cm
+/gps/pos/halfy 0 cm
+/gps/pos/centre 0. 0. 143. cm
+/gps/direction 0 0 -1
+
+/run/initialize
+/run/beamOn 100

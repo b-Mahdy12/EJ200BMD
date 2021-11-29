@@ -17,41 +17,26 @@ RunAction::RunAction(EventAction* eventAction)
  : G4UserRunAction(), 
    fEventAction(eventAction)
 {
-  /*
-  // Create analysis manager
-  // The choice of analysis technology is done via selection of a namespace
-  // in Analysis.hh
-  auto analysisManager = G4AnalysisManager::Instance();
-  G4cout << "Using " << analysisManager->GetType() << G4endl;
-
-  // Default settings
-  analysisManager->SetNtupleMerging(true);
-     // Note: merging ntuples is available only with Root output
+  
+  G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
   analysisManager->SetVerboseLevel(1);
-  analysisManager->SetFileName("MuravesSim.root");
+  analysisManager->SetFirstNtupleId(1);
+  analysisManager->SetFirstHistoId(1);
 
-  // Creating ntuple
-  //
-  if ( fEventAction ) {
-    analysisManager->CreateNtuple("MuravesSim", "GenMuons");
+  analysisManager->CreateH1("eDep", "Title", 20, 0, 665);
 
-    analysisManager->CreateNtupleIColumn("NGenMuon"); // id =0
-    analysisManager->CreateNtupleDColumn("GenMuonE", );  // column Id = 0
-    analysisManager->CreateNtupleIColumn("GenMuonTheta");  // column Id = 1
-    analysisManager->CreateNtupleDColumn("GenMuonPhi"); // column Id = 2
-    analysisManager                                   // column Id = 6
-      ->CreateNtupleDColumn("ECEnergyVector", fEventAction->GetEmCalEdep()); 
-    analysisManager                                   // column Id = 7
-    ->CreateNtupleDColumn("HCEnergyVector", fEventAction->GetHadCalEdep());
-    analysisManager->FinishNtuple();
-  }*/
+  analysisManager->CreateNtuple("eDep", "eDep");  
+  analysisManager->CreateNtupleDColumn("eDep");  
+  analysisManager->CreateNtupleDColumn("eMis");  
+  analysisManager->FinishNtuple();
 
-  ROOTManager::Instance()->Init();
+  analysisManager->OpenFile("Pyramid"); 
 }
 
 RunAction::~RunAction()
 {
-  delete G4AnalysisManager::Instance();  
+  G4AnalysisManager* man = G4AnalysisManager::Instance();
+    man->Write();
 }
 
 void RunAction::BeginOfRunAction(const G4Run* /*run*/)
@@ -80,5 +65,12 @@ void RunAction::EndOfRunAction(const G4Run* /*run*/)
   analysisManager->CloseFile();
   */
   ROOTManager::Instance()->Save();
+}
+
+void RunAction::OnEvent()
+{
+    fNEvents += 1;
+
+    return;
 }
 

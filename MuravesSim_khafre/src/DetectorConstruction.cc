@@ -30,6 +30,7 @@
 #include "G4GenericTrap.hh"
 #include "G4GenericMessenger.hh"
 #include "G4TwoVector.hh"
+
 #include "G4MultiFunctionalDetector.hh"
 #include "G4VPrimitiveScorer.hh"
 #include "G4SDManager.hh"
@@ -90,15 +91,8 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   rota->rotateX(90 * deg);
 
   G4LogicalVolume *Khafre_log = new G4LogicalVolume(Khafre_py, limestone, "Pyramid");
-
-  pyrSD *pySD = new pyrSD("/Py");
-  G4SDManager *sdman = G4SDManager ::GetSDMpointer();
-  sdman->AddNewDetector(pySD);
-  Khafre_log->SetSensitiveDetector(pySD);
-
   G4VPhysicalVolume *khafre_py = new G4PVPlacement(0, G4ThreeVector(0, 0, 0), Khafre_log, "KhafrePyramid", logicWorld, false, 0, checkOverlaps);
 
-/** 
   //
   //  EJ200
   //
@@ -256,7 +250,17 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   //
   // auto rod1 = new G4LogicalBorderSurface("TeflonBorderSurface1", WirePhy, physScint1, teflonSurface);
   // auto rod2 = new G4LogicalBorderSurface("TeflonBorderSurface1", WirePhy, physScint2, teflonSurface);
-**/
+
+  // pyrSD *pySD = new pyrSD("/Py");
+  G4SDManager *sdman = G4SDManager ::GetSDMpointer();
+
+  G4MultiFunctionalDetector *pySD = new G4MultiFunctionalDetector("Pyramid");
+  G4VPrimitiveScorer *scorer = new G4PSEnergyDeposit("EnergyDeposit");
+  pySD->RegisterPrimitive(scorer);
+  sdman->AddNewDetector(pySD);
+  // Khafre_log->SetSensitiveDetector(pySD);
+  fScintillatorLogical->SetSensitiveDetector(pySD);
+
   return physWorld;
 }
 
