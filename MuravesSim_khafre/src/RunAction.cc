@@ -5,6 +5,7 @@
 
 #include "RunAction.hh"
 #include "EventAction.hh"
+#include <G4AccumulableManager.hh>
 #include "Analysis.hh"
 #include "ROOTManager.hh"
 
@@ -12,35 +13,39 @@
 #include "G4UnitsTable.hh"
 #include "G4SystemOfUnits.hh"
 
-
-RunAction::RunAction(EventAction* eventAction)
- : G4UserRunAction(), 
-   fEventAction(eventAction)
+RunAction::RunAction(EventAction *eventAction)
+    : G4UserRunAction(),
+      fEventAction(eventAction), fNEvents("NEvents", 0)
 {
-  
-  G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
+  G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();
+  accumulableManager->RegisterAccumulable(fNEvents);
+
+
+  G4AnalysisManager *analysisManager = G4AnalysisManager::Instance();
   analysisManager->SetVerboseLevel(1);
   analysisManager->SetFirstNtupleId(1);
   analysisManager->SetFirstHistoId(1);
 
   analysisManager->CreateH1("eDep", "Title", 20, 0, 665);
 
-  analysisManager->CreateNtuple("eDep", "eDep");  
-  analysisManager->CreateNtupleDColumn("eDep");  
-  analysisManager->CreateNtupleDColumn("eMis");  
+  analysisManager->CreateNtuple("eDep", "eDep");
+  analysisManager->CreateNtupleDColumn("eDep");
+  analysisManager->CreateNtupleDColumn("eMis");
   analysisManager->FinishNtuple();
 
-  analysisManager->OpenFile("Pyramid"); 
+  ROOTManager::Instance()->Init();
+  // analysisManager->OpenFile("Pyramid");
 }
 
 RunAction::~RunAction()
 {
-  G4AnalysisManager* man = G4AnalysisManager::Instance();
-    man->Write();
+  // G4AnalysisManager* man = G4AnalysisManager::Instance();
+  // man->Write();
+  delete G4AnalysisManager::Instance();
 }
 
-void RunAction::BeginOfRunAction(const G4Run* /*run*/)
-{ 
+void RunAction::BeginOfRunAction(const G4Run * /*run*/)
+{
   //inform the runManager to save random number seed
   //G4RunManager::GetRunManager()->SetRandomNumberStore(true);
 
@@ -55,7 +60,7 @@ void RunAction::BeginOfRunAction(const G4Run* /*run*/)
   */
 }
 
-void RunAction::EndOfRunAction(const G4Run* /*run*/)
+void RunAction::EndOfRunAction(const G4Run * /*run*/)
 {
   // save histograms & ntuple
   //
@@ -69,8 +74,7 @@ void RunAction::EndOfRunAction(const G4Run* /*run*/)
 
 void RunAction::OnEvent()
 {
-    fNEvents += 1;
+  fNEvents += 1;
 
-    return;
+  return;
 }
-

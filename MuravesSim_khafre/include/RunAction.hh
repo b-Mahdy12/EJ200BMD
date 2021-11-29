@@ -23,7 +23,7 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-// 
+//
 /// \file RunAction.hh
 /// \brief Definition of the RunAction class
 
@@ -32,6 +32,8 @@
 
 #include "G4UserRunAction.hh"
 #include "globals.hh"
+#include <G4Accumulable.hh>
+
 
 class EventAction;
 
@@ -41,16 +43,18 @@ class G4Run;
 
 class RunAction : public G4UserRunAction
 {
-  public:
-    RunAction(EventAction* eventAction);
-    virtual ~RunAction();
+public:
+  RunAction(EventAction *eventAction);
+  virtual ~RunAction();
 
-    virtual void BeginOfRunAction(const G4Run*);
-    virtual void   EndOfRunAction(const G4Run*);
+  virtual void BeginOfRunAction(const G4Run *);
+  virtual void EndOfRunAction(const G4Run *);
 
-  private:
-    EventAction* fEventAction;
+  void OnEvent();
+
+private:
+  EventAction *fEventAction;
+  G4Accumulable<G4int>    fNEvents;
 };
-
 
 #endif

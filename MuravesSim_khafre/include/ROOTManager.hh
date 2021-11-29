@@ -17,23 +17,24 @@ class ROOTManager
   
   struct ROOTTreeStruct_t {
     Int_t Event;
-    
-    Int_t NGenPart;
-    Int_t GenPartID[MaxNGenPart];
-    Int_t GenPartPDG[MaxNGenPart];
-    Float_t GenPartE[MaxNGenPart];
-    Float_t GenPartTheta[MaxNGenPart];
-    Float_t GenPartPhi[MaxNGenPart];
+    Double_t EnergyDeposition;
+    // Int_t NGenPart;
+    // Int_t GenPartID[MaxNGenPart];
+    // Int_t GenPartPDG[MaxNGenPart];
+    // Float_t GenPartE[MaxNGenPart];
+    // Float_t GenPartTheta[MaxNGenPart];
+    // Float_t GenPartPhi[MaxNGenPart];
+// 
+    // Int_t NScintHit;
+    // Int_t ScintHitPrimaryID[MaxNScintHit];
+    // Float_t ScintHitE[MaxNScintHit];
+    // Float_t ScintHitPosX[MaxNScintHit];
+    // Float_t ScintHitPosY[MaxNScintHit];
+    // Float_t ScintHitPosZ[MaxNScintHit];
+    // Int_t ScintHitStation[MaxNScintHit];
+    // Int_t ScintHitModule[MaxNScintHit];
+    // Int_t ScintHitBar[MaxNScintHit];
 
-    Int_t NScintHit;
-    Int_t ScintHitPrimaryID[MaxNScintHit];
-    Float_t ScintHitE[MaxNScintHit];
-    Float_t ScintHitPosX[MaxNScintHit];
-    Float_t ScintHitPosY[MaxNScintHit];
-    Float_t ScintHitPosZ[MaxNScintHit];
-    Int_t ScintHitStation[MaxNScintHit];
-    Int_t ScintHitModule[MaxNScintHit];
-    Int_t ScintHitBar[MaxNScintHit];
 
   };
 

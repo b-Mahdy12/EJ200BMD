@@ -12,6 +12,7 @@
 #include "G4RunManager.hh"
 #include "G4EventManager.hh"
 #include "G4HCofThisEvent.hh"
+#include <G4THitsMap.hh>
 #include "G4VHitsCollection.hh"
 #include "G4SDManager.hh"
 #include "G4SystemOfUnits.hh"
@@ -69,7 +70,7 @@ void EventAction::BeginOfEventAction(const G4Event *)
   // if ( fScintbarsHCID == -1 ) {
   auto SDManager = G4SDManager::GetSDMpointer();
   // py from DetectorConstruction.cc "/Py" and PyramidColl from SensetiveDetector.cc
-  fScintbarsHCID = SDManager->GetCollectionID("Pyramid/PyramidColl");
+  fScintbarsHCID = SDManager->GetCollectionID("Py/EnergyDeposit");
   // }
   //G4cout << "BeginOfEventAction fScintbarsHCID: " << fScintbarsHCID << G4endl;
 
@@ -80,43 +81,41 @@ void EventAction::EndOfEventAction(const G4Event *event)
 {
   // Get analysis manager
   G4AnalysisManager *analysis = G4AnalysisManager::Instance();
-}
 
-G4HCofThisEvent *HCE = event->GetHCofThisEvent();
+  G4HCofThisEvent *HCE = event->GetHCofThisEvent();
 
-if (!HCE)
-{
-  return;
-}
- //Retrieve the hits-collection.
-    //This comes from a Geant4 multiscorer of type "G4PSEnergyDeposit", which scores
-    //energy deposit.
-    G4THitsMap<G4double> *evtMap = dynamic_cast<G4THitsMap<G4double> *>(HCE->GetHC(fCollID_cryst));
+  if (!HCE)
+  {
+    return;
+  }
+  //Retrieve the hits-collection.
+  //This comes from a Geant4 multiscorer of type "G4PSEnergyDeposit", which scores
+  //energy deposit.
+  G4THitsMap<G4double> *evtMap = dynamic_cast<G4THitsMap<G4double> *>(HCE->GetHC(fScintbarsHCID));
 
-    //Store the total energy in a variable
-    G4double totEdep = 0.;
-    //Sum all individual energy deposits in this event
-    for (auto pair : *(evtMap->GetMap()))
-    {
-        G4double edep = *(pair.second);
-        //Sum the energy deposited in all crystals, irrespectively of threshold.
-        totEdep += edep;
-    }
-    
-     if (totEdep > 0)
-    {
-        fRunAction->OnEvent();
+  //Store the total energy in a variable
+  G4double totEdep = 0.;
+  //Sum all individual energy deposits in this event
+  for (auto pair : *(evtMap->GetMap()))
+  {
+    G4double edep = *(pair.second);
+    //Sum the energy deposited in all crystals, irrespectively of threshold.
+    totEdep += edep;
+  }
 
-        G4double energy = totEdep / keV;
-        G4double missing_energy = 662 - totEdep / keV;
+  if (totEdep > 0)
+  {
+    fRunAction->OnEvent();
 
-        analysis->FillH1(1, energy);
+    G4double energy = totEdep / keV;
+    G4double missing_energy = 662 - totEdep / keV;
 
-        analysis->FillNtupleDColumn(1, 0, energy);
-        analysis->FillNtupleDColumn(1, 1, missing_energy);
-        analysis->AddNtupleRow(1);
+    analysis->FillH1(1, energy);
 
-        G4cout << "The total energy deposited in this event is: " << totEdep / keV << " keV " << G4endl;
-    }
+    analysis->FillNtupleDColumn(1, 0, energy);
+    analysis->FillNtupleDColumn(1, 1, missing_energy);
+    analysis->AddNtupleRow(1);
 
+    G4cout << "The total energy deposited in this event is: " << totEdep / keV << " keV " << G4endl;
+  }
 }

@@ -93,6 +93,8 @@ CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-in
 CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/FTFP_BERT.hh
 CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/FTFP_BERT.icc
 CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ASCIITree.hh
+CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.hh
+CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.icc
 CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AffineTransform.hh
 CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AffineTransform.icc
 CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Allocator.hh
@@ -249,6 +251,7 @@ CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-in
 CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MaterialPropertiesTable.icc
 CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MaterialPropertyVector.hh
 CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MaterialTable.hh
+CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MergeMode.hh
 CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ModelingParameters.hh
 CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ModelingParameters.icc
 CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MuonMinus.hh
@@ -424,6 +427,8 @@ CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-in
 CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserStackingAction.hh
 CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserSteppingAction.hh
 CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserTrackingAction.hh
+CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.hh
+CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.icc
 CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VBasicShell.hh
 CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VCrossSectionDataSet.hh
 CMakeFiles/MuravesSim.dir/MuravesSim.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VDigi.hh
@@ -637,6 +642,8 @@ CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant
 CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Utility/thread_local.h
 CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.h
 CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.icc
+CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.hh
+CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.icc
 CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ApplicationState.hh
 CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AutoLock.hh
 CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4DataVector.hh
@@ -644,6 +651,7 @@ CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant
 CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4EnvironmentUtils.hh
 CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Exception.hh
 CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ExceptionSeverity.hh
+CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MergeMode.hh
 CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4PDefManager.hh
 CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ParticleDefinition.hh
 CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ParticleDefinition.icc
@@ -663,6 +671,8 @@ CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant
 CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserEventAction.hh
 CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserRunAction.hh
 CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserTrackingAction.hh
+CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.hh
+CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.icc
 CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VExceptionHandler.hh
 CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VUserActionInitialization.hh
 CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh
@@ -1099,6 +1109,8 @@ CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/RotationZ.icc
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.h
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.icc
+CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.hh
+CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.icc
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AffineTransform.hh
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AffineTransform.icc
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Allocator.hh
@@ -1164,6 +1176,7 @@ CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MaterialPropertiesTable.icc
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MaterialPropertyVector.hh
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MaterialTable.hh
+CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MergeMode.hh
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4NavigationHistory.hh
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4NavigationHistory.icc
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4NavigationHistoryPool.hh
@@ -1245,6 +1258,7 @@ CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4String.icc
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4SystemOfUnits.hh
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4THitsCollection.hh
+CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4THitsMap.hh
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4THnManager.hh
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4THnManager.icc
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4TNtupleDescription.hh
@@ -1284,6 +1298,8 @@ CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserStackingAction.hh
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserSteppingAction.hh
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserTrackingAction.hh
+CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.hh
+CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.icc
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAnalysisManager.hh
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAnalysisManager.icc
 CMakeFiles/MuravesSim.dir/src/EventAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAnalysisReader.hh
@@ -2679,9 +2695,12 @@ CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p
 CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Utility/defs.h
 CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.h
 CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.icc
+CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.hh
+CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.icc
 CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4EnvironmentUtils.hh
 CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Exception.hh
 CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ExceptionSeverity.hh
+CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MergeMode.hh
 CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4String.hh
 CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4String.icc
 CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ThreeVector.hh
@@ -2690,6 +2709,8 @@ CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p
 CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UnitsTable.icc
 CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserEventAction.hh
 CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserRunAction.hh
+CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.hh
+CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.icc
 CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VExceptionHandler.hh
 CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ios.hh
 CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/globals.hh
@@ -2769,6 +2790,10 @@ CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01
 CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Utility/defs.h
 CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.h
 CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.icc
+CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.hh
+CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.icc
+CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AccumulableManager.hh
+CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AccumulableManager.icc
 CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AnalysisManagerState.hh
 CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AnalysisUtilities.hh
 CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AnalysisVerbose.hh
@@ -2786,6 +2811,7 @@ CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01
 CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4H3ToolsManager.hh
 CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4HnInformation.hh
 CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4HnManager.hh
+CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MergeMode.hh
 CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4P1ToolsManager.hh
 CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4P2ToolsManager.hh
 CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4RootAnalysisManager.hh
@@ -2818,6 +2844,8 @@ CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01
 CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UnitsTable.icc
 CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserEventAction.hh
 CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserRunAction.hh
+CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.hh
+CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.icc
 CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAnalysisManager.hh
 CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAnalysisManager.icc
 CMakeFiles/MuravesSim.dir/src/RunAction.cc.o: /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAnalysisReader.hh

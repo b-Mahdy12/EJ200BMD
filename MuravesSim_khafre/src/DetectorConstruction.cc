@@ -93,6 +93,7 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   G4LogicalVolume *Khafre_log = new G4LogicalVolume(Khafre_py, limestone, "Pyramid");
   G4VPhysicalVolume *khafre_py = new G4PVPlacement(0, G4ThreeVector(0, 0, 0), Khafre_log, "KhafrePyramid", logicWorld, false, 0, checkOverlaps);
 
+/*
   //
   //  EJ200
   //
@@ -187,39 +188,39 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   // Scintillator
   //
   G4double envSizeX = 50. * cm;
-  auto meshSci = CADMesh::TessellatedMesh::FromSTL("EJ200Scibar_Ascii.stl");
-  meshSci->SetScale(0.5);
+  // auto meshSci = CADMesh::TessellatedMesh::FromSTL("EJ200Scibar_Ascii.stl");
+  // meshSci->SetScale(0.5);
   // mesh->SetOffset(G4ThreeVector(-0.5 * scintillatorSizeX, 0, -0.5 * scintillatorSizeX));
   // mesh->SetOffset(G4ThreeVector(0,0,0));
-  auto EJ200Scibar = meshSci->GetSolid();
-  fScintillatorLogical = new G4LogicalVolume(EJ200Scibar, polyvinyltoluene, "ScintillatorLogical");
-  G4VPhysicalVolume *physScint1 = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), fScintillatorLogical, "ScintillatorPhysical", Khafre_log, false, 0, checkOverlaps);
-  G4VPhysicalVolume *physScint2 = new G4PVPlacement(0, G4ThreeVector(0., 0., -2.), fScintillatorLogical, "ScintillatorPhysical", Khafre_log, false, 0, checkOverlaps);
+  // auto EJ200Scibar = meshSci->GetSolid();
+  // fScintillatorLogical = new G4LogicalVolume(EJ200Scibar, polyvinyltoluene, "ScintillatorLogical");
+  // G4VPhysicalVolume *physScint1 = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), fScintillatorLogical, "ScintillatorPhysical", Khafre_log, false, 0, checkOverlaps);
+  // G4VPhysicalVolume *physScint2 = new G4PVPlacement(0, G4ThreeVector(0., 0., -2.), fScintillatorLogical, "ScintillatorPhysical", Khafre_log, false, 0, checkOverlaps);
 
   //
   // WLS Fiber
   //
   auto meshWire = CADMesh::TessellatedMesh::FromSTL("WLS_Ascii.stl");
-  meshWire->SetScale(0.5);
+  // meshWire->SetScale(0.5);
   // meshWire->SetOffset(G4ThreeVector(-0.5 * scintillatorSizeX, 0, -0.5 * scintillatorSizeX));
-  auto Wire = meshWire->GetSolid();
-  G4Material *Fib = G4Material::GetMaterial("G4_PLEXIGLASS");
+  // auto Wire = meshWire->GetSolid();
+  // G4Material *Fib = G4Material::GetMaterial("G4_PLEXIGLASS");
   // double density = 2.700 * g / cm3;
   // double a = 26.98 * g / mole;
   // G4Material *Al = new G4Material("Aluminum", 13., a, density);
-  WLSFiberLogical = new G4LogicalVolume(Wire, Fib, "WireLogical");
-  G4VPhysicalVolume *WirePhy = new G4PVPlacement(0, G4ThreeVector(0, 0, 0.), WLSFiberLogical, "WwirePhysical", fScintillatorLogical, false, 0, checkOverlaps);
+  // WLSFiberLogical = new G4LogicalVolume(Wire, Fib, "WireLogical");
+  // G4VPhysicalVolume *WirePhy = new G4PVPlacement(0, G4ThreeVector(0, 0, 0.), WLSFiberLogical, "WwirePhysical", fScintillatorLogical, false, 0, checkOverlaps);
 
   //
   // SiPM
   //
   auto meshSiPM = CADMesh::TessellatedMesh::FromSTL("SiPM_Ascii.stl");
-  meshSiPM->SetScale(0.5);
+  // meshSiPM->SetScale(0.5);
   // mesh->SetOffset(G4ThreeVector(-0.5 * scintillatorSizeX, 0, -0.5 * scintillatorSizeX));
-  meshSiPM->SetOffset(G4ThreeVector(-0.065, -0.05, 0));
-  auto SiPM = meshSiPM->GetSolid();
-  fSipmLogical = new G4LogicalVolume(SiPM, silicon, "SiPMLogical");
-  G4VPhysicalVolume *SiPMPhy = new G4PVPlacement(0, G4ThreeVector(0, 0, 0), fSipmLogical, "SiPMPhysical", fScintillatorLogical, false, 0, checkOverlaps);
+  // meshSiPM->SetOffset(G4ThreeVector(-0.065, -0.05, 0));
+  // auto SiPM = meshSiPM->GetSolid();
+  // fSipmLogical = new G4LogicalVolume(SiPM, silicon, "SiPMLogical");
+  // G4VPhysicalVolume *SiPMPhy = new G4PVPlacement(0, G4ThreeVector(0, 0, 0), fSipmLogical, "SiPMPhysical", fScintillatorLogical, false, 0, checkOverlaps);
 
   //
   // VISUAL ATTRIBUTE
@@ -228,7 +229,7 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   bore->SetVisibility(true);
   bore->SetForceWireframe(true);
   //  // bore->SetForceSolid(false);
-  fScintillatorLogical->SetVisAttributes(bore);
+  // fScintillatorLogical->SetVisAttributes(bore);
 
   // G4OpticalSurface *teflonSurface = new G4OpticalSurface("TeflonSurface");
   // teflonSurface->SetType(dielectric_LUTDAVIS);
@@ -252,15 +253,11 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   // auto rod2 = new G4LogicalBorderSurface("TeflonBorderSurface1", WirePhy, physScint2, teflonSurface);
 
   // pyrSD *pySD = new pyrSD("/Py");
-  G4SDManager *sdman = G4SDManager ::GetSDMpointer();
+  // G4SDManager *sdman = G4SDManager ::GetSDMpointer();
 
-  G4MultiFunctionalDetector *pySD = new G4MultiFunctionalDetector("Pyramid");
-  G4VPrimitiveScorer *scorer = new G4PSEnergyDeposit("EnergyDeposit");
-  pySD->RegisterPrimitive(scorer);
-  sdman->AddNewDetector(pySD);
   // Khafre_log->SetSensitiveDetector(pySD);
-  fScintillatorLogical->SetSensitiveDetector(pySD);
-
+  // fScintillatorLogical->SetSensitiveDetector(pySD);
+*/
   return physWorld;
 }
 
@@ -287,14 +284,21 @@ void DetectorConstruction::ConstructMaterials()
 //method 2
 void DetectorConstruction::ConstructSDandField()
 {
-  G4SDManager::GetSDMpointer()->SetVerboseLevel(1);
-  G4String SDname;
+  G4SDManager *sdManager = G4SDManager::GetSDMpointer();
+  sdManager->SetVerboseLevel(2);
+
+  G4MultiFunctionalDetector *pySD = new G4MultiFunctionalDetector("Py");
+  G4VPrimitiveScorer *scorer = new G4PSEnergyDeposit("EnergyDeposit");
+  pySD->RegisterPrimitive(scorer);
+
+  SetSensitiveDetector("Pyramid", pySD);
+  sdManager->AddNewDetector(pySD);
 
   // approach with hits
   // auto Scintbars = new ScintbarSD(SDname = "/Scintbars");
   // G4SDManager::GetSDMpointer()->AddNewDetector(Scintbars);
   // //fScoringVolume->SetSensitiveDetector(Scintbars);
-  // GetScoringVolume()->SetSensitiveDetector(Scintbars);
+  // GetScoringVolume()->SetSensitiveDetector(Khafre_log);
 }
 
 // Track must hit front and back layer

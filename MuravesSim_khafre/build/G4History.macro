@@ -19,40 +19,19 @@
 /vis/scene/create
 /vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
 /vis/sceneHandler/attach
-/vis/open OGL
-/vis/sceneHandler/create OGL
-/vis/sceneHandler/attach
-/vis/viewer/create ! ! 600
-/vis/viewer/refresh
-/vis/scene/add/trajectories
-/tracking/storeTrajectory 1
-/vis/scene/notifyHandlers
-/control/execute cmd.file
-/CRY/input returnNeutrons 0
-/CRY/input returnProtons 0
-/CRY/input returnGammas 0
-/CRY/input returnPions 0
-/CRY/input returnKaons 0
-/CRY/input returnMuons 1
-/CRY/input date 7-1-2012
-/CRY/input latitude 90.0
-/CRY/input altitude 2100
-/CRY/input subboxLength 100
-/CRY/update
-/run/beamOn 100
+/control/execute cmdgps.mac
+/gps/particle mu-
+/gps/ene/type Mono
+/gps/ene/mono 4 GeV
+/gps/pos/type Plane
+/gps/pos/shape Rectangle
+/gps/pos/rot1 0 0 1
+/gps/pos/rot2 1 0 0
+/gps/pos/halfx 0 cm
+/gps/pos/halfy 0 cm
+/gps/pos/centre 0. 0. 143. cm
+/gps/direction 0 0 -1
+/run/initialize
+/run/beamOn 10
 /vis/scene/notifyHandlers scene-0
 /vis/scene/notifyHandlers scene-1
-/tracking/storeTrajectory 1
-/control/execute cmd.file
-/CRY/input returnNeutrons 0
-/CRY/input returnProtons 0
-/CRY/input returnGammas 0
-/CRY/input returnPions 0
-/CRY/input returnKaons 0
-/CRY/input returnMuons 1
-/CRY/input date 7-1-2012
-/CRY/input latitude 90.0
-/CRY/input altitude 2100
-/CRY/input subboxLength 100
-/CRY/update
-/run/beamOn 100

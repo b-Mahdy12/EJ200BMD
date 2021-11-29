@@ -94,6 +94,8 @@ CMakeFiles/MuravesSim.dir/MuravesSim.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/FTFP_BERT.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/FTFP_BERT.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ASCIITree.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AffineTransform.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AffineTransform.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Allocator.hh
@@ -250,6 +252,7 @@ CMakeFiles/MuravesSim.dir/MuravesSim.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MaterialPropertiesTable.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MaterialPropertyVector.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MaterialTable.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MergeMode.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ModelingParameters.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ModelingParameters.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MuonMinus.hh
@@ -425,6 +428,8 @@ CMakeFiles/MuravesSim.dir/MuravesSim.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserStackingAction.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserSteppingAction.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserTrackingAction.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VBasicShell.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VCrossSectionDataSet.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VDigi.hh
@@ -638,6 +643,8 @@ CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Utility/thread_local.h
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.h
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ApplicationState.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AutoLock.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4DataVector.hh
@@ -645,6 +652,7 @@ CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4EnvironmentUtils.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Exception.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ExceptionSeverity.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MergeMode.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4PDefManager.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ParticleDefinition.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ParticleDefinition.icc
@@ -664,6 +672,8 @@ CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserEventAction.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserRunAction.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserTrackingAction.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VExceptionHandler.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VUserActionInitialization.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh
@@ -1100,6 +1110,8 @@ CMakeFiles/MuravesSim.dir/src/EventAction.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/RotationZ.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.h
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AffineTransform.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AffineTransform.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Allocator.hh
@@ -1165,6 +1177,7 @@ CMakeFiles/MuravesSim.dir/src/EventAction.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MaterialPropertiesTable.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MaterialPropertyVector.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MaterialTable.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MergeMode.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4NavigationHistory.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4NavigationHistory.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4NavigationHistoryPool.hh
@@ -1246,6 +1259,7 @@ CMakeFiles/MuravesSim.dir/src/EventAction.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4String.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4SystemOfUnits.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4THitsCollection.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4THitsMap.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4THnManager.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4THnManager.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4TNtupleDescription.hh
@@ -1285,6 +1299,8 @@ CMakeFiles/MuravesSim.dir/src/EventAction.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserStackingAction.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserSteppingAction.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserTrackingAction.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAnalysisManager.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAnalysisManager.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAnalysisReader.hh
@@ -2680,9 +2696,12 @@ CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Utility/defs.h
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.h
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4EnvironmentUtils.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Exception.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ExceptionSeverity.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MergeMode.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4String.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4String.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ThreeVector.hh
@@ -2691,6 +2710,8 @@ CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UnitsTable.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserEventAction.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserRunAction.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VExceptionHandler.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ios.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/globals.hh
@@ -2770,6 +2791,10 @@ CMakeFiles/MuravesSim.dir/src/RunAction.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Utility/defs.h
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.h
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AccumulableManager.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AccumulableManager.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AnalysisManagerState.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AnalysisUtilities.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AnalysisVerbose.hh
@@ -2787,6 +2812,7 @@ CMakeFiles/MuravesSim.dir/src/RunAction.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4H3ToolsManager.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4HnInformation.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4HnManager.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MergeMode.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4P1ToolsManager.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4P2ToolsManager.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4RootAnalysisManager.hh
@@ -2819,6 +2845,8 @@ CMakeFiles/MuravesSim.dir/src/RunAction.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UnitsTable.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserEventAction.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserRunAction.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAnalysisManager.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAnalysisManager.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAnalysisReader.hh

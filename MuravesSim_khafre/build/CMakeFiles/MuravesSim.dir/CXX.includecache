@@ -6,8 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../MuravesSim.hh
-
 ../include/CADMesh.hh
 G4String.hh
 ../include/G4String.hh
@@ -77,42 +75,6 @@ G4Allocator.hh
 ../include/G4Allocator.hh
 G4ThreeVector.hh
 ../include/G4ThreeVector.hh
-
-../include/PrimaryGeneratorAction_CRY.hh
-G4VUserPrimaryGeneratorAction.hh
-../include/G4VUserPrimaryGeneratorAction.hh
-G4ThreeVector.hh
-../include/G4ThreeVector.hh
-G4DataVector.hh
-../include/G4DataVector.hh
-G4ParticleTable.hh
-../include/G4ParticleTable.hh
-Randomize.hh
-../include/Randomize.hh
-globals.hh
-../include/globals.hh
-CRYSetup.h
-../include/CRYSetup.h
-CRYGenerator.h
-../include/CRYGenerator.h
-CRYParticle.h
-../include/CRYParticle.h
-CRYUtils.h
-../include/CRYUtils.h
-vector
-../include/vector
-RNGWrapper.hh
-../include/RNGWrapper.hh
-PrimaryGeneratorMessenger.hh
-../include/PrimaryGeneratorMessenger.hh
-
-../include/PrimaryGeneratorMessenger.hh
-G4UImessenger.hh
-../include/G4UImessenger.hh
-globals.hh
-../include/globals.hh
-
-../include/RNGWrapper.hh
 
 ../include/SensitiveDetector.hh
 G4VSensitiveDetector.hh
@@ -1520,20 +1482,6 @@ G4ParticleDefinition.icc
 
 /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ParticleDefinition.icc
 
-/home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ParticleGun.hh
-globals.hh
-/home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/globals.hh
-G4VPrimaryGenerator.hh
-/home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VPrimaryGenerator.hh
-G4ThreeVector.hh
-/home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ThreeVector.hh
-G4ParticleDefinition.hh
-/home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ParticleDefinition.hh
-G4PrimaryVertex.hh
-/home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4PrimaryVertex.hh
-G4ParticleMomentum.hh
-/home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ParticleMomentum.hh
-
 /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ParticleMomentum.hh
 G4ThreeVector.hh
 /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ThreeVector.hh
@@ -2538,10 +2486,6 @@ G4VPhysicalVolume.icc
 
 /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VPhysicalVolume.icc
 
-/home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VPrimaryGenerator.hh
-G4ThreeVector.hh
-/home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ThreeVector.hh
-
 /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VPrimitiveScorer.hh
 globals.hh
 /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/globals.hh
@@ -2663,8 +2607,6 @@ globals.hh
 /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/globals.hh
 
 /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VUserEventInformation.hh
-
-/home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh
 
 /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VUserTrackInformation.hh
 globals.hh
@@ -2870,38 +2812,6 @@ climits
 G4Types.hh
 /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Types.hh
 
-/home/beso/cry_v1.7/src/CRYGenerator.h
-CRYParticle.h
-/home/beso/cry_v1.7/src/CRYParticle.h
-vector
--
-map
--
-CRYPrimary.h
-/home/beso/cry_v1.7/src/CRYPrimary.h
-
-/home/beso/cry_v1.7/src/CRYParticle.h
-string
--
-
-/home/beso/cry_v1.7/src/CRYPrimary.h
-vector
--
-
-/home/beso/cry_v1.7/src/CRYSetup.h
-string
--
-map
--
-CRYUtils.h
-/home/beso/cry_v1.7/src/CRYUtils.h
-
-/home/beso/cry_v1.7/src/CRYUtils.h
-CRYParticle.h
-/home/beso/cry_v1.7/src/CRYParticle.h
-string
--
-
 /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/DetectorConstruction.cc
 DetectorConstruction.hh
 /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/DetectorConstruction.hh
@@ -2967,22 +2877,4 @@ G4Colour.hh
 /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/G4Colour.hh
 cmath
 -
-
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/PrimaryGeneratorAction_CRY.cc
-iomanip
--
-PrimaryGeneratorAction_CRY.hh
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/PrimaryGeneratorAction_CRY.hh
-DetectorConstruction.hh
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/DetectorConstruction.hh
-MuravesSim.hh
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/MuravesSim.hh
-G4Event.hh
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/G4Event.hh
-G4RunManager.hh
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/G4RunManager.hh
-G4RotationMatrix.hh
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/G4RotationMatrix.hh
-G4ParticleGun.hh
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/G4ParticleGun.hh
 

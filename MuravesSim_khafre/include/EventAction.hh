@@ -30,7 +30,6 @@
 #ifndef EventAction_h
 #define EventAction_h 1
 
-
 #include "G4UserEventAction.hh"
 #include "globals.hh"
 
@@ -47,22 +46,24 @@ const G4int kDim = 2;
 */
 /// Event action
 
+class RunAction;
 class EventAction : public G4UserEventAction
 {
 public:
-    EventAction();
-    virtual ~EventAction();
-    
-    virtual void BeginOfEventAction(const G4Event*);
-    virtual void EndOfEventAction(const G4Event*);
+  EventAction();
+  virtual ~EventAction();
+
+  virtual void BeginOfEventAction(const G4Event *anEvent);
+  virtual void EndOfEventAction(const G4Event *anEvent);
 
   /*  std::vector<G4double>& GetEmCalEdep() { return fCalEdep[kEm]; }
     std::vector<G4double>& GetHadCalEdep() { return fCalEdep[kHad]; }
   */
 private:
-    // hit collections Ids
+  RunAction *fRunAction;
+  // hit collections Ids
   G4int fScintbarsHCID;
-  
+
   /* std::array<G4int, kDim> fHodHCID;
     std::array<G4int, kDim> fDriftHCID;
     std::array<G4int, kDim> fCalHCID;

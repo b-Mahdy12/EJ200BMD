@@ -43,12 +43,14 @@ void ROOTManager::Init()
 
   ROOTTree->Branch("Event", &ROOTTreeStruct.Event, "Event/I");
 
-  ROOTTree->Branch("NGenPart", &ROOTTreeStruct.NGenPart, "NGenPart/I");
-  ROOTTree->Branch("GenPartID", &ROOTTreeStruct.GenPartID, "GenPartID[NGenPart]/I");
-  ROOTTree->Branch("GenPartPDG", &ROOTTreeStruct.GenPartPDG, "GenPartPDG[NGenPart]/I");
-  ROOTTree->Branch("GenPartE", &ROOTTreeStruct.GenPartE, "GenPartE[NGenPart]/F");
-  ROOTTree->Branch("GenPartTheta", &ROOTTreeStruct.GenPartTheta, "GenPartTheta[NGenPart]/F");
-  ROOTTree->Branch("GenPartPhi", &ROOTTreeStruct.GenPartPhi, "GenPartPhi[NGenPart]/F");
+  ROOTTree->Branch("Energy Deposit", &ROOTTreeStruct.EnergyDeposition, "NGHits/Event");
+
+  // ROOTTree->Branch("NGenPart", &ROOTTreeStruct.NGenPart, "NGenPart/I");
+  // ROOTTree->Branch("GenPartID", &ROOTTreeStruct.GenPartID, "GenPartID[NGenPart]/I");
+  // ROOTTree->Branch("GenPartPDG", &ROOTTreeStruct.GenPartPDG, "GenPartPDG[NGenPart]/I");
+  // ROOTTree->Branch("GenPartE", &ROOTTreeStruct.GenPartE, "GenPartE[NGenPart]/F");
+  // ROOTTree->Branch("GenPartTheta", &ROOTTreeStruct.GenPartTheta, "GenPartTheta[NGenPart]/F");
+  // ROOTTree->Branch("GenPartPhi", &ROOTTreeStruct.GenPartPhi, "GenPartPhi[NGenPart]/F");
 
   // ROOTTree->Branch("NScintHit", &ROOTTreeStruct.NScintHit, "NScintHit/I");
   // ROOTTree->Branch("ScintHitPrimaryID", &ROOTTreeStruct.ScintHitPrimaryID, "ScintHitPrimaryID[NScintHit]/I");
