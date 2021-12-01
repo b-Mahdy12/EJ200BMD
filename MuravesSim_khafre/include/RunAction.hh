@@ -31,6 +31,8 @@
 #define RunAction_h 1
 
 #include "G4UserRunAction.hh"
+#include <G4Run.hh>
+#include <G4ParticleDefinition.hh>
 #include "globals.hh"
 #include <G4Accumulable.hh>
 

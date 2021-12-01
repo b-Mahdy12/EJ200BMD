@@ -43,7 +43,7 @@ void ROOTManager::Init()
 
   ROOTTree->Branch("Event", &ROOTTreeStruct.Event, "Event/I");
 
-  ROOTTree->Branch("Energy Deposit", &ROOTTreeStruct.EnergyDeposition, "NGHits/Event");
+  ROOTTree->Branch("EnergyDeposit", &ROOTTreeStruct.EnergyDeposition, "NGHits/Event");
 
   // ROOTTree->Branch("NGenPart", &ROOTTreeStruct.NGenPart, "NGenPart/I");
   // ROOTTree->Branch("GenPartID", &ROOTTreeStruct.GenPartID, "GenPartID[NGenPart]/I");

@@ -346,6 +346,7 @@ CMakeFiles/MuravesSim.dir/MuravesSim.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ReplicaNavigation.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ReplicaNavigation.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4RotationMatrix.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Run.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4RunManager.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4RunManagerKernel.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4SandiaTable.hh
@@ -659,6 +660,7 @@ CMakeFiles/MuravesSim.dir/src/ActionInitialization.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ParticleTable.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ParticleTable.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ParticleTableIterator.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Run.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4String.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4String.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Threading.hh
@@ -1233,6 +1235,7 @@ CMakeFiles/MuravesSim.dir/src/EventAction.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4RootNtupleManager.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4RootRNtupleManager.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4RotationMatrix.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Run.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4RunManager.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4RunManagerKernel.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4SDManager.hh
@@ -2692,18 +2695,25 @@ CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o
  ../include/EventAction.hh
  ../include/ROOTManager.hh
  ../include/RunAction.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Units/PhysicalConstants.h
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Units/SystemOfUnits.h
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Utility/defs.h
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.h
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AutoLock.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4EnvironmentUtils.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Exception.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ExceptionSeverity.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MergeMode.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4PDefManager.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ParticleDefinition.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ParticleDefinition.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Run.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4String.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4String.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Threading.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ThreeVector.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Types.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UnitsTable.hh
@@ -2715,6 +2725,7 @@ CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VExceptionHandler.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ios.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/globals.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/pwdefs.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/templates.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/tls.hh
  /home/beso/root6/root_build/include/DllImport.h
@@ -2787,6 +2798,7 @@ CMakeFiles/MuravesSim.dir/src/RunAction.cc.o
  ../include/EventAction.hh
  ../include/ROOTManager.hh
  ../include/RunAction.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Units/PhysicalConstants.h
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Units/SystemOfUnits.h
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Utility/defs.h
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.h
@@ -2798,6 +2810,7 @@ CMakeFiles/MuravesSim.dir/src/RunAction.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AnalysisManagerState.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AnalysisUtilities.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AnalysisVerbose.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AutoLock.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4BaseAnalysisManager.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4BaseFileManager.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4BaseNtupleManager.hh
@@ -2815,6 +2828,9 @@ CMakeFiles/MuravesSim.dir/src/RunAction.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MergeMode.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4P1ToolsManager.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4P2ToolsManager.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4PDefManager.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ParticleDefinition.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ParticleDefinition.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4RootAnalysisManager.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4RootAnalysisManager.icc
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4RootAnalysisReader.hh
@@ -2864,6 +2880,7 @@ CMakeFiles/MuravesSim.dir/src/RunAction.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/g4root.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/g4root_defs.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/globals.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/pwdefs.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/templates.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/tls.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/tools/S_STRING
@@ -3156,6 +3173,114 @@ CMakeFiles/MuravesSim.dir/src/SensitiveDetector.cc.o
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/tls.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/trkdefs.hh
  /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/SensitiveDetector.cc
+CMakeFiles/MuravesSim.dir/src/StackingAction.cc.o
+ ../include/RunAction.hh
+ ../include/StackingAction.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Units/PhysicalConstants.h
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Units/SystemOfUnits.h
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Utility/defs.h
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/AxisAngle.h
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/AxisAngle.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/LorentzVector.h
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/LorentzVector.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/Rotation.h
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/Rotation.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/RotationInterfaces.h
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/RotationInterfaces.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/RotationX.h
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/RotationX.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/RotationY.h
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/RotationY.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/RotationZ.h
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/RotationZ.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.h
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Accumulable.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Allocator.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AllocatorPool.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4AutoLock.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ClassificationOfNewTrack.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4DataVector.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4DataVector.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4DynamicParticle.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4DynamicParticle.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ElectronOccupancy.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Element.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ElementTable.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ElementVector.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4EnvironmentUtils.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Exception.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ExceptionSeverity.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Exp.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4GeomSplitter.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4IonisParamElm.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4IonisParamMat.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Isotope.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4IsotopeVector.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Log.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4LogicalVolume.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4LogicalVolume.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4LorentzVector.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Material.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MaterialPropertiesIndex.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MaterialPropertiesTable.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MaterialPropertiesTable.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MaterialPropertyVector.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MaterialTable.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4MergeMode.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4OrderedTable.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4PDefManager.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ParticleDefinition.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ParticleDefinition.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ParticleMomentum.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4PhysicsModelCatalog.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4PhysicsOrderedFreeVector.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4PhysicsVector.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4PhysicsVector.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4PhysicsVectorType.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ReferenceCountedHandle.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Region.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Region.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4RotationMatrix.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Run.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4SandiaTable.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Step.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Step.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4StepPoint.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4StepPoint.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4StepStatus.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4SteppingControl.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4String.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4String.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4SystemOfUnits.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Threading.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ThreeVector.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4TouchableHandle.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Track.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Track.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4TrackStatus.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4TrackVector.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4Types.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserRunAction.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4UserStackingAction.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VAccumulable.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VExceptionHandler.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VPhysicalVolume.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VPhysicalVolume.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VTouchable.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VTouchable.icc
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4VUserTrackInformation.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/G4ios.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/geomdefs.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/geomwdefs.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/globals.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/pwdefs.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/templates.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/tls.hh
+ /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/trkdefs.hh
+ /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/StackingAction.cc
 CMakeFiles/MuravesSim.dir/src/TrackingAction.cc.o
  ../include/TrackingAction.hh
  /home/beso/Geant4/geant4.10.05.p01-install/include/Geant4/CLHEP/Units/PhysicalConstants.h

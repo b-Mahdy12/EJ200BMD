@@ -34,6 +34,7 @@ public:
 private:
   G4ParticleTable* particleTable;
   G4GeneralParticleSource* particleGun;
+    bool virgin;
 
 };
 

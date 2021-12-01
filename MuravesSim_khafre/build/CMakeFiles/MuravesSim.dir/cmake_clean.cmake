@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o"
   "CMakeFiles/MuravesSim.dir/src/RunAction.cc.o"
   "CMakeFiles/MuravesSim.dir/src/SensitiveDetector.cc.o"
+  "CMakeFiles/MuravesSim.dir/src/StackingAction.cc.o"
   "CMakeFiles/MuravesSim.dir/src/TrackingAction.cc.o"
   "MuravesSim"
   "MuravesSim.pdb"

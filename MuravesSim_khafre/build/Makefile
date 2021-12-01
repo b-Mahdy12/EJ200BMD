@@ -574,6 +574,33 @@ src/SensitiveDetector.cc.s:
 	$(MAKE) -f CMakeFiles/MuravesSim.dir/build.make CMakeFiles/MuravesSim.dir/src/SensitiveDetector.cc.s
 .PHONY : src/SensitiveDetector.cc.s
 
+src/StackingAction.o: src/StackingAction.cc.o
+
+.PHONY : src/StackingAction.o
+
+# target to build an object file
+src/StackingAction.cc.o:
+	$(MAKE) -f CMakeFiles/MuravesSim.dir/build.make CMakeFiles/MuravesSim.dir/src/StackingAction.cc.o
+.PHONY : src/StackingAction.cc.o
+
+src/StackingAction.i: src/StackingAction.cc.i
+
+.PHONY : src/StackingAction.i
+
+# target to preprocess a source file
+src/StackingAction.cc.i:
+	$(MAKE) -f CMakeFiles/MuravesSim.dir/build.make CMakeFiles/MuravesSim.dir/src/StackingAction.cc.i
+.PHONY : src/StackingAction.cc.i
+
+src/StackingAction.s: src/StackingAction.cc.s
+
+.PHONY : src/StackingAction.s
+
+# target to generate assembly for a file
+src/StackingAction.cc.s:
+	$(MAKE) -f CMakeFiles/MuravesSim.dir/build.make CMakeFiles/MuravesSim.dir/src/StackingAction.cc.s
+.PHONY : src/StackingAction.cc.s
+
 src/TrackingAction.o: src/TrackingAction.cc.o
 
 .PHONY : src/TrackingAction.o
@@ -659,6 +686,9 @@ help:
 	@echo "... src/SensitiveDetector.o"
 	@echo "... src/SensitiveDetector.i"
 	@echo "... src/SensitiveDetector.s"
+	@echo "... src/StackingAction.o"
+	@echo "... src/StackingAction.i"
+	@echo "... src/StackingAction.s"
 	@echo "... src/TrackingAction.o"
 	@echo "... src/TrackingAction.i"
 	@echo "... src/TrackingAction.s"

@@ -82,7 +82,7 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   //
   G4Material *limestone = nist->FindOrBuildMaterial("G4_CALCIUM_CARBONATE");
   auto mesh = CADMesh::TessellatedMesh::FromSTL("Pyramid_of_Khafre.stl");
-  mesh->SetScale(10.0);
+  mesh->SetScale(1000.0);
   // mesh->SetOffset(G4ThreeVector(-0.5 * scintillatorSizeX, 0, -0.5 * scintillatorSizeX));
   // mesh->SetOffset(G4ThreeVector(0,0,0));
   auto Khafre_py = mesh->GetSolid();

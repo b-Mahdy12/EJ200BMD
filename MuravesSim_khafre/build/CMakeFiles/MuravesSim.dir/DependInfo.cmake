@@ -19,6 +19,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/ROOTManager.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/build/CMakeFiles/MuravesSim.dir/src/ROOTManager.cc.o"
   "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/RunAction.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/build/CMakeFiles/MuravesSim.dir/src/RunAction.cc.o"
   "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/SensitiveDetector.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/build/CMakeFiles/MuravesSim.dir/src/SensitiveDetector.cc.o"
+  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/StackingAction.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/build/CMakeFiles/MuravesSim.dir/src/StackingAction.cc.o"
   "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/src/TrackingAction.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/MuravesSim_khafre/build/CMakeFiles/MuravesSim.dir/src/TrackingAction.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
