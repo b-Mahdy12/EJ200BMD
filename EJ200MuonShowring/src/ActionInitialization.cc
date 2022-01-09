@@ -8,8 +8,6 @@
 #include "PrimaryGeneratorAction.hh"
 #include "RunAction.hh"
 #include "EventAction.hh"
-#include "steppinAction.hh"
-
 #include "MuravesMessenger.hh"
 
 ActionInitialization::ActionInitialization()
@@ -23,6 +21,8 @@ ActionInitialization::~ActionInitialization()
 
 void ActionInitialization::BuildForMaster() const
 {
+   EventAction *eventAction = new EventAction;
+  SetUserAction(new RunAction(eventAction));
 }
 
 void ActionInitialization::Build() const
@@ -33,12 +33,11 @@ void ActionInitialization::Build() const
   else if (generator == "GPS")
     SetUserAction(new PrimaryGeneratorAction());
 
-  RunAction *theRunAction = new RunAction();
-  SetUserAction(theRunAction);
-
-  EventAction *eventAction = new EventAction(theRunAction);
+  EventAction *eventAction = new EventAction;
   SetUserAction(eventAction);
 
-  SteppingAction *steppingAction = new SteppingAction(eventAction);
-  SetUserAction(steppingAction);
+  SetUserAction(new RunAction(eventAction));
+
+  // SteppingAction *steppingAction = new SteppingAction(eventAction);
+  // SetUserAction(steppingAction);
 }

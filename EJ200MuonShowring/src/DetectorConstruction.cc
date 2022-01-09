@@ -280,21 +280,20 @@ void DetectorConstruction::ConstructSDandField()
   G4SDManager::GetSDMpointer()->SetVerboseLevel(1);
   G4String SDname;
 
-  //
+/* //
   // EJ200 SensitiveDetector
   //
-  // SenDet *SciPlateSD = new SenDet(SDname = "/ScinPlate");
-  // G4SDManager::GetSDMpointer()->AddNewDetector(SciPlateSD);
-  // GetScoringVolume()->SetSensitiveDetector(SciPlateSD);
+  SenDet *SciPlateSD = new SenDet(SDname = "/ScinPlate");
+  G4SDManager::GetSDMpointer()->AddNewDetector(SciPlateSD);
+  GetScoringVolume()->SetSensitiveDetector(SciPlateSD);
+*/
 
-/*//
+  //
   // WLS SensitiveDetector
   //
   SenDet *WLSSD = new SenDet(SDname = "/WLSWire");
   G4SDManager::GetSDMpointer()->AddNewDetector(WLSSD);
   GetScoringVolume()->SetSensitiveDetector(WLSSD);
-*/
-
 }
 
 void DetectorConstruction::ConstructMaterials()

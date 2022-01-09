@@ -12,7 +12,7 @@ SteppingAction::~SteppingAction()
 
 void SteppingAction::UserSteppingAction(const G4Step *step)
 {
-
+/*
     G4LogicalVolume *volume = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume()->GetLogicalVolume();
     const DetectorConstruction *det = static_cast<const DetectorConstruction *>(G4RunManager::GetRunManager()->GetUserDetectorConstruction());
     G4LogicalVolume *fScoringVolume = det->GetScoringVolume();
@@ -26,4 +26,5 @@ void SteppingAction::UserSteppingAction(const G4Step *step)
     G4double nSec = step->GetNumberOfSecondariesInCurrentStep();
     fEvent->AddEdep(edep);
     fEvent->AddnSec(nSec);
+*/
 }

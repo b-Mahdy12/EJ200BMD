@@ -19,7 +19,7 @@ public:
     void EndOFEvent(G4HCofThisEvent *HCE);
 
 private:
-    G4VHitsCollection *hitCollection;
+    WLSHitCollection *hitCollection;
 };
 
 #endif

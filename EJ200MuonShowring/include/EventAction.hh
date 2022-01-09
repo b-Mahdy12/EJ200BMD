@@ -2,30 +2,22 @@
 #define EVENTACTION_HH
 
 #include "G4UserEventAction.hh"
-#include "G4RunManager.hh"
-#include "G4Event.hh"
+#include "globals.hh"
 
-#include "g4root.hh"
+#include <vector>
+#include <array>
 
-#include "RunAction.hh"
-
-
-class EventAction : public G4UserEventAction{
+class EventAction : public G4UserEventAction
+{
 
 public:
-    EventAction(RunAction *);
-    ~EventAction();
+  EventAction();
+  ~EventAction();
 
-    virtual void BeginOfEventAction(const G4Event *);
-    virtual void EndOfEventAction(const G4Event *);
-
-    void AddEdep(G4double edep) { fEdep += edep; };
-    void AddnSec(G4double nsec) { fNsec += nsec; };
-
+  virtual void BeginOfEventAction(const G4Event *);
+  virtual void EndOfEventAction(const G4Event *);
 
 private:
-    G4double fEdep;
-    G4double fNsec;
-    G4ThreeVector *posMuon;
+  G4int fWLSHCID;
 };
 #endif
