@@ -23,6 +23,7 @@
 #include "vector"
 #include "RNGWrapper.hh"
 #include "PrimaryGeneratorMessenger.hh"
+#include "g4root.hh"
 
 class G4Event;
 class G4ParticleGun;

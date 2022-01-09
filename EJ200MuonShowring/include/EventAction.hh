@@ -1,31 +1,31 @@
-/// \file EventAction.hh
-/// \brief Definition of the EventAction class
+#ifndef EVENTACTION_HH
+#define EVENTACTION_HH
 
-#ifndef EVENT_ACTION_HH
-#define EVENT_ACTION_HH
+#include "G4UserEventAction.hh"
+#include "G4RunManager.hh"
+#include "G4Event.hh"
 
-#include <G4UserEventAction.hh>
-#include <globals.hh>
+#include "g4root.hh"
 
-/// Event action class
-/// Provides access to the G4Event* information at the begin and 
-/// at the end of each event
-class RunAction;
+#include "RunAction.hh"
 
-class EventAction : public G4UserEventAction
-{
+
+class EventAction : public G4UserEventAction{
+
 public:
-    ///constructor
-    EventAction(RunAction* );
-
-    ///destructor
+    EventAction(RunAction *);
     ~EventAction();
 
-    void BeginOfEventAction(const G4Event* anEvent) override;
-    void EndOfEventAction(const G4Event* anEvent) override;
-private:
-    RunAction* fRunAction;
-    G4int  fCollID_cryst { -1 };
-};
+    virtual void BeginOfEventAction(const G4Event *);
+    virtual void EndOfEventAction(const G4Event *);
 
+    void AddEdep(G4double edep) { fEdep += edep; };
+    void AddnSec(G4double nsec) { fNsec += nsec; };
+
+
+private:
+    G4double fEdep;
+    G4double fNsec;
+    G4ThreeVector *posMuon;
+};
 #endif

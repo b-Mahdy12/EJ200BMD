@@ -27,7 +27,7 @@ PrimaryGeneratorAction::PrimaryGeneratorAction() :
     gps->GetCurrentSource()->GetPosDist()->SetCentreCoords(G4ThreeVector(0, 0, 0));
     gps->GetCurrentSource()->GetPosDist()->SetRadius(70 * m);
     gps->GetCurrentSource()->GetEneDist()->SetEnergyDisType("Mono");
-    gps->GetCurrentSource()->GetEneDist()->SetMonoEnergy(10 * GeV);
+    gps->GetCurrentSource()->GetEneDist()->SetMonoEnergy(4 * GeV);
     gps->GetCurrentSource()->GetAngDist()->SetAngDistType("focused");
     gps->GetCurrentSource()->GetAngDist()->SetFocusPoint({0, 0, 0});
 }

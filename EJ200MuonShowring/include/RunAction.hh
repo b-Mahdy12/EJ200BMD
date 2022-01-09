@@ -3,32 +3,17 @@
 
 #include <G4UserRunAction.hh>
 #include <G4Run.hh>
-#include <G4ParticleDefinition.hh>
-#include <G4Accumulable.hh>
+#include "g4root.hh"
 
 class RunAction : public G4UserRunAction
 {
 public:
-  // constructor
   RunAction();
-
-  // destructor
   ~RunAction();
 
   // Main interface
-  void BeginOfRunAction(const G4Run*);
-  void EndOfRunAction(const G4Run*);
-
-  void AddSecondary(const G4ParticleDefinition*, G4double energy);
-  void OnFullEnergyEvent();
-  void OnEvent();
-
-private:
-  G4Accumulable<G4int>    fNFEEvents;
-  G4Accumulable<G4int>    fNEvents;
-
-  G4Accumulable<G4int>    fNGammas;
-  G4Accumulable<G4double> fAverageGammaEnergy;
+  void BeginOfRunAction(const G4Run *);
+  void EndOfRunAction(const G4Run *);
 };
 
 #endif

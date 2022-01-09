@@ -29,9 +29,12 @@ cmd.file
   init_vis.mac
   run2.mac
   vis.mac
+  Pyramid_of_Khafre.stl
 WLS_Ascii.stl
 EJ200Scibar_Ascii.stl  
 SiPM_Ascii.stl
+EJ200Scibar_singlesipm_Ascii.stl
+EJ200Scibar_singlewire_Ascii.stl
 )
 
 # Enable macros for out-of-source build

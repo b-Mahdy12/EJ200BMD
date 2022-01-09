@@ -25,6 +25,11 @@ public:
 
   /// Set user cuts
   void SetCuts() override;
+
+protected:
+  // these methods Construct physics processes and register them
+  void ConstructGeneral();
+  void ConstructInteractions();
 };
 
 #endif

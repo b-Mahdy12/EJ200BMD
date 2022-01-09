@@ -8,7 +8,8 @@
 #include "PrimaryGeneratorAction.hh"
 #include "RunAction.hh"
 #include "EventAction.hh"
-#include "StackingAction.hh"
+#include "steppinAction.hh"
+
 #include "MuravesMessenger.hh"
 
 ActionInitialization::ActionInitialization()
@@ -33,9 +34,11 @@ void ActionInitialization::Build() const
     SetUserAction(new PrimaryGeneratorAction());
 
   RunAction *theRunAction = new RunAction();
-
   SetUserAction(theRunAction);
-  SetUserAction(new PrimaryGeneratorAction());
-  SetUserAction(new StackingAction(theRunAction));
-  SetUserAction(new EventAction(theRunAction));
+
+  EventAction *eventAction = new EventAction(theRunAction);
+  SetUserAction(eventAction);
+
+  SteppingAction *steppingAction = new SteppingAction(eventAction);
+  SetUserAction(steppingAction);
 }

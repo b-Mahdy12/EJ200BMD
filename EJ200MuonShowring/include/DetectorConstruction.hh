@@ -5,6 +5,7 @@
 #define DETECTOR_CONSTRUCTION_HH
 
 #include <G4VUserDetectorConstruction.hh>
+#include "G4VPhysicalVolume.hh"
 #include "G4Material.hh"
 #include "globals.hh"
 
@@ -19,24 +20,27 @@ public:
   DetectorConstruction();
   virtual ~DetectorConstruction();
 
-   virtual G4VPhysicalVolume *Construct();
+  virtual G4VPhysicalVolume *Construct();
 
   /// Defines the detector geometry and returns a pointer to the physical World Volume
-    void ConstructMaterials();
+  void ConstructMaterials();
+  void ConstructSDandField() override;
 
-  G4LogicalVolume *GetScintillator() const { return fScintillatorLogical; }
-  G4LogicalVolume *GetWLS() const { return WLSFiberLogical; }
-  G4LogicalVolume *GetSipm() const { return fSipmLogical; }
+  G4LogicalVolume *GetScoringVolume() const { return fScoringVolume; }
+
+  // G4LogicalVolume *GetScintillator() const { return fScintillatorLogical; }
+  // G4LogicalVolume *GetWLS() const { return WLSFiberLogical; }
+  // G4LogicalVolume *GetSipm() const { return fSipmLogical; }
+
+private:
+  // G4LogicalVolume *Khafrelog;
 
 protected:
+  G4LogicalVolume *fScoringVolume;
   G4LogicalVolume *fScintillatorLogical;
-  G4LogicalVolume *fScintillatorLogicalR;
   G4LogicalVolume *WLSFiberLogical;
   G4LogicalVolume *fSipmLogical;
-  
-  /// Register some of the detector's volumes as "sensitive"
-  // Add the following, if you have fields / sensitive detectors
-  void ConstructSDandField() override;  
+
 };
 
 #endif
