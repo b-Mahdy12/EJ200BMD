@@ -3,7 +3,6 @@
 
 #include <G4UserRunAction.hh>
 #include "globals.hh"
-#include "g4root.hh"
 
 class EventAction;
 

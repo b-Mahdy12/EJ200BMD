@@ -19,6 +19,18 @@ set(CRY_PATH /home/beso/cry_v1.7)
 set(CRY_LIB -L${CRY_PATH}/lib libCRY.a) 
 include_directories(${CRY_PATH}/src)
 
+
+#----------------------------------------------------------------------------
+# Find ROOT variables if the variable G4ANALYSIS_USE_ROOT is set
+#
+find_package(ROOT REQUIRED)
+message("${ROOT_INCLUDE_DIR}")
+
+# Setup ROOT
+#
+include(${ROOT_USE_FILE})
+
+
 # We presume the existence of three directories
 file(GLOB_RECURSE sources ${PROJECT_SOURCE_DIR}/src/*.cc)
 file(GLOB_RECURSE headers ${PROJECT_SOURCE_DIR}/include/*.hh)

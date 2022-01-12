@@ -2,7 +2,7 @@
 #include "EventAction.hh"
 #include "g4root.hh"
 #include "Hits.hh"
-#include "ROOTManager.hh"
+// #include "ROOTManager.hh"
 
 #include "G4Event.hh"
 #include "G4RunManager.hh"
@@ -68,10 +68,10 @@ void EventAction::BeginOfEventAction(const G4Event *)
 
 void EventAction::EndOfEventAction(const G4Event *event)
 {
-    auto runManager = ROOTManager::Instance();
+    // G4AnalysisManager *man = G4AnalysisManager::Instance();
 
-    runManager->ROOTTreeStruct.NMuonHit = 0;
-    runManager->ROOTTreeStruct.Event = event->GetEventID();
+    G4int NMuonHit = 0;
+    G4int evt = event->GetEventID();
 
     G4cout << ">>> Event " << event->GetEventID() << " >>> Simulation truth : " << G4endl;
 
@@ -87,15 +87,24 @@ void EventAction::EndOfEventAction(const G4Event *event)
         auto hit = static_cast<MuonHit *>(hc->GetHit(i));
         auto pos = hit->GetPos();
 
-        runManager->ROOTTreeStruct.MuonHitE[runManager->ROOTTreeStruct.NMuonHit] = (Float_t)hit->GetEdep();
-        runManager->ROOTTreeStruct.MuonHitPosX[runManager->ROOTTreeStruct.NMuonHit] = (Float_t)pos.x();
-        runManager->ROOTTreeStruct.MuonHitPosY[runManager->ROOTTreeStruct.NMuonHit] = (Float_t)pos.y();
-        runManager->ROOTTreeStruct.MuonHitPosZ[runManager->ROOTTreeStruct.NMuonHit] = (Float_t)pos.z();
-        runManager->ROOTTreeStruct.MuonHitBar[runManager->ROOTTreeStruct.NMuonHit] = (Int_t)hit->GetLayerNumber();
+        G4double eng = hit->GetEdep();
+        G4double X = pos.x();
+        G4double Y = pos.y();
+        G4double Z = pos.z();
+        G4int WLS_ID = hit->GetLayerNumber();
+
+        G4AnalysisManager *man = G4AnalysisManager::Instance();
+        man->FillNtupleIColumn(0, 0, evt);
+        man->FillNtupleDColumn(0, 1, eng);
+        // man->FillNtupleDColumn(0,2,??);
+        man->FillNtupleDColumn(0, 2, X);
+        man->FillNtupleDColumn(0, 3, Y);
+        man->FillNtupleDColumn(0, 4, Z);
+        man->FillNtupleIColumn(0, 5, WLS_ID);
+        man->AddNtupleRow(0);
 
         hit->Print();
-        runManager->ROOTTreeStruct.NMuonHit++;
+        NMuonHit++;
     }
-
-    runManager->Fill();
+    G4cout << ">>> NoOfMuonHits " << NMuonHit << G4endl;
 }

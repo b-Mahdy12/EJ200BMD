@@ -43,9 +43,9 @@ void MuonHit::Draw()
 void MuonHit::Print()
 {
     G4cout << "LayerID: " << flayerID
-           << ", Edep: " << eDep / MeV << " (MeV), "
-           << ", pos: " << fPos
-           << ", Track ID: " << fTrackID
+           << " Edep: " << eDep / MeV << " (MeV), "
+           << " pos: " << fPos / mm << "(mm),"
+           << " Track ID: " << fTrackID
            << G4endl;
 }
 

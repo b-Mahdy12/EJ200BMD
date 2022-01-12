@@ -54,4 +54,18 @@ typedef G4THitsCollection<MuonHit> WLSHitCollection;
 
 extern G4ThreadLocal G4Allocator<MuonHit> *WLSHitAllocator;
 
+inline void *MuonHit::operator new(size_t)
+{
+    if (!WLSHitAllocator)
+    {
+        WLSHitAllocator = new G4Allocator<MuonHit>;
+    }
+    return (void *)WLSHitAllocator->MallocSingle();
+};
+
+inline void MuonHit::operator delete(void *aHit)
+{
+    WLSHitAllocator->FreeSingle((MuonHit *)aHit);
+};
+
 #endif

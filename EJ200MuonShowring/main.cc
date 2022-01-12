@@ -16,6 +16,7 @@
 #include <G4UImanager.hh>
 #include <G4ScoringManager.hh>
 
+// #include "ROOTManager.hh"
 #include "ActionInitialization.hh"
 #include "DetectorConstruction.hh"
 #include "PhysicsList.hh"
@@ -24,6 +25,8 @@
 #include "Randomize.hh"
 
 using namespace std;
+
+// extern DetectorConstruction* theDetector;
 
 /* Main function that enables to:
  * - run any number of macros (put them as command-line arguments)
