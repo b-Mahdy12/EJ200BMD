@@ -200,8 +200,8 @@ void PrimaryGeneratorAction_CRY::GeneratePrimaries(G4Event *anEvent)
     G4ThreeVector pmom = G4ThreeVector((*vect)[j]->u(), (*vect)[j]->v(), (*vect)[j]->w());
 
     // rotate from CRY to Geant4 xyz reference system
-    // ppos.transform(*_rotX);
-    // pmom.transform(*_rotX);
+    ppos.transform(*_rotX);
+    pmom.transform(*_rotX);
 
     particleName = CRYUtils::partName((*vect)[j]->id());
 

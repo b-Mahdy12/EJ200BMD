@@ -162,7 +162,7 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   auto EJ200Scibar = mesh->GetSolid();
   fScintillatorLogical = new G4LogicalVolume(EJ200Scibar, polyvinyltoluene, "ScintillatorLogical");
 
-  fScoringVolume = fScintillatorLogical;
+  // fScoringVolume = fScintillatorLogical;
   // G4VPhysicalVolume *physScint1 = new G4PVPlacement(rota, G4ThreeVector(-0.5 * envSizeX, 0, 0.5 * envSizeX), fScintillatorLogical, "ScintillatorPhysical", logicWorld, false, 0, checkOverlaps);
   G4VPhysicalVolume *physScint1 = new G4PVPlacement(rota, G4ThreeVector(-25. * cm, -25 * cm, 0. * cm), fScintillatorLogical, "ScintillatorPhysical", logicWorld, false, 0, false);
   G4VPhysicalVolume *physScint2 = new G4PVPlacement(rota, G4ThreeVector(-25. * cm, -25 * cm, 0. + 2. * cm), fScintillatorLogical, "ScintillatorPhysical", logicWorld, false, 0, false);
@@ -174,6 +174,7 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   meshSWire->SetScale(10.0);
   auto wire = meshSWire->GetSolid();
   WLSFiberLogical = new G4LogicalVolume(wire, Fib, "SingleWireLogical");
+  fScoringVolume = WLSFiberLogical;
 
   G4RotationMatrix *rotb = new G4RotationMatrix();
   rotb->rotateZ(90 * deg);
@@ -204,6 +205,7 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   meshSWire->SetScale(10.0);
   auto SiPM = meshSWire->GetSolid();
   fSipmLogical = new G4LogicalVolume(SiPM, silicon, "SiPMLogical");
+  // fScoringVolume = fSipmLogical;
 
   G4VPhysicalVolume *SipmPhy = new G4PVPlacement(0, G4ThreeVector(0 * cm, 0 * cm, 0 * cm), fSipmLogical, "SiPM", WLSFiberLogical, false, 0, checkOverlaps);
 
@@ -279,21 +281,22 @@ void DetectorConstruction::ConstructSDandField()
 {
   G4SDManager::GetSDMpointer()->SetVerboseLevel(1);
   G4String SDname;
-
-/* //
+/*
+  //
   // EJ200 SensitiveDetector
   //
-  SenDet *SciPlateSD = new SenDet(SDname = "/ScinPlate");
-  G4SDManager::GetSDMpointer()->AddNewDetector(SciPlateSD);
-  GetScoringVolume()->SetSensitiveDetector(SciPlateSD);
+  SenDet *SciPlaneSD = new SenDet(SDname = "/ScinPlane");
+  G4SDManager::GetSDMpointer()->AddNewDetector(SciPlaneSD);
+  GetScoringVolume()->SetSensitiveDetector(SciPlaneSD);
 */
-
+  
   //
   // WLS SensitiveDetector
   //
   SenDet *WLSSD = new SenDet(SDname = "/WLSWire");
   G4SDManager::GetSDMpointer()->AddNewDetector(WLSSD);
   GetScoringVolume()->SetSensitiveDetector(WLSSD);
+  
 }
 
 void DetectorConstruction::ConstructMaterials()

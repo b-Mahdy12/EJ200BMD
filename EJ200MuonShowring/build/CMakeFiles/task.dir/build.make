@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring
+CMAKE_SOURCE_DIR = "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build
+CMAKE_BINARY_DIR = "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/task.dir/depend.make
@@ -59,185 +59,185 @@ include CMakeFiles/task.dir/flags.make
 
 CMakeFiles/task.dir/main.cc.o: CMakeFiles/task.dir/flags.make
 CMakeFiles/task.dir/main.cc.o: ../main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/task.dir/main.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/main.cc.o -c /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/task.dir/main.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/main.cc.o -c "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/main.cc"
 
 CMakeFiles/task.dir/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task.dir/main.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/main.cc > CMakeFiles/task.dir/main.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/main.cc" > CMakeFiles/task.dir/main.cc.i
 
 CMakeFiles/task.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task.dir/main.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/main.cc -o CMakeFiles/task.dir/main.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/main.cc" -o CMakeFiles/task.dir/main.cc.s
 
 CMakeFiles/task.dir/src/ActionInitialization.cc.o: CMakeFiles/task.dir/flags.make
 CMakeFiles/task.dir/src/ActionInitialization.cc.o: ../src/ActionInitialization.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/task.dir/src/ActionInitialization.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/ActionInitialization.cc.o -c /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/ActionInitialization.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/task.dir/src/ActionInitialization.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/ActionInitialization.cc.o -c "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/ActionInitialization.cc"
 
 CMakeFiles/task.dir/src/ActionInitialization.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task.dir/src/ActionInitialization.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/ActionInitialization.cc > CMakeFiles/task.dir/src/ActionInitialization.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/ActionInitialization.cc" > CMakeFiles/task.dir/src/ActionInitialization.cc.i
 
 CMakeFiles/task.dir/src/ActionInitialization.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task.dir/src/ActionInitialization.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/ActionInitialization.cc -o CMakeFiles/task.dir/src/ActionInitialization.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/ActionInitialization.cc" -o CMakeFiles/task.dir/src/ActionInitialization.cc.s
 
 CMakeFiles/task.dir/src/DetectorConstruction.cc.o: CMakeFiles/task.dir/flags.make
 CMakeFiles/task.dir/src/DetectorConstruction.cc.o: ../src/DetectorConstruction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/task.dir/src/DetectorConstruction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/DetectorConstruction.cc.o -c /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/DetectorConstruction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/task.dir/src/DetectorConstruction.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/DetectorConstruction.cc.o -c "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/DetectorConstruction.cc"
 
 CMakeFiles/task.dir/src/DetectorConstruction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task.dir/src/DetectorConstruction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/DetectorConstruction.cc > CMakeFiles/task.dir/src/DetectorConstruction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/DetectorConstruction.cc" > CMakeFiles/task.dir/src/DetectorConstruction.cc.i
 
 CMakeFiles/task.dir/src/DetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task.dir/src/DetectorConstruction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/DetectorConstruction.cc -o CMakeFiles/task.dir/src/DetectorConstruction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/DetectorConstruction.cc" -o CMakeFiles/task.dir/src/DetectorConstruction.cc.s
 
 CMakeFiles/task.dir/src/EventAction.cc.o: CMakeFiles/task.dir/flags.make
 CMakeFiles/task.dir/src/EventAction.cc.o: ../src/EventAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/task.dir/src/EventAction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/EventAction.cc.o -c /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/EventAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/task.dir/src/EventAction.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/EventAction.cc.o -c "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/EventAction.cc"
 
 CMakeFiles/task.dir/src/EventAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task.dir/src/EventAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/EventAction.cc > CMakeFiles/task.dir/src/EventAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/EventAction.cc" > CMakeFiles/task.dir/src/EventAction.cc.i
 
 CMakeFiles/task.dir/src/EventAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task.dir/src/EventAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/EventAction.cc -o CMakeFiles/task.dir/src/EventAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/EventAction.cc" -o CMakeFiles/task.dir/src/EventAction.cc.s
 
 CMakeFiles/task.dir/src/Hits.cc.o: CMakeFiles/task.dir/flags.make
 CMakeFiles/task.dir/src/Hits.cc.o: ../src/Hits.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/task.dir/src/Hits.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/Hits.cc.o -c /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/Hits.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/task.dir/src/Hits.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/Hits.cc.o -c "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/Hits.cc"
 
 CMakeFiles/task.dir/src/Hits.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task.dir/src/Hits.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/Hits.cc > CMakeFiles/task.dir/src/Hits.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/Hits.cc" > CMakeFiles/task.dir/src/Hits.cc.i
 
 CMakeFiles/task.dir/src/Hits.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task.dir/src/Hits.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/Hits.cc -o CMakeFiles/task.dir/src/Hits.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/Hits.cc" -o CMakeFiles/task.dir/src/Hits.cc.s
 
 CMakeFiles/task.dir/src/MuravesMessenger.cc.o: CMakeFiles/task.dir/flags.make
 CMakeFiles/task.dir/src/MuravesMessenger.cc.o: ../src/MuravesMessenger.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/task.dir/src/MuravesMessenger.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/MuravesMessenger.cc.o -c /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/MuravesMessenger.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/task.dir/src/MuravesMessenger.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/MuravesMessenger.cc.o -c "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/MuravesMessenger.cc"
 
 CMakeFiles/task.dir/src/MuravesMessenger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task.dir/src/MuravesMessenger.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/MuravesMessenger.cc > CMakeFiles/task.dir/src/MuravesMessenger.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/MuravesMessenger.cc" > CMakeFiles/task.dir/src/MuravesMessenger.cc.i
 
 CMakeFiles/task.dir/src/MuravesMessenger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task.dir/src/MuravesMessenger.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/MuravesMessenger.cc -o CMakeFiles/task.dir/src/MuravesMessenger.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/MuravesMessenger.cc" -o CMakeFiles/task.dir/src/MuravesMessenger.cc.s
 
 CMakeFiles/task.dir/src/PhysicsList.cc.o: CMakeFiles/task.dir/flags.make
 CMakeFiles/task.dir/src/PhysicsList.cc.o: ../src/PhysicsList.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/task.dir/src/PhysicsList.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/PhysicsList.cc.o -c /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/PhysicsList.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/task.dir/src/PhysicsList.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/PhysicsList.cc.o -c "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/PhysicsList.cc"
 
 CMakeFiles/task.dir/src/PhysicsList.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task.dir/src/PhysicsList.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/PhysicsList.cc > CMakeFiles/task.dir/src/PhysicsList.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/PhysicsList.cc" > CMakeFiles/task.dir/src/PhysicsList.cc.i
 
 CMakeFiles/task.dir/src/PhysicsList.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task.dir/src/PhysicsList.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/PhysicsList.cc -o CMakeFiles/task.dir/src/PhysicsList.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/PhysicsList.cc" -o CMakeFiles/task.dir/src/PhysicsList.cc.s
 
 CMakeFiles/task.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/task.dir/flags.make
 CMakeFiles/task.dir/src/PrimaryGeneratorAction.cc.o: ../src/PrimaryGeneratorAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/task.dir/src/PrimaryGeneratorAction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/PrimaryGeneratorAction.cc.o -c /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/PrimaryGeneratorAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/task.dir/src/PrimaryGeneratorAction.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/PrimaryGeneratorAction.cc.o -c "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/PrimaryGeneratorAction.cc"
 
 CMakeFiles/task.dir/src/PrimaryGeneratorAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task.dir/src/PrimaryGeneratorAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/PrimaryGeneratorAction.cc > CMakeFiles/task.dir/src/PrimaryGeneratorAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/PrimaryGeneratorAction.cc" > CMakeFiles/task.dir/src/PrimaryGeneratorAction.cc.i
 
 CMakeFiles/task.dir/src/PrimaryGeneratorAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task.dir/src/PrimaryGeneratorAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/PrimaryGeneratorAction.cc -o CMakeFiles/task.dir/src/PrimaryGeneratorAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/PrimaryGeneratorAction.cc" -o CMakeFiles/task.dir/src/PrimaryGeneratorAction.cc.s
 
 CMakeFiles/task.dir/src/PrimaryGeneratorAction_CRY.cc.o: CMakeFiles/task.dir/flags.make
 CMakeFiles/task.dir/src/PrimaryGeneratorAction_CRY.cc.o: ../src/PrimaryGeneratorAction_CRY.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/task.dir/src/PrimaryGeneratorAction_CRY.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/PrimaryGeneratorAction_CRY.cc.o -c /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/PrimaryGeneratorAction_CRY.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/task.dir/src/PrimaryGeneratorAction_CRY.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/PrimaryGeneratorAction_CRY.cc.o -c "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/PrimaryGeneratorAction_CRY.cc"
 
 CMakeFiles/task.dir/src/PrimaryGeneratorAction_CRY.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task.dir/src/PrimaryGeneratorAction_CRY.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/PrimaryGeneratorAction_CRY.cc > CMakeFiles/task.dir/src/PrimaryGeneratorAction_CRY.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/PrimaryGeneratorAction_CRY.cc" > CMakeFiles/task.dir/src/PrimaryGeneratorAction_CRY.cc.i
 
 CMakeFiles/task.dir/src/PrimaryGeneratorAction_CRY.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task.dir/src/PrimaryGeneratorAction_CRY.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/PrimaryGeneratorAction_CRY.cc -o CMakeFiles/task.dir/src/PrimaryGeneratorAction_CRY.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/PrimaryGeneratorAction_CRY.cc" -o CMakeFiles/task.dir/src/PrimaryGeneratorAction_CRY.cc.s
 
 CMakeFiles/task.dir/src/PrimaryGeneratorMessenger.cc.o: CMakeFiles/task.dir/flags.make
 CMakeFiles/task.dir/src/PrimaryGeneratorMessenger.cc.o: ../src/PrimaryGeneratorMessenger.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/task.dir/src/PrimaryGeneratorMessenger.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/PrimaryGeneratorMessenger.cc.o -c /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/PrimaryGeneratorMessenger.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/task.dir/src/PrimaryGeneratorMessenger.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/PrimaryGeneratorMessenger.cc.o -c "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/PrimaryGeneratorMessenger.cc"
 
 CMakeFiles/task.dir/src/PrimaryGeneratorMessenger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task.dir/src/PrimaryGeneratorMessenger.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/PrimaryGeneratorMessenger.cc > CMakeFiles/task.dir/src/PrimaryGeneratorMessenger.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/PrimaryGeneratorMessenger.cc" > CMakeFiles/task.dir/src/PrimaryGeneratorMessenger.cc.i
 
 CMakeFiles/task.dir/src/PrimaryGeneratorMessenger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task.dir/src/PrimaryGeneratorMessenger.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/PrimaryGeneratorMessenger.cc -o CMakeFiles/task.dir/src/PrimaryGeneratorMessenger.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/PrimaryGeneratorMessenger.cc" -o CMakeFiles/task.dir/src/PrimaryGeneratorMessenger.cc.s
 
 CMakeFiles/task.dir/src/RNGWrapper.cc.o: CMakeFiles/task.dir/flags.make
 CMakeFiles/task.dir/src/RNGWrapper.cc.o: ../src/RNGWrapper.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/task.dir/src/RNGWrapper.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/RNGWrapper.cc.o -c /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/RNGWrapper.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/task.dir/src/RNGWrapper.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/RNGWrapper.cc.o -c "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/RNGWrapper.cc"
 
 CMakeFiles/task.dir/src/RNGWrapper.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task.dir/src/RNGWrapper.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/RNGWrapper.cc > CMakeFiles/task.dir/src/RNGWrapper.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/RNGWrapper.cc" > CMakeFiles/task.dir/src/RNGWrapper.cc.i
 
 CMakeFiles/task.dir/src/RNGWrapper.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task.dir/src/RNGWrapper.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/RNGWrapper.cc -o CMakeFiles/task.dir/src/RNGWrapper.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/RNGWrapper.cc" -o CMakeFiles/task.dir/src/RNGWrapper.cc.s
 
 CMakeFiles/task.dir/src/RunAction.cc.o: CMakeFiles/task.dir/flags.make
 CMakeFiles/task.dir/src/RunAction.cc.o: ../src/RunAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/task.dir/src/RunAction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/RunAction.cc.o -c /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/RunAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/task.dir/src/RunAction.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/RunAction.cc.o -c "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/RunAction.cc"
 
 CMakeFiles/task.dir/src/RunAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task.dir/src/RunAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/RunAction.cc > CMakeFiles/task.dir/src/RunAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/RunAction.cc" > CMakeFiles/task.dir/src/RunAction.cc.i
 
 CMakeFiles/task.dir/src/RunAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task.dir/src/RunAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/RunAction.cc -o CMakeFiles/task.dir/src/RunAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/RunAction.cc" -o CMakeFiles/task.dir/src/RunAction.cc.s
 
 CMakeFiles/task.dir/src/SD.cc.o: CMakeFiles/task.dir/flags.make
 CMakeFiles/task.dir/src/SD.cc.o: ../src/SD.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/task.dir/src/SD.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/SD.cc.o -c /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/SD.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/task.dir/src/SD.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/SD.cc.o -c "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/SD.cc"
 
 CMakeFiles/task.dir/src/SD.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task.dir/src/SD.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/SD.cc > CMakeFiles/task.dir/src/SD.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/SD.cc" > CMakeFiles/task.dir/src/SD.cc.i
 
 CMakeFiles/task.dir/src/SD.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task.dir/src/SD.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/SD.cc -o CMakeFiles/task.dir/src/SD.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/SD.cc" -o CMakeFiles/task.dir/src/SD.cc.s
 
 CMakeFiles/task.dir/src/steppingAction.cc.o: CMakeFiles/task.dir/flags.make
 CMakeFiles/task.dir/src/steppingAction.cc.o: ../src/steppingAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/task.dir/src/steppingAction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/steppingAction.cc.o -c /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/steppingAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/task.dir/src/steppingAction.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task.dir/src/steppingAction.cc.o -c "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/steppingAction.cc"
 
 CMakeFiles/task.dir/src/steppingAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task.dir/src/steppingAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/steppingAction.cc > CMakeFiles/task.dir/src/steppingAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/steppingAction.cc" > CMakeFiles/task.dir/src/steppingAction.cc.i
 
 CMakeFiles/task.dir/src/steppingAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task.dir/src/steppingAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/steppingAction.cc -o CMakeFiles/task.dir/src/steppingAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/src/steppingAction.cc" -o CMakeFiles/task.dir/src/steppingAction.cc.s
 
 # Object files for target task
 task_OBJECTS = \
@@ -323,7 +323,7 @@ task: /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4intercoms.so
 task: /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4global.so
 task: /home/beso/Geant4/geant4.10.05.p01-install/lib/libG4clhep.so
 task: CMakeFiles/task.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable task"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable task"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/task.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -336,6 +336,6 @@ CMakeFiles/task.dir/clean:
 .PHONY : CMakeFiles/task.dir/clean
 
 CMakeFiles/task.dir/depend:
-	cd /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/task.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/build" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/build" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring(SD=WLS)/build/CMakeFiles/task.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/task.dir/depend
 
