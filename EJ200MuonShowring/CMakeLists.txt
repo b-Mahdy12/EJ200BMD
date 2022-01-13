@@ -34,13 +34,10 @@ include(${ROOT_USE_FILE})
 # We presume the existence of three directories
 file(GLOB_RECURSE sources ${PROJECT_SOURCE_DIR}/src/*.cc)
 file(GLOB_RECURSE headers ${PROJECT_SOURCE_DIR}/include/*.hh)
-file(GLOB_RECURSE macros RELATIVE ${PROJECT_SOURCE_DIR} macros/*.mac)
+file(GLOB_RECURSE macros RELATIVE ${PROJECT_SOURCE_DIR} macros/*)
 
 set(macros
-cmd.file
-  init_vis.mac
-  run2.mac
-  vis.mac
+
   Pyramid_of_Khafre.stl
 WLS_Ascii.stl
 EJ200Scibar_Ascii.stl  

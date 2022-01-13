@@ -1,0 +1,624 @@
+/vis/open OGL
+/vis/sceneHandler/create OGL
+/vis/sceneHandler/attach
+/vis/viewer/create ! ! 600
+/vis/viewer/refresh
+/run/beamOn 1
+====================================================================
+                  HADRONIC PROCESSES SUMMARY (verbose level 1)
+---------------------------------------------------
+                           Hadronic Processes for He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: anti_He3Inelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: anti_alphaInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: anti_deuteronInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_neutron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: anti_neutronInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_proton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: anti_protonInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: anti_tritonInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for e+
+
+  Process: positronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for e-
+
+  Process: electronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for gamma
+
+  Process: photonNuclear
+        Model:            BertiniCascade: 0 eV  ---> 3.5 GeV
+        Model:           TheoFSGenerator: 3 GeV ---> 100 TeV
+Cr_sctns:            PhotoNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon+
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: kaon+Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 12 GeV
+Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+     Cr_sctns:  ChipsKaonPlusInelasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: kaon-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 12 GeV
+Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+     Cr_sctns: ChipsKaonMinusInelasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for lambda
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: lambdaInelastic
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+        Model:                      FTFP: 2 GeV ---> 100 TeV
+Cr_sctns:   ChipsHyperonInelasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu+
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu-
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for neutron
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+Cr_sctns:        G4NeutronElasticXS: 0 eV  ---> 100 TeV
+
+  Process: neutronInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 12 GeV
+Cr_sctns:      G4NeutronInelasticXS: 0 eV  ---> 100 TeV
+
+  Process: nCapture
+        Model:               nRadCapture: 0 eV  ---> 100 TeV
+Cr_sctns:        G4NeutronCaptureXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for pi+
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 1.0001 GeV
+        Model:           hElasticGlauber: 1 GeV ---> 100 TeV
+Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+
+  Process: pi+Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 12 GeV
+Cr_sctns: Barashenkov-Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for pi-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 1.0001 GeV
+        Model:           hElasticGlauber: 1 GeV ---> 100 TeV
+Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+
+  Process: pi-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 12 GeV
+Cr_sctns: Barashenkov-Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for proton
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+
+  Process: protonInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 12 GeV
+Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+================================================================
+Region <DefaultRegionForTheWorld> --  -- appears in <World> world volume
+This region is in the mass world.
+Root logical volume(s) : World
+Pointers : G4VUserRegionInformation[0], G4UserLimits[0], G4FastSimulationManager[0], G4UserSteppingAction[0]
+Materials : G4_AIR G4_PLASTIC_SC_VINYLTOLUENE G4_PLEXIGLASS silicon
+Production cuts :   gamma 1 mm      e- 1 mm      e+ 1 mm  proton 1 mm
+Region <DefaultRegionForParallelWorld> --  -- is not associated to any world.
+Root logical volume(s) :
+Pointers : G4VUserRegionInformation[0], G4UserLimits[0], G4FastSimulationManager[0], G4UserSteppingAction[0]
+Materials :
+Production cuts :   gamma 1 mm      e- 1 mm      e+ 1 mm  proton 1 mm
+========= Table of registered couples ==============================
+Index : 0     used in the geometry : Yes
+Material : G4_AIR
+Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm
+Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 100 keV
+Region(s) which use this couple :
+DefaultRegionForTheWorld
+Index : 1     used in the geometry : Yes
+Material : G4_PLASTIC_SC_VINYLTOLUENE
+Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm
+Energy thresholds :  gamma  2.40367 keV    e-  356.639 keV    e+  344.855 keV proton 100 keV
+Region(s) which use this couple :
+DefaultRegionForTheWorld
+Index : 2     used in the geometry : Yes
+Material : G4_PLEXIGLASS
+Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm
+Energy thresholds :  gamma  2.78665 keV    e-  389.196 keV    e+  376.336 keV proton 100 keV
+Region(s) which use this couple :
+DefaultRegionForTheWorld
+Index : 3     used in the geometry : Yes
+Material : silicon
+Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm
+Energy thresholds :  gamma  6.95018 keV    e-  548.291 keV    e+  526.624 keV proton 100 keV
+Region(s) which use this couple :
+DefaultRegionForTheWorld
+====================================================================
+Start closing geometry.
+G4GeometryManager::ReportVoxelStats -- Voxel Statistics
+Total memory consumed for geometry optimisation:   711 kByte
+Total CPU time elapsed for geometry optimisation: 0.01 seconds
+Voxelisation: top CPU users:
+Percent   Total CPU    System CPU       Memory  Volume
+    -------   ----------   ----------     --------  ----------
+100.00         0.01         0.00          712k ScintillatorLogical
+0.00         0.00         0.00            0k World
+Voxelisation: top memory users:
+Percent     Memory      Heads    Nodes   Pointers    Total CPU    Volume
+    -------   --------     ------   ------   --------   ----------    ----------
+99.97        711k       120    12601      14396         0.01    ScintillatorLogical
+0.03          0k         1        3          4         0.00    World
+/vis/scene/notifyHandlers scene-0
+### Run 0 starts.
+--> Event 0 starts.
+**** Error: Volume does not exist ****
+Ignoring confine condition
+BeginOfEventAction fWLSHCID: 0
+Hit Phys.Vol: WLS_x
+WLSID: 51
+LayerID: -1 Edep: 0 (MeV),  pos: (2.99054,6.44722,1.55131)(mm), Track ID: 29144
+Hit Phys.Vol: WLS_x
+WLSID: 49
+LayerID: -1 Edep: 0 (MeV),  pos: (-7.40482,-9.26579,0.701599)(mm), Track ID: 26732
+Hit Phys.Vol: WLS_x
+WLSID: 51
+LayerID: -1 Edep: 0 (MeV),  pos: (2.81678,2.71839,2.06501)(mm), Track ID: 26712
+Hit Phys.Vol: WLS_x
+WLSID: 51
+LayerID: -1 Edep: 0 (MeV),  pos: (2.63797,2.77547,2.26169)(mm), Track ID: 26702
+Hit Phys.Vol: WLS_x
+WLSID: 51
+LayerID: -1 Edep: 0 (MeV),  pos: (2.62951,2.6482,2.26977)(mm), Track ID: 24335
+Hit Phys.Vol: WLS_x
+WLSID: 47
+LayerID: -1 Edep: 0 (MeV),  pos: (-17.338,234.381,2.23875)(mm), Track ID: 22455
+Hit Phys.Vol: WLS_x
+WLSID: 51
+LayerID: -1 Edep: 0 (MeV),  pos: (2.90435,9.15124,1.08732)(mm), Track ID: 17515
+Hit Phys.Vol: WLS_x
+WLSID: 51
+LayerID: -1 Edep: 0 (MeV),  pos: (2.18452,-2.70716,2.47549)(mm), Track ID: 15343
+Hit Phys.Vol: WLS_x
+WLSID: 51
+LayerID: -1 Edep: 0 (MeV),  pos: (2.6123,1.19848,2.2862)(mm), Track ID: 10995
+Hit Phys.Vol: WLS_x
+WLSID: 51
+LayerID: -1 Edep: 0 (MeV),  pos: (2.92043,-1.70123,1.11671)(mm), Track ID: 10771
+Hit Phys.Vol: WLS_x
+WLSID: 51
+LayerID: -1 Edep: 0 (MeV),  pos: (2.08065,-11.8001,0.51016)(mm), Track ID: 10299
+Hit Phys.Vol: WLS_x
+WLSID: 51
+LayerID: -1 Edep: 0 (MeV),  pos: (2.6324,0.0322073,2.26701)(mm), Track ID: 8654
+Hit Phys.Vol: WLS_x
+WLSID: 51
+LayerID: -1 Edep: 0 (MeV),  pos: (2.81079,3.22498,2.07485)(mm), Track ID: 6481
+Hit Phys.Vol: WLS_y
+WLSID: 42
+LayerID: -1 Edep: 0 (MeV),  pos: (40.2038,-47.9495,17.0095)(mm), Track ID: 56749
+Hit Phys.Vol: WLS_y
+WLSID: 54
+LayerID: -1 Edep: 0 (MeV),  pos: (59.2648,12.321,17.0609)(mm), Track ID: 54173
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (-21.7208,22.3407,17.0667)(mm), Track ID: 53830
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (21.2171,22.1093,17.0108)(mm), Track ID: 53520
+Hit Phys.Vol: WLS_y
+WLSID: 54
+LayerID: -1 Edep: 0 (MeV),  pos: (30.7448,12.9423,18.31)(mm), Track ID: 53342
+Hit Phys.Vol: WLS_y
+WLSID: 58
+LayerID: -1 Edep: 0 (MeV),  pos: (43.2734,32.0392,17.0092)(mm), Track ID: 51941
+Hit Phys.Vol: WLS_y
+WLSID: 54
+LayerID: -1 Edep: 0 (MeV),  pos: (-53.7188,12.921,18.3826)(mm), Track ID: 51825
+Hit Phys.Vol: WLS_y
+WLSID: 58
+LayerID: -1 Edep: 0 (MeV),  pos: (69.155,31.8219,17.023)(mm), Track ID: 51115
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (31.3391,22.396,17.0829)(mm), Track ID: 51075
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (76.1204,21.8752,17.01)(mm), Track ID: 49744
+Hit Phys.Vol: WLS_y
+WLSID: 52
+LayerID: -1 Edep: 0 (MeV),  pos: (93.8438,2.30002,17.0548)(mm), Track ID: 49055
+Hit Phys.Vol: WLS_y
+WLSID: 42
+LayerID: -1 Edep: 0 (MeV),  pos: (39.4321,-47.9151,17.0103)(mm), Track ID: 49004
+Hit Phys.Vol: WLS_y
+WLSID: 52
+LayerID: -1 Edep: 0 (MeV),  pos: (-61.1876,2.07401,17.01)(mm), Track ID: 47907
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (-57.3229,22.068,17.0099)(mm), Track ID: 47171
+Hit Phys.Vol: WLS_y
+WLSID: 54
+LayerID: -1 Edep: 0 (MeV),  pos: (-35.6704,12.8635,17.5126)(mm), Track ID: 46900
+Hit Phys.Vol: WLS_y
+WLSID: 52
+LayerID: -1 Edep: 0 (MeV),  pos: (-46.0689,2.10668,17.0108)(mm), Track ID: 44471
+Hit Phys.Vol: WLS_y
+WLSID: 54
+LayerID: -1 Edep: 0 (MeV),  pos: (30.0907,12.476,18.8697)(mm), Track ID: 44370
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (20.4708,22.1286,17.0113)(mm), Track ID: 44052
+Hit Phys.Vol: WLS_x
+WLSID: 51
+LayerID: -1 Edep: 0 (MeV),  pos: (2.6723,16.645,22.2289)(mm), Track ID: 41426
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (12.9683,22.3287,17.0632)(mm), Track ID: 40065
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (9.4455,22.1124,17.0109)(mm), Track ID: 39583
+Hit Phys.Vol: WLS_y
+WLSID: 48
+LayerID: -1 Edep: 0 (MeV),  pos: (-29.2913,-17.8696,17.0113)(mm), Track ID: 38924
+Hit Phys.Vol: WLS_y
+WLSID: 52
+LayerID: -1 Edep: 0 (MeV),  pos: (-89.1934,2.08583,17.0103)(mm), Track ID: 37964
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (22.9302,22.0841,17.0102)(mm), Track ID: 37703
+Hit Phys.Vol: WLS_y
+WLSID: 52
+LayerID: -1 Edep: 0 (MeV),  pos: (0.399128,1.7772,17.0339)(mm), Track ID: 36366
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (17.5434,22.1449,17.0116)(mm), Track ID: 36032
+Hit Phys.Vol: WLS_y
+WLSID: 68
+LayerID: -1 Edep: 0 (MeV),  pos: (95.1416,82.0684,17.0099)(mm), Track ID: 35174
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (20.9565,21.8005,17.0282)(mm), Track ID: 34776
+Hit Phys.Vol: WLS_y
+WLSID: 54
+LayerID: -1 Edep: 0 (MeV),  pos: (50.513,12.1293,17.0113)(mm), Track ID: 33427
+Hit Phys.Vol: WLS_y
+WLSID: 54
+LayerID: -1 Edep: 0 (MeV),  pos: (3.9972,12.4617,18.8775)(mm), Track ID: 33229
+Hit Phys.Vol: WLS_y
+WLSID: 22
+LayerID: -1 Edep: 0 (MeV),  pos: (138.402,-147.898,17.0107)(mm), Track ID: 32581
+Hit Phys.Vol: WLS_x
+WLSID: 39
+LayerID: -1 Edep: 0 (MeV),  pos: (-57.9542,30.5,20.5094)(mm), Track ID: 32004
+Hit Phys.Vol: WLS_y
+WLSID: 46
+LayerID: -1 Edep: 0 (MeV),  pos: (-19.0589,-27.854,17.0117)(mm), Track ID: 31427
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (20.7614,21.7753,17.0343)(mm), Track ID: 31334
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (27.8727,22.9136,17.6042)(mm), Track ID: 63841
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (17.197,22.9312,18.348)(mm), Track ID: 63790
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (21.8452,22.6683,18.7327)(mm), Track ID: 63538
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (46.1115,22.9245,18.3708)(mm), Track ID: 61276
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (21.7844,22.9887,17.8697)(mm), Track ID: 61178
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (21.5393,22.9174,18.395)(mm), Track ID: 60931
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (21.8421,22.9904,18.0573)(mm), Track ID: 59722
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (22.0925,22.8977,17.5751)(mm), Track ID: 59634
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (28.8252,22.7821,17.3834)(mm), Track ID: 59438
+Hit Phys.Vol: WLS_x
+WLSID: 57
+LayerID: -1 Edep: 0 (MeV),  pos: (32.0053,125.978,22.4918)(mm), Track ID: 90708
+Hit Phys.Vol: WLS_y
+WLSID: 56
+LayerID: -1 Edep: 0 (MeV),  pos: (13.7651,22.8853,17.5524)(mm), Track ID: 77808
+Hit Phys.Vol: WLS_x
+WLSID: 55
+LayerID: -1 Edep: 0 (MeV),  pos: (22.2915,21.7239,20.5523)(mm), Track ID: 68088
+Hit Phys.Vol: WLS_y
+WLSID: 54
+LayerID: -1 Edep: 0 (MeV),  pos: (35.7259,12.5658,17.1837)(mm), Track ID: 98460
+Hit Phys.Vol: WLS_y
+WLSID: 64
+LayerID: -1 Edep: 0 (MeV),  pos: (70.2906,62.0574,37.0096)(mm), Track ID: 131216
+Hit Phys.Vol: WLS_y
+WLSID: 60
+LayerID: -1 Edep: 0 (MeV),  pos: (42.5355,42.9299,37.634)(mm), Track ID: 127510
+Hit Phys.Vol: WLS_y
+WLSID: 60
+LayerID: -1 Edep: 0 (MeV),  pos: (3.89943,42.3107,37.0579)(mm), Track ID: 126416
+Hit Phys.Vol: WLS_y
+WLSID: 60
+LayerID: -1 Edep: 0 (MeV),  pos: (103.776,42.1366,37.0114)(mm), Track ID: 119233
+Hit Phys.Vol: WLS_y
+WLSID: 60
+LayerID: -1 Edep: 0 (MeV),  pos: (52.5843,42.8025,38.5885)(mm), Track ID: 118638
+Hit Phys.Vol: WLS_y
+WLSID: 60
+LayerID: -1 Edep: 0 (MeV),  pos: (104.144,42.618,37.2155)(mm), Track ID: 117625
+Hit Phys.Vol: WLS_y
+WLSID: 60
+LayerID: -1 Edep: 0 (MeV),  pos: (67.4683,42.0897,37.0104)(mm), Track ID: 117043
+Hit Phys.Vol: WLS_y
+WLSID: 58
+LayerID: -1 Edep: 0 (MeV),  pos: (-22.6223,32.9445,38.3026)(mm), Track ID: 114305
+Hit Phys.Vol: WLS_y
+WLSID: 54
+LayerID: -1 Edep: 0 (MeV),  pos: (-143.347,12.5756,37.1897)(mm), Track ID: 113270
+Hit Phys.Vol: WLS_y
+WLSID: 62
+LayerID: -1 Edep: 0 (MeV),  pos: (26.4794,52.0978,37.0106)(mm), Track ID: 112110
+Hit Phys.Vol: WLS_y
+WLSID: 60
+LayerID: -1 Edep: 0 (MeV),  pos: (46.5034,42.9922,37.8841)(mm), Track ID: 110253
+Hit Phys.Vol: WLS_y
+WLSID: 66
+LayerID: -1 Edep: 0 (MeV),  pos: (127.592,71.8671,37.012)(mm), Track ID: 108980
+Hit Phys.Vol: WLS_y
+WLSID: 60
+LayerID: -1 Edep: 0 (MeV),  pos: (62.4005,42.3505,37.0696)(mm), Track ID: 108668
+Hit Phys.Vol: WLS_y
+WLSID: 50
+LayerID: -1 Edep: 0 (MeV),  pos: (-0.568581,-7.91424,37.0103)(mm), Track ID: 106578
+>>> Event 0 >>> Simulation truth :
+Nhit: 74
+LayerID: -1 Edep: 0 (MeV),  pos: (2.99054,6.44722,1.55131)(mm), Track ID: 29144
+LayerID: -1 Edep: 0 (MeV),  pos: (-7.40482,-9.26579,0.701599)(mm), Track ID: 26732
+LayerID: -1 Edep: 0 (MeV),  pos: (2.81678,2.71839,2.06501)(mm), Track ID: 26712
+LayerID: -1 Edep: 0 (MeV),  pos: (2.63797,2.77547,2.26169)(mm), Track ID: 26702
+LayerID: -1 Edep: 0 (MeV),  pos: (2.62951,2.6482,2.26977)(mm), Track ID: 24335
+LayerID: -1 Edep: 0 (MeV),  pos: (-17.338,234.381,2.23875)(mm), Track ID: 22455
+LayerID: -1 Edep: 0 (MeV),  pos: (2.90435,9.15124,1.08732)(mm), Track ID: 17515
+LayerID: -1 Edep: 0 (MeV),  pos: (2.18452,-2.70716,2.47549)(mm), Track ID: 15343
+LayerID: -1 Edep: 0 (MeV),  pos: (2.6123,1.19848,2.2862)(mm), Track ID: 10995
+LayerID: -1 Edep: 0 (MeV),  pos: (2.92043,-1.70123,1.11671)(mm), Track ID: 10771
+LayerID: -1 Edep: 0 (MeV),  pos: (2.08065,-11.8001,0.51016)(mm), Track ID: 10299
+LayerID: -1 Edep: 0 (MeV),  pos: (2.6324,0.0322073,2.26701)(mm), Track ID: 8654
+LayerID: -1 Edep: 0 (MeV),  pos: (2.81079,3.22498,2.07485)(mm), Track ID: 6481
+LayerID: -1 Edep: 0 (MeV),  pos: (40.2038,-47.9495,17.0095)(mm), Track ID: 56749
+LayerID: -1 Edep: 0 (MeV),  pos: (59.2648,12.321,17.0609)(mm), Track ID: 54173
+LayerID: -1 Edep: 0 (MeV),  pos: (-21.7208,22.3407,17.0667)(mm), Track ID: 53830
+LayerID: -1 Edep: 0 (MeV),  pos: (21.2171,22.1093,17.0108)(mm), Track ID: 53520
+LayerID: -1 Edep: 0 (MeV),  pos: (30.7448,12.9423,18.31)(mm), Track ID: 53342
+LayerID: -1 Edep: 0 (MeV),  pos: (43.2734,32.0392,17.0092)(mm), Track ID: 51941
+LayerID: -1 Edep: 0 (MeV),  pos: (-53.7188,12.921,18.3826)(mm), Track ID: 51825
+LayerID: -1 Edep: 0 (MeV),  pos: (69.155,31.8219,17.023)(mm), Track ID: 51115
+LayerID: -1 Edep: 0 (MeV),  pos: (31.3391,22.396,17.0829)(mm), Track ID: 51075
+LayerID: -1 Edep: 0 (MeV),  pos: (76.1204,21.8752,17.01)(mm), Track ID: 49744
+LayerID: -1 Edep: 0 (MeV),  pos: (93.8438,2.30002,17.0548)(mm), Track ID: 49055
+LayerID: -1 Edep: 0 (MeV),  pos: (39.4321,-47.9151,17.0103)(mm), Track ID: 49004
+LayerID: -1 Edep: 0 (MeV),  pos: (-61.1876,2.07401,17.01)(mm), Track ID: 47907
+LayerID: -1 Edep: 0 (MeV),  pos: (-57.3229,22.068,17.0099)(mm), Track ID: 47171
+LayerID: -1 Edep: 0 (MeV),  pos: (-35.6704,12.8635,17.5126)(mm), Track ID: 46900
+LayerID: -1 Edep: 0 (MeV),  pos: (-46.0689,2.10668,17.0108)(mm), Track ID: 44471
+LayerID: -1 Edep: 0 (MeV),  pos: (30.0907,12.476,18.8697)(mm), Track ID: 44370
+LayerID: -1 Edep: 0 (MeV),  pos: (20.4708,22.1286,17.0113)(mm), Track ID: 44052
+LayerID: -1 Edep: 0 (MeV),  pos: (2.6723,16.645,22.2289)(mm), Track ID: 41426
+LayerID: -1 Edep: 0 (MeV),  pos: (12.9683,22.3287,17.0632)(mm), Track ID: 40065
+LayerID: -1 Edep: 0 (MeV),  pos: (9.4455,22.1124,17.0109)(mm), Track ID: 39583
+LayerID: -1 Edep: 0 (MeV),  pos: (-29.2913,-17.8696,17.0113)(mm), Track ID: 38924
+LayerID: -1 Edep: 0 (MeV),  pos: (-89.1934,2.08583,17.0103)(mm), Track ID: 37964
+LayerID: -1 Edep: 0 (MeV),  pos: (22.9302,22.0841,17.0102)(mm), Track ID: 37703
+LayerID: -1 Edep: 0 (MeV),  pos: (0.399128,1.7772,17.0339)(mm), Track ID: 36366
+LayerID: -1 Edep: 0 (MeV),  pos: (17.5434,22.1449,17.0116)(mm), Track ID: 36032
+LayerID: -1 Edep: 0 (MeV),  pos: (95.1416,82.0684,17.0099)(mm), Track ID: 35174
+LayerID: -1 Edep: 0 (MeV),  pos: (20.9565,21.8005,17.0282)(mm), Track ID: 34776
+LayerID: -1 Edep: 0 (MeV),  pos: (50.513,12.1293,17.0113)(mm), Track ID: 33427
+LayerID: -1 Edep: 0 (MeV),  pos: (3.9972,12.4617,18.8775)(mm), Track ID: 33229
+LayerID: -1 Edep: 0 (MeV),  pos: (138.402,-147.898,17.0107)(mm), Track ID: 32581
+LayerID: -1 Edep: 0 (MeV),  pos: (-57.9542,30.5,20.5094)(mm), Track ID: 32004
+LayerID: -1 Edep: 0 (MeV),  pos: (-19.0589,-27.854,17.0117)(mm), Track ID: 31427
+LayerID: -1 Edep: 0 (MeV),  pos: (20.7614,21.7753,17.0343)(mm), Track ID: 31334
+LayerID: -1 Edep: 0 (MeV),  pos: (27.8727,22.9136,17.6042)(mm), Track ID: 63841
+LayerID: -1 Edep: 0 (MeV),  pos: (17.197,22.9312,18.348)(mm), Track ID: 63790
+LayerID: -1 Edep: 0 (MeV),  pos: (21.8452,22.6683,18.7327)(mm), Track ID: 63538
+LayerID: -1 Edep: 0 (MeV),  pos: (46.1115,22.9245,18.3708)(mm), Track ID: 61276
+LayerID: -1 Edep: 0 (MeV),  pos: (21.7844,22.9887,17.8697)(mm), Track ID: 61178
+LayerID: -1 Edep: 0 (MeV),  pos: (21.5393,22.9174,18.395)(mm), Track ID: 60931
+LayerID: -1 Edep: 0 (MeV),  pos: (21.8421,22.9904,18.0573)(mm), Track ID: 59722
+LayerID: -1 Edep: 0 (MeV),  pos: (22.0925,22.8977,17.5751)(mm), Track ID: 59634
+LayerID: -1 Edep: 0 (MeV),  pos: (28.8252,22.7821,17.3834)(mm), Track ID: 59438
+LayerID: -1 Edep: 0 (MeV),  pos: (32.0053,125.978,22.4918)(mm), Track ID: 90708
+LayerID: -1 Edep: 0 (MeV),  pos: (13.7651,22.8853,17.5524)(mm), Track ID: 77808
+LayerID: -1 Edep: 0 (MeV),  pos: (22.2915,21.7239,20.5523)(mm), Track ID: 68088
+LayerID: -1 Edep: 0 (MeV),  pos: (35.7259,12.5658,17.1837)(mm), Track ID: 98460
+LayerID: -1 Edep: 0 (MeV),  pos: (70.2906,62.0574,37.0096)(mm), Track ID: 131216
+LayerID: -1 Edep: 0 (MeV),  pos: (42.5355,42.9299,37.634)(mm), Track ID: 127510
+LayerID: -1 Edep: 0 (MeV),  pos: (3.89943,42.3107,37.0579)(mm), Track ID: 126416
+LayerID: -1 Edep: 0 (MeV),  pos: (103.776,42.1366,37.0114)(mm), Track ID: 119233
+LayerID: -1 Edep: 0 (MeV),  pos: (52.5843,42.8025,38.5885)(mm), Track ID: 118638
+LayerID: -1 Edep: 0 (MeV),  pos: (104.144,42.618,37.2155)(mm), Track ID: 117625
+LayerID: -1 Edep: 0 (MeV),  pos: (67.4683,42.0897,37.0104)(mm), Track ID: 117043
+LayerID: -1 Edep: 0 (MeV),  pos: (-22.6223,32.9445,38.3026)(mm), Track ID: 114305
+LayerID: -1 Edep: 0 (MeV),  pos: (-143.347,12.5756,37.1897)(mm), Track ID: 113270
+LayerID: -1 Edep: 0 (MeV),  pos: (26.4794,52.0978,37.0106)(mm), Track ID: 112110
+LayerID: -1 Edep: 0 (MeV),  pos: (46.5034,42.9922,37.8841)(mm), Track ID: 110253
+LayerID: -1 Edep: 0 (MeV),  pos: (127.592,71.8671,37.012)(mm), Track ID: 108980
+LayerID: -1 Edep: 0 (MeV),  pos: (62.4005,42.3505,37.0696)(mm), Track ID: 108668
+LayerID: -1 Edep: 0 (MeV),  pos: (-0.568581,-7.91424,37.0103)(mm), Track ID: 106578
+>>> NoOfMuonHits 74
+********************* WARNING! ********************
+*  Display list limit reached in OpenGL.
+*  Continuing drawing WITHOUT STORING. Scene only partially refreshable.
+*  Current limit: 50000.  Change with "/vis/ogl/set/displayListLimit".
+***************************************************
+Run terminated.
+Run Summary
+Number of events processed : 1
+User=8.260000s Real=8.408860s Sys=0.090000s
+WARNING: 1 event has been kept for refreshing and/or reviewing.
+"/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
