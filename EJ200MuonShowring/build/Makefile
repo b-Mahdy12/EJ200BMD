@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY
+CMAKE_SOURCE_DIR = /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build
+CMAKE_BINARY_DIR = /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -276,6 +276,33 @@ src/EventAction.s: src/EventAction.cc.s
 src/EventAction.cc.s:
 	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/EventAction.cc.s
 .PHONY : src/EventAction.cc.s
+
+src/Hits.o: src/Hits.cc.o
+
+.PHONY : src/Hits.o
+
+# target to build an object file
+src/Hits.cc.o:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/Hits.cc.o
+.PHONY : src/Hits.cc.o
+
+src/Hits.i: src/Hits.cc.i
+
+.PHONY : src/Hits.i
+
+# target to preprocess a source file
+src/Hits.cc.i:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/Hits.cc.i
+.PHONY : src/Hits.cc.i
+
+src/Hits.s: src/Hits.cc.s
+
+.PHONY : src/Hits.s
+
+# target to generate assembly for a file
+src/Hits.cc.s:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/Hits.cc.s
+.PHONY : src/Hits.cc.s
 
 src/MuravesMessenger.o: src/MuravesMessenger.cc.o
 
@@ -466,32 +493,59 @@ src/RunAction.cc.s:
 	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/RunAction.cc.s
 .PHONY : src/RunAction.cc.s
 
-src/StackingAction.o: src/StackingAction.cc.o
+src/SD.o: src/SD.cc.o
 
-.PHONY : src/StackingAction.o
+.PHONY : src/SD.o
 
 # target to build an object file
-src/StackingAction.cc.o:
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/StackingAction.cc.o
-.PHONY : src/StackingAction.cc.o
+src/SD.cc.o:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/SD.cc.o
+.PHONY : src/SD.cc.o
 
-src/StackingAction.i: src/StackingAction.cc.i
+src/SD.i: src/SD.cc.i
 
-.PHONY : src/StackingAction.i
+.PHONY : src/SD.i
 
 # target to preprocess a source file
-src/StackingAction.cc.i:
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/StackingAction.cc.i
-.PHONY : src/StackingAction.cc.i
+src/SD.cc.i:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/SD.cc.i
+.PHONY : src/SD.cc.i
 
-src/StackingAction.s: src/StackingAction.cc.s
+src/SD.s: src/SD.cc.s
 
-.PHONY : src/StackingAction.s
+.PHONY : src/SD.s
 
 # target to generate assembly for a file
-src/StackingAction.cc.s:
-	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/StackingAction.cc.s
-.PHONY : src/StackingAction.cc.s
+src/SD.cc.s:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/SD.cc.s
+.PHONY : src/SD.cc.s
+
+src/steppingAction.o: src/steppingAction.cc.o
+
+.PHONY : src/steppingAction.o
+
+# target to build an object file
+src/steppingAction.cc.o:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/steppingAction.cc.o
+.PHONY : src/steppingAction.cc.o
+
+src/steppingAction.i: src/steppingAction.cc.i
+
+.PHONY : src/steppingAction.i
+
+# target to preprocess a source file
+src/steppingAction.cc.i:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/steppingAction.cc.i
+.PHONY : src/steppingAction.cc.i
+
+src/steppingAction.s: src/steppingAction.cc.s
+
+.PHONY : src/steppingAction.s
+
+# target to generate assembly for a file
+src/steppingAction.cc.s:
+	$(MAKE) -f CMakeFiles/task.dir/build.make CMakeFiles/task.dir/src/steppingAction.cc.s
+.PHONY : src/steppingAction.cc.s
 
 # Help Target
 help:
@@ -518,6 +572,9 @@ help:
 	@echo "... src/EventAction.o"
 	@echo "... src/EventAction.i"
 	@echo "... src/EventAction.s"
+	@echo "... src/Hits.o"
+	@echo "... src/Hits.i"
+	@echo "... src/Hits.s"
 	@echo "... src/MuravesMessenger.o"
 	@echo "... src/MuravesMessenger.i"
 	@echo "... src/MuravesMessenger.s"
@@ -539,9 +596,12 @@ help:
 	@echo "... src/RunAction.o"
 	@echo "... src/RunAction.i"
 	@echo "... src/RunAction.s"
-	@echo "... src/StackingAction.o"
-	@echo "... src/StackingAction.i"
-	@echo "... src/StackingAction.s"
+	@echo "... src/SD.o"
+	@echo "... src/SD.i"
+	@echo "... src/SD.s"
+	@echo "... src/steppingAction.o"
+	@echo "... src/steppingAction.i"
+	@echo "... src/steppingAction.s"
 .PHONY : help
 
 

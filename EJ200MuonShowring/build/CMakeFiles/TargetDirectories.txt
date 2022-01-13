@@ -1,7 +1,7 @@
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles/install/local.dir
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles/install.dir
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles/list_install_components.dir
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles/rebuild_cache.dir
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles/edit_cache.dir
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles/install/strip.dir
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles/task.dir
+/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/install/local.dir
+/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/install.dir
+/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/list_install_components.dir
+/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/rebuild_cache.dir
+/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/edit_cache.dir
+/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/install/strip.dir
+/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/task.dir

@@ -4,18 +4,20 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/main.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles/task.dir/main.cc.o"
-  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/src/ActionInitialization.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles/task.dir/src/ActionInitialization.cc.o"
-  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/src/DetectorConstruction.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles/task.dir/src/DetectorConstruction.cc.o"
-  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/src/EventAction.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles/task.dir/src/EventAction.cc.o"
-  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/src/MuravesMessenger.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles/task.dir/src/MuravesMessenger.cc.o"
-  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/src/PhysicsList.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles/task.dir/src/PhysicsList.cc.o"
-  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/src/PrimaryGeneratorAction.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles/task.dir/src/PrimaryGeneratorAction.cc.o"
-  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/src/PrimaryGeneratorAction_CRY.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles/task.dir/src/PrimaryGeneratorAction_CRY.cc.o"
-  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/src/PrimaryGeneratorMessenger.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles/task.dir/src/PrimaryGeneratorMessenger.cc.o"
-  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/src/RNGWrapper.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles/task.dir/src/RNGWrapper.cc.o"
-  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/src/RunAction.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles/task.dir/src/RunAction.cc.o"
-  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/src/StackingAction.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/Detector-CRY/build/CMakeFiles/task.dir/src/StackingAction.cc.o"
+  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/main.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/task.dir/main.cc.o"
+  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/ActionInitialization.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/task.dir/src/ActionInitialization.cc.o"
+  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/DetectorConstruction.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/task.dir/src/DetectorConstruction.cc.o"
+  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/EventAction.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/task.dir/src/EventAction.cc.o"
+  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/Hits.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/task.dir/src/Hits.cc.o"
+  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/MuravesMessenger.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/task.dir/src/MuravesMessenger.cc.o"
+  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/PhysicsList.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/task.dir/src/PhysicsList.cc.o"
+  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/PrimaryGeneratorAction.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/task.dir/src/PrimaryGeneratorAction.cc.o"
+  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/PrimaryGeneratorAction_CRY.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/task.dir/src/PrimaryGeneratorAction_CRY.cc.o"
+  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/PrimaryGeneratorMessenger.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/task.dir/src/PrimaryGeneratorMessenger.cc.o"
+  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/RNGWrapper.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/task.dir/src/RNGWrapper.cc.o"
+  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/RunAction.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/task.dir/src/RunAction.cc.o"
+  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/SD.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/task.dir/src/SD.cc.o"
+  "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/src/steppingAction.cc" "/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring/build/CMakeFiles/task.dir/src/steppingAction.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -47,6 +49,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
   "/home/beso/cry_v1.7/src"
+  "/home/beso/root6/root_build/include"
   "/home/beso/Geant4/geant4.10.05.p01-install/include/Geant4"
   "/usr/include/x86_64-linux-gnu/qt5"
   "/usr/include/x86_64-linux-gnu/qt5/QtWidgets"

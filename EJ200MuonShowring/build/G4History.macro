@@ -1,9 +1,9 @@
 /run/verbose 2
 /run/initialize
 /control/execute vis.mac
-/vis/open OGL 600x600-0+0
-/vis/sceneHandler/create OGL
-/vis/viewer/create ! ! 600x600-0+0
+/vis/open OpenGLStoredQt
+/vis/sceneHandler/create OpenGLStoredQt
+/vis/viewer/create ! ! 600
 /vis/viewer/refresh
 /vis/viewer/set/autoRefresh false
 /vis/verbose errors
@@ -25,8 +25,6 @@
 /vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
 /vis/scene/notifyHandlers scene-0
 /vis/scene/endOfEventAction accumulate
-/vis/set/textLayout
-/vis/set/textColour
 /vis/scene/add/scale
 /vis/scene/notifyHandlers
 /vis/scene/add/hits
@@ -35,35 +33,15 @@
 /vis/scene/notifyHandlers
 /vis/scene/add/eventID
 /vis/scene/notifyHandlers
-/vis/set/colour red
-/vis/set/lineWidth 2
-/vis/set/colour
-/vis/set/lineWidth
-/vis/geometry/set/visibility World 0 false
+/vis/geometry/set/visibility World 0 true
 /vis/scene/notifyHandlers
-/vis/geometry/set/colour Envelope 0 0 .9 0 .2
-/vis/geometry/set/colour CopperLogical 0 .5 0 .8 .5
-/vis/geometry/set/colour FR4Logical 0 .5 0 0 .5
-/vis/geometry/set/colour ScintillatorLogical 0 0 0 .8 .5
-/vis/scene/notifyHandlers
-/vis/viewer/set/style surface
-/vis/viewer/set/hiddenMarker true
-/vis/viewer/set/viewpointThetaPhi 120 150
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
-/control/execute cmd.mac
-/control/execute cmd.file
-/CRY/input returnNeutrons 0
-/CRY/input returnProtons 0
-/CRY/input returnGammas 0
-/CRY/input returnPions 0
-/CRY/input returnKaons 0
-/CRY/input returnMuons 1
-/CRY/input date 7-1-2012
-/CRY/input latitude 90.0
-/CRY/input altitude 2100
-/CRY/input subboxLength 100
-/CRY/update
-/run/beamOn 100
+/vis/open OGL
+/vis/sceneHandler/create OGL
+/vis/sceneHandler/attach
+/vis/viewer/create ! ! 600
+/vis/viewer/refresh
+/run/beamOn 1
 /vis/scene/notifyHandlers scene-0
