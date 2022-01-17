@@ -1,0 +1,12 @@
+/gps/particle mu-
+/gps/ene/type Mono
+/gps/ene/mono 4 GeV
+/gps/pos/type Surface
+/gps/pos/shape Sphere
+/gps/SetRadius 70. cm
+
+/gps/pos/centre 0. 0. 70. cm
+/gps/direction 0 0 -1
+
+/run/initialize
+/run/beamOn 1
