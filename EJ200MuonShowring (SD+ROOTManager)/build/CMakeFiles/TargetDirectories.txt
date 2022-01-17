@@ -1,7 +1,0 @@
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring (SD+ROOTManager)/build/CMakeFiles/install/local.dir
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring (SD+ROOTManager)/build/CMakeFiles/install.dir
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring (SD+ROOTManager)/build/CMakeFiles/list_install_components.dir
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring (SD+ROOTManager)/build/CMakeFiles/rebuild_cache.dir
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring (SD+ROOTManager)/build/CMakeFiles/edit_cache.dir
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring (SD+ROOTManager)/build/CMakeFiles/install/strip.dir
-/media/beso/Basma/0-SWMC/0-Simulations/00-scintillator-sipm-EJ200/EJ200MuonShowring (SD+ROOTManager)/build/CMakeFiles/task.dir
