@@ -1,0 +1,10 @@
+#/run/initialize
+# /gps/particle mu-
+# /gps/particle e-
+# /gps/particle gamma
+# /gps/pos/centre 0 0 200 m
+# /gps/ene/type Mono
+# /gps/ene/mono 662. keV
+# /gps/ang/type iso
+# /gps/pos/confine world
+#/run/beamOn 100
