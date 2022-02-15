@@ -100,9 +100,11 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   G4MaterialPropertiesTable *siliconProperties = new G4MaterialPropertiesTable();
   siliconProperties->AddProperty("RINDEX", pCherenkovsilicon, siliconRefractiveIndex, k_)->SetSpline(true);
   silicon->SetMaterialPropertiesTable(siliconProperties);
-  /*
 
   // WLS_FIBER_DIFINITION
+
+  G4NistManager *nistManager = G4NistManager::Instance();
+
   const G4int nAEntries = 15;
   G4double PhotonEnergy_h1[nAEntries] = {
       0.548304131 * eV, 0.535216907 * eV, 0.518731399 * eV,
@@ -125,7 +127,8 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
       0.66928761 * eV, 1.00420441 * eV, 0.64016001 * eV, 0.35772361 * eV, 0.17181025 * eV,
       0.08392609 * eV, 0.03359889 * eV, 0.01646089 * eV, 0.00840889 * eV, 0.89000356 * eV};
   //
-  G4Material *WLS;
+  G4Material *WLS = nistManager->FindOrBuildMaterial("G4_PLEXIGLASS");
+
   // was Causes segmintation violation
   G4MaterialPropertiesTable *WLSmaterial = new G4MaterialPropertiesTable();
   WLSmaterial->AddProperty("RINDEX", PhotonEnergy_h1, RIndexFiber, nEEntries);
@@ -134,7 +137,6 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   WLSmaterial->AddConstProperty("WLSTIMECONSTANT", 2.7 * ns);
   //
   WLS->SetMaterialPropertiesTable(WLSmaterial);
-*/
 
   // Option to switch on/off checking of volumes overlaps
   //
@@ -173,7 +175,7 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   auto meshSWire = CADMesh::TessellatedMesh::FromSTL("EJ200Scibar_singlewire_Ascii.stl");
   meshSWire->SetScale(10.0);
   auto wire = meshSWire->GetSolid();
-  WLSFiberLogical = new G4LogicalVolume(wire, Fib, "SingleWireLogical");
+  WLSFiberLogical = new G4LogicalVolume(wire, WLS, "upSingleWireLogical");
   fScoringVolume = WLSFiberLogical;
 
   G4RotationMatrix *rotb = new G4RotationMatrix();
@@ -185,25 +187,12 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
     G4VPhysicalVolume *wirePhyY = new G4PVPlacement(0, G4ThreeVector(0, d, 1.7 * cm), WLSFiberLogical, "WLS_y", fScintillatorLogical, false, 0, checkOverlaps);
   }
 
-  /*
-  auto meshWire = CADMesh::TessellatedMesh::FromSTL("WLS_Ascii.stl");
-  meshWire->SetScale(10.0);
-  // meshWire->SetOffset(G4ThreeVector(-0.5 * scintillatorSizeX, 0, -0.5 * scintillatorSizeX));
-  auto Wire = meshWire->GetSolid();
-  // double density = 2.700 * g / cm3;
-  // double a = 26.98 * g / mole;
-  // G4Material *Al = new G4Material("Aluminum", 13., a, density);
-  WLSFiberLogical = new G4LogicalVolume(Wire, Fib, "WireLogical");
-  // fScoringVolume = WLSFiberLogical;
-
-  G4VPhysicalVolume *WirePhy = new G4PVPlacement(0, G4ThreeVector(0, 0, 0.), WLSFiberLogical, "wirePhysical", fScintillatorLogical, false, 0, checkOverlaps);
-*/
   //
   // SiPM
   //
   auto meshSSipm = CADMesh::TessellatedMesh::FromSTL("EJ200Scibar_singlesipm_Ascii.stl");
-  meshSWire->SetScale(10.0);
-  auto SiPM = meshSWire->GetSolid();
+  meshSSipm->SetScale(10.0);
+  auto SiPM = meshSSipm->GetSolid();
   fSipmLogical = new G4LogicalVolume(SiPM, silicon, "SiPMLogical");
   // fScoringVolume = fSipmLogical;
 
@@ -281,7 +270,7 @@ void DetectorConstruction::ConstructSDandField()
 {
   G4SDManager::GetSDMpointer()->SetVerboseLevel(1);
   G4String SDname;
-/*
+  /*
   //
   // EJ200 SensitiveDetector
   //
@@ -289,14 +278,13 @@ void DetectorConstruction::ConstructSDandField()
   G4SDManager::GetSDMpointer()->AddNewDetector(SciPlaneSD);
   GetScoringVolume()->SetSensitiveDetector(SciPlaneSD);
 */
-  
+
   //
   // WLS SensitiveDetector
   //
   SenDet *WLSSD = new SenDet(SDname = "/WLSWire");
   G4SDManager::GetSDMpointer()->AddNewDetector(WLSSD);
   GetScoringVolume()->SetSensitiveDetector(WLSSD);
-  
 }
 
 void DetectorConstruction::ConstructMaterials()

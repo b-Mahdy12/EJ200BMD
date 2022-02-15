@@ -200,8 +200,8 @@ void PrimaryGeneratorAction_CRY::GeneratePrimaries(G4Event *anEvent)
     G4ThreeVector pmom = G4ThreeVector((*vect)[j]->u(), (*vect)[j]->v(), (*vect)[j]->w());
 
     // rotate from CRY to Geant4 xyz reference system
-    // ppos.transform(*_rotX);
-    // pmom.transform(*_rotX);
+   // ppos.transform(*_rotX);
+   // pmom.transform(*_rotX);
 
     particleName = CRYUtils::partName((*vect)[j]->id());
 
@@ -222,6 +222,9 @@ void PrimaryGeneratorAction_CRY::GeneratePrimaries(G4Event *anEvent)
     // if (particleName == 13)
     // {
     G4AnalysisManager *man = G4AnalysisManager::Instance();
+    man->FillH3(1, pmom[2] / cm, pmom[0] / cm, pmom[1] / cm);
+
+
     man->FillNtupleDColumn(1, 0, ppos[0]);
     man->FillNtupleDColumn(1, 1, ppos[1]);
     man->FillNtupleDColumn(1, 2, ppos[2]);

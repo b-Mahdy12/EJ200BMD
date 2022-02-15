@@ -4,6 +4,8 @@
 #include <sstream>
 #include "g4root.hh"
 
+#include "G4SystemOfUnits.hh"
+
 #include "G4HCofThisEvent.hh"
 #include "G4TouchableHistory.hh"
 #include "G4Step.hh"
@@ -67,6 +69,8 @@ G4bool SenDet::ProcessHits(G4Step *astep, G4TouchableHistory *ROhist)
     hit->Print();
 
     G4AnalysisManager *man = G4AnalysisManager::Instance();
+    man->FillH3(0, Z_m / cm, X_m / cm, Y_m / cm);
+
     man->FillNtupleIColumn(0, 0, evt);
     man->FillNtupleDColumn(0, 1, TrackEnergy);
     man->FillNtupleDColumn(0, 2, X_m);
