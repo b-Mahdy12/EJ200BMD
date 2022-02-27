@@ -55,14 +55,16 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
 
   G4Material *air = G4Material::GetMaterial("G4_AIR");
   G4Material *polyvinyltoluene = G4Material::GetMaterial("G4_PLASTIC_SC_VINYLTOLUENE");
-  G4Material *Fib = G4Material::GetMaterial("G4_PLEXIGLASS");
+  G4Material *WLS = G4Material::GetMaterial("G4_PLEXIGLASS");
+  G4Material *silicon = G4Material::GetMaterial("silicon");
+  G4Material *limestone = G4Material::GetMaterial("G4_CALCIUM_CARBONATE");
 
+  // Scintellator Plates Material
   G4MaterialPropertiesTable *scintillatorProperties = new G4MaterialPropertiesTable();
   scintillatorProperties->AddConstProperty("SCINTILLATIONYIELD", 10000. / MeV);
   scintillatorProperties->AddConstProperty("FASTTIMECONSTANT", 0.7 * ns);
   scintillatorProperties->AddConstProperty("RESOLUTIONSCALE", 1.0);
   scintillatorProperties->AddConstProperty("YIELDRATIO", 1.0);
-  //
   const G4int NPHOTONENERGIES = 37;
   G4double scintResponseWavelengths[NPHOTONENERGIES] = {
       0.4906 * eV, 0.4868 * eV, 0.4838 * eV, 0.4816 * eV, 0.4797 * eV, 0.4779 * eV, 0.4761 * eV, 0.4740 * eV, 0.4732 * eV,
@@ -90,21 +92,7 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
 
   polyvinyltoluene->SetMaterialPropertiesTable(scintillatorProperties);
 
-  // SiPM_WINDOW_DEFINITION
-  double siliconDensity = 2.33 * g / cm3;
-  double siliconAtomicWeight = 28.0855 * g / mole;
-  G4Material *silicon = new G4Material("silicon", 14., siliconAtomicWeight, siliconDensity);
-  const G4int k_ = 1;
-  G4double pCherenkovsilicon[k_] = {2. * GeV};
-  G4double siliconRefractiveIndex[k_] = {1.57};
-  G4MaterialPropertiesTable *siliconProperties = new G4MaterialPropertiesTable();
-  siliconProperties->AddProperty("RINDEX", pCherenkovsilicon, siliconRefractiveIndex, k_)->SetSpline(true);
-  silicon->SetMaterialPropertiesTable(siliconProperties);
-
   // WLS_FIBER_DIFINITION
-
-  G4NistManager *nistManager = G4NistManager::Instance();
-
   const G4int nAEntries = 15;
   G4double PhotonEnergy_h1[nAEntries] = {
       0.548304131 * eV, 0.535216907 * eV, 0.518731399 * eV,
@@ -126,17 +114,60 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
       0.02795584 * eV, 0.06528025 * eV, 0.16208676 * eV, 0.37920964 * eV, 0.53260804 * eV,
       0.66928761 * eV, 1.00420441 * eV, 0.64016001 * eV, 0.35772361 * eV, 0.17181025 * eV,
       0.08392609 * eV, 0.03359889 * eV, 0.01646089 * eV, 0.00840889 * eV, 0.89000356 * eV};
-  //
-  G4Material *WLS = nistManager->FindOrBuildMaterial("G4_PLEXIGLASS");
-
-  // was Causes segmintation violation
   G4MaterialPropertiesTable *WLSmaterial = new G4MaterialPropertiesTable();
   WLSmaterial->AddProperty("RINDEX", PhotonEnergy_h1, RIndexFiber, nEEntries);
   WLSmaterial->AddProperty("WLSABSLENGTH", PhotonEnergy_h1, AbsFiber, nAEntries);
-  WLSmaterial->AddProperty("WLSCOMPONENT", PhotonEnergy_h2, EmissionFiber, nEEntries);
+  WLSmaterial->AddProperty("WLSCOMPONENT", PhotonEnergy_h1, EmissionFiber, nEEntries);
   WLSmaterial->AddConstProperty("WLSTIMECONSTANT", 2.7 * ns);
-  //
+
   WLS->SetMaterialPropertiesTable(WLSmaterial);
+
+  // SiPM_WINDOW_DEFINITION
+  const G4int k_ = 1;
+  G4double pCherenkovsilicon[k_] = {2. * GeV};
+  G4double siliconRefractiveIndex[k_] = {1.57};
+  G4MaterialPropertiesTable *siliconProperties = new G4MaterialPropertiesTable();
+  siliconProperties->AddProperty("RINDEX", pCherenkovsilicon, siliconRefractiveIndex, k_)->SetSpline(true);
+
+  silicon->SetMaterialPropertiesTable(siliconProperties);
+
+  // Air Material
+  G4double airRefractiveIndex[NPHOTONENERGIES];
+  for (int k = 0; k < NPHOTONENERGIES; k++)
+  {
+    airRefractiveIndex[k] = 1.;
+  }
+  G4MaterialPropertiesTable *AirProperties = new G4MaterialPropertiesTable();
+  AirProperties->AddProperty("RINDEX", scintResponseWavelengths, airRefractiveIndex, NPHOTONENERGIES);
+
+  air->SetMaterialPropertiesTable(AirProperties);
+
+    // Pyramid Material
+  G4double limestoneRefractiveIndex[NPHOTONENERGIES];
+  for (int j = 0; j < NPHOTONENERGIES; j++)
+  {
+    limestoneRefractiveIndex[j] = 1.4862;  //https://refractiveindex.info/?shelf=main&book=CaCO3&page=Ghosh-e
+  }
+  G4MaterialPropertiesTable *limestoneProperties = new G4MaterialPropertiesTable();
+  limestoneProperties->AddProperty("RINDEX", scintResponseWavelengths, limestoneRefractiveIndex, NPHOTONENERGIES);
+
+  limestone->SetMaterialPropertiesTable(limestoneProperties);
+
+  /*
+//! Error
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomNav1002
+      issued by : G4Navigator::ComputeStep()
+Track stuck or not moving.
+          Track stuck, not moving for 10 steps
+          in volume -World- at point (-209.6150940411388,-75.29295054083779,1096.712906736098) (local point (-209.6150940411388,-75.29295054083779,1096.712906736098))
+          direction: (-0.001818792451208391,-0.0001546854130032639,-0.9999983340318336) (local direction: (-0.001818792451208391,-0.0001546854130032639,-0.9999983340318336)).
+          Potential geometry or navigation problem !
+          Trying pushing it of 1e-07 mm ...Potential overlap in geometry!
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+*/
 
   // Option to switch on/off checking of volumes overlaps
   //
@@ -146,22 +177,45 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   // World
   //
   G4Material *worldMaterial = air;
-
   G4Box *solidWorld = new G4Box("World", 200 * cm, 200 * cm, 200 * cm);
   G4LogicalVolume *logicWorld = new G4LogicalVolume(solidWorld, worldMaterial, "World");
   G4VPhysicalVolume *physWorld = new G4PVPlacement(0, G4ThreeVector(), logicWorld, "World", 0, false, 0, checkOverlaps);
 
-  G4RotationMatrix *rota = new G4RotationMatrix();
-  rota->rotateX(0 * deg);
+  // G4RotationMatrix *rota = new G4RotationMatrix();
+  // rota->rotateX(0 * deg);
+
+  //
+  // Pyramid
+  //
+  auto meshPyrmid = CADMesh::TessellatedMesh::FromSTL("Pyramid_of_Khafre.stl");
+  meshPyrmid->SetScale(10.0);
+  auto Khafre_py = meshPyrmid->GetSolid();
+  G4LogicalVolume *Khafrelog = new G4LogicalVolume(Khafre_py, limestone, "Pyramid");
+
+   fScoringVolume = Khafrelog;
+  G4VPhysicalVolume *khafre_py = new G4PVPlacement(0, G4ThreeVector(0, 0, 0), Khafrelog, "KhafrePyramid", logicWorld, false, 0, checkOverlaps);
 
   //
   // Scintillator
   //
   auto mesh = CADMesh::TessellatedMesh::FromSTL("EJ200Scibar_Ascii.stl");
-  mesh->SetScale(10.0);
+  mesh->SetScale(0.5);
   auto EJ200Scibar = mesh->GetSolid();
   fScintillatorLogical = new G4LogicalVolume(EJ200Scibar, polyvinyltoluene, "ScintillatorLogical");
 
+  //fScoringVolume = fScintillatorLogical;
+  // G4VPhysicalVolume *physScint1 = new G4PVPlacement(0, G4ThreeVector(0 * cm, 0 * cm, 0. * cm), fScintillatorLogical, "ScintillatorPhysical", Khafrelog, false, 0, false);
+  // G4VPhysicalVolume *physScint2 = new G4PVPlacement(0, G4ThreeVector(0 * cm, 0 * cm, 0. + 2. * cm), fScintillatorLogical, "ScintillatorPhysical", Khafrelog, false, 0, false);
+
+
+  //G4double Z = 2 * cm;
+
+ // for (G4int j = 0; j < 2; j++)
+ // {
+   // Z -= 2 * cm;
+  //  G4VPhysicalVolume *physScint = new G4PVPlacement(0, G4ThreeVector(0 * cm, 0 * cm, Z), fScintillatorLogical, "ScintillatorPhysical", Khafrelog, false, j + 1, false);
+ // }
+  /*
   //
   // WLS Fiber
   //
@@ -169,44 +223,50 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   meshSWire->SetScale(10.0);
   auto wire = meshSWire->GetSolid();
   WLSFiberLogical = new G4LogicalVolume(wire, Fib, "SingleWireLogical");
-
-  //
-  // SiPM
-  //
-  auto meshSSipm = CADMesh::TessellatedMesh::FromSTL("SingleSiPM_Ascii.stl");
-  meshSSipm->SetScale(0.01);
-  auto SiPM = meshSSipm->GetSolid();
-  fSipmLogical = new G4LogicalVolume(SiPM, silicon, "SiPMLogical");
-  fScoringVolume = fSipmLogical;
-
-  //
-  //! Placement
-  //
-
-  G4double Z = 0 * cm;
-
-  for (G4int j = 0; j < 2; j++)
-  {
-    Z -= 2 * cm;
-    G4VPhysicalVolume *physScint = new G4PVPlacement(0, G4ThreeVector(-25. * cm, -25 * cm, Z), fScintillatorLogical, "ScintillatorPhysical", logicWorld, false, j + 1, false);
-  }
+  // fScoringVolume = WLSFiberLogical;
 
   G4RotationMatrix *rotb = new G4RotationMatrix();
   rotb->rotateZ(90 * deg);
 
-  G4double XYCenter = 0. * cm;
-  for (G4int k = 0; k < 59; k++)
+  for (int d = 1.1 * cm; d < 60 * cm; d = d + 1 * cm)
   {
-    XYCenter += 1 * cm;
-    G4VPhysicalVolume *wire_up_Phy = new G4PVPlacement(rotb, G4ThreeVector(XYCenter, 60 * cm, 0.05 * cm), WLSFiberLogical, "WLS_up", fScintillatorLogical, false, k + 1, checkOverlaps);
-    G4VPhysicalVolume *wire_down_Phy = new G4PVPlacement(0, G4ThreeVector(0 * cm, XYCenter, 1.7 * cm), WLSFiberLogical, "WLS_down", fScintillatorLogical, false, k + 1, checkOverlaps);
+    G4VPhysicalVolume *wirePhyX = new G4PVPlacement(rotb, G4ThreeVector(d, 60 * cm, 0.05 * cm), WLSFiberLogical, "WLS_x", fScintillatorLogical, false, 0, checkOverlaps);
+    G4VPhysicalVolume *wirePhyY = new G4PVPlacement(0, G4ThreeVector(0, d, 1.7 * cm), WLSFiberLogical, "WLS_y", fScintillatorLogical, false, 0, checkOverlaps);
   }
-  G4VPhysicalVolume *Sipm_topSide1_Phy = new G4PVPlacement(0, G4ThreeVector(-0.1 * cm, 0 * cm, -0.35 * cm), fSipmLogical, "SiPM_S1", WLSFiberLogical, false, 0, checkOverlaps);
-  // G4VPhysicalVolume *Sipm_topSide2_Phy = new G4PVPlacement(0, G4ThreeVector(-0.1 * cm, 0 * cm, -0.35 * cm), fSipmLogical, "SiPM_S2", WLSFiberLogical, false, 0, checkOverlaps);
 
-  // G4VPhysicalVolume *Sipm_downSide1_Phy = new G4PVPlacement(0, G4ThreeVector(59.9 * cm, 0 * cm, -0.35 * cm), fSipmLogical, "SiPM_S1_down", WLSFiberLogical, false, 0, checkOverlaps);
-  // G4VPhysicalVolume *Sipm_downSide2_Phy = new G4PVPlacement(0, G4ThreeVector(-0.1 * cm, 0 * cm, -0.35 * cm), fSipmLogical, "SiPM_S2_down", WLSFiberLogical, false, 0, checkOverlaps);
+  
+  auto meshWire = CADMesh::TessellatedMesh::FromSTL("WLS_Ascii.stl");
+  meshWire->SetScale(10.0);
+  // meshWire->SetOffset(G4ThreeVector(-0.5 * scintillatorSizeX, 0, -0.5 * scintillatorSizeX));
+  auto Wire = meshWire->GetSolid();
+  // double density = 2.700 * g / cm3;
+  // double a = 26.98 * g / mole;
+  // G4Material *Al = new G4Material("Aluminum", 13., a, density);
+  WLSFiberLogical = new G4LogicalVolume(Wire, Fib, "WireLogical");
+  // fScoringVolume = WLSFiberLogical;
 
+  G4VPhysicalVolume *WirePhy = new G4PVPlacement(0, G4ThreeVector(0, 0, 0.), WLSFiberLogical, "wirePhysical", fScintillatorLogical, false, 0, checkOverlaps);
+
+  //
+  // SiPM
+  //
+  auto meshSSipm = CADMesh::TessellatedMesh::FromSTL("EJ200Scibar_singlesipm_Ascii.stl");
+  meshSWire->SetScale(10.0);
+  auto SiPM = meshSWire->GetSolid();
+  fSipmLogical = new G4LogicalVolume(SiPM, silicon, "SiPMLogical");
+  // fScoringVolume = fSipmLogical;
+
+  G4VPhysicalVolume *SipmPhy = new G4PVPlacement(0, G4ThreeVector(0 * cm, 0 * cm, 0 * cm), fSipmLogical, "SiPM", WLSFiberLogical, false, 0, checkOverlaps);
+
+  
+  auto meshSiPM = CADMesh::TessellatedMesh::FromSTL("SiPM_Ascii.stl");
+  meshSiPM->SetScale(10.0);
+  // mesh->SetOffset(G4ThreeVector(-0.5 * scintillatorSizeX, 0, -0.5 * scintillatorSizeX));
+  // meshSiPM->SetOffset(G4ThreeVector(-1.5 * mm, -2 * mm, -0.15 * mm));
+  auto SiPM = meshSiPM->GetSolid();
+  fSipmLogical = new G4LogicalVolume(SiPM, silicon, "SiPMLogical");
+  G4VPhysicalVolume *SiPMPhy = new G4PVPlacement(0, G4ThreeVector(0, 0, 0), fSipmLogical, "SiPMPhysical", WLSFiberLogical, false, 0, checkOverlaps);
+*/
   //
   // visualization attributes
   //
@@ -220,13 +280,10 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
   G4VisAttributes *yellowcol = new G4VisAttributes(G4Colour(1.0, 1.0, 0.));
   G4VisAttributes *greencol = new G4VisAttributes(G4Colour(0., 1.0, 0., 0.4));
   G4VisAttributes *bluecol = new G4VisAttributes(G4Colour(0., 0., 0.8));
-  cyancol->SetForceWireframe(true);
-  pinkcol->SetForceWireframe(true);
   //  // bore->SetForceSolid(false);
-  fScintillatorLogical->SetVisAttributes(redcol);
-  WLSFiberLogical->SetVisAttributes(yellowcol);
-  fSipmLogical->SetVisAttributes(cyancol);
-  // fSipmYLogical->SetVisAttributes(pinkcol);
+  fScintillatorLogical->SetVisAttributes(yellowcol);
+  // WLSFiberLogical->SetVisAttributes(yellowcol);
+  // fSipmLogical->SetVisAttributes(cyancol);
 
   // G4OpticalSurface *teflonSurface = new G4OpticalSurface("TeflonSurface");
   // teflonSurface->SetType(dielectric_LUTDAVIS);
@@ -273,11 +330,19 @@ void DetectorConstruction::ConstructSDandField()
 {
   G4SDManager::GetSDMpointer()->SetVerboseLevel(1);
   G4String SDname;
+  /*
+  //
+  // EJ200 SensitiveDetector
+  //
+  SenDet *SciPlaneSD = new SenDet(SDname = "/ScinPlane");
+  G4SDManager::GetSDMpointer()->AddNewDetector(SciPlaneSD);
+  GetScoringVolume()->SetSensitiveDetector(SciPlaneSD);
+*/
 
   //
-  // SensitiveDetector
+  // WLS SensitiveDetector
   //
- SenDet *WLSSD = new SenDet(SDname = "/WLSWire");
+  SenDet *WLSSD = new SenDet(SDname = "/WLSWire");
   G4SDManager::GetSDMpointer()->AddNewDetector(WLSSD);
   GetScoringVolume()->SetSensitiveDetector(WLSSD);
 }
@@ -288,9 +353,15 @@ void DetectorConstruction::ConstructMaterials()
 
   // Air
   nistManager->FindOrBuildMaterial("G4_AIR");
-
+  // Limestone
+  nistManager->FindOrBuildMaterial("G4_CALCIUM_CARBONATE");
   // // Argon gas
   // nistManager->FindOrBuildMaterial("G4_Ar");
+
+  // Scilicon
+  double siliconDensity = 2.33 * g / cm3;
+  double siliconAtomicWeight = 28.0855 * g / mole;
+  G4Material *silicon = new G4Material("silicon", 14., siliconAtomicWeight, siliconDensity);
 
   // PLEXIGLASS
   nistManager->FindOrBuildMaterial("G4_PLEXIGLASS");

@@ -61,7 +61,7 @@ void EventAction::BeginOfEventAction(const G4Event *)
     if (fWLSHCID == -1)
     {
         auto SDManager = G4SDManager::GetSDMpointer();
-        fWLSHCID = SDManager->GetCollectionID("/HitCollection");
+        fWLSHCID = SDManager->GetCollectionID("WLSWire/HitCollection");
     }
     G4cout << "BeginOfEventAction fWLSHCID: " << fWLSHCID << G4endl;
 }

@@ -21,9 +21,11 @@ void RunAction::BeginOfRunAction(const G4Run *)
 {
     G4AnalysisManager *analysisManager = G4AnalysisManager::Instance();
 
-    analysisManager->CreateH3("0", "Hit position (cm)", 200, -200 * cm, 200 * cm, 200, -10 * cm, 10 * cm, 200, -10 * cm, 10 * cm);
-    // analysisManager->CreateH3("1", "Generated Muon position (cm)", 200, -10 * cm, 10 * cm, 29, -1.45 * cm, 1.45 * cm, 29, -1.45 * cm, 1.45 * cm);
-    analysisManager->CreateH3("1", "Generated Muon position (cm)", 200, -200 * cm, 200 * cm, 200, -10 * cm, 10 * cm, 200, -10 * cm, 10 * cm);
+analysisManager->CreateH3("Energy_distribution","Energy loss distribution",  200, -61 * cm, 61 * cm, 200, -61 * cm, 61 * cm, 200, 0,2*MeV );
+analysisManager->CreateH3("1","momentum_Z", 10,-200,200,10,-200,200,10,0,4500);
+analysisManager->CreateH2("Energy_track","Energy loss per Track", 100, 0,50000, 200, 0,2 );
+analysisManager->CreateH2("1","Momemtum vs Position [Z-direction]", 200, 0,200, 200, 0,200 );
+
 
     analysisManager->CreateNtuple("MuonHits", "Hits");
     analysisManager->CreateNtupleIColumn("evt");
@@ -40,6 +42,7 @@ void RunAction::BeginOfRunAction(const G4Run *)
     analysisManager->CreateNtupleDColumn("fy");
     analysisManager->CreateNtupleDColumn("fz");
     analysisManager->FinishNtuple(1);
+
 
     analysisManager->OpenFile("MuonHits");
 }

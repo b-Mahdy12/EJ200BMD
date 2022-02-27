@@ -50,11 +50,11 @@ G4bool SenDet::ProcessHits(G4Step *astep, G4TouchableHistory *ROhist)
     G4ThreeVector pos = prestep->GetPosition();
     // G4double edep = astep->GetTotalEnergyDeposit();
 
-    G4int WLSCopyNo = touchable->GetVolume()->GetCopyNo();
-    G4int WLSID = (WLSCopyNo & 0xFF);
+    // G4int WLSCopyNo = touchable->GetVolume()->GetCopyNo();
+    // G4int WLSID = (WLSCopyNo & 0xFF);
 
     G4VPhysicalVolume *physVol = touchable->GetVolume();
-    G4ThreeVector posMuon = physVol->GetTranslation();
+     G4ThreeVector posMuon = physVol->GetTranslation();
     G4double X_m = posMuon.x();
     G4double Y_m = posMuon.y();
     G4double Z_m = posMuon.z();
@@ -68,13 +68,13 @@ G4bool SenDet::ProcessHits(G4Step *astep, G4TouchableHistory *ROhist)
     hit->SetTrackID(TrackID);
     hit->Print();
     hitCollection->insert(hit);
-
+man->FillH3(0,X_m,Y_m,TrackEnergy);
     man->FillNtupleIColumn(0, 0, evt);
     man->FillNtupleDColumn(0, 1, TrackEnergy);
     man->FillNtupleDColumn(0, 2, X_m);
     man->FillNtupleDColumn(0, 3, Y_m);
     man->FillNtupleDColumn(0, 4, Z_m);
-    man->FillNtupleIColumn(0, 5, WLSID);
+    // man->FillNtupleIColumn(0, 5, WLSID);
     man->FillNtupleIColumn(0, 6, TrackID);
     man->AddNtupleRow(0);
 
